@@ -106,7 +106,7 @@
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 171024,
+		"initialSize": 202907,
 		"inputAbbreviatedPath": "\/assets\/images\/home\/gradescope.png",
 		"outputAbbreviatedPath": "\/assets\/images\/home\/gradescope.png",
 		"outputPathIsOutsideProject": 0,
@@ -131,6 +131,17 @@
 		"initialSize": 48123,
 		"inputAbbreviatedPath": "\/assets\/images\/home\/photobooth.jpg",
 		"outputAbbreviatedPath": "\/assets\/images\/home\/photobooth.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/home\/twitter.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 34342,
+		"inputAbbreviatedPath": "\/assets\/images\/home\/twitter.png",
+		"outputAbbreviatedPath": "\/assets\/images\/home\/twitter.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
