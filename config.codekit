@@ -124,6 +124,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/home\/hpv.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 75393,
+		"inputAbbreviatedPath": "\/assets\/images\/home\/hpv.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/home\/hpv.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/home\/photobooth.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -131,6 +142,28 @@
 		"initialSize": 48123,
 		"inputAbbreviatedPath": "\/assets\/images\/home\/photobooth.jpg",
 		"outputAbbreviatedPath": "\/assets\/images\/home\/photobooth.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/home\/scoreportal.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 85831,
+		"inputAbbreviatedPath": "\/assets\/images\/home\/scoreportal.jpg",
+		"outputAbbreviatedPath": "\/assets\/images\/home\/scoreportal.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/assets\/images\/home\/twitter.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 34342,
+		"inputAbbreviatedPath": "\/assets\/images\/home\/twitter.png",
+		"outputAbbreviatedPath": "\/assets\/images\/home\/twitter.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
