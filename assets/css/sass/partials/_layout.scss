@@ -25,10 +25,11 @@ a.button {
   background-color: $blue-80;
   border-radius: 2px;
   color: $white-80;
-  font-size: $f-size-md;
+  display: inline-block;
+  font-size: $f-size-sm;
   padding: 10px 10px;
   text-decoration: none;
-  transition: 0;
+  transition: 100ms;
 
   &:hover {
     background-color: $blue;

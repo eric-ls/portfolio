@@ -88,14 +88,16 @@
 .featured-project {
   background: url("../../images/home/gradescope-background.png");
   height: 300px;
+  overflow: hidden;
+  position: relative;
 
   .project-title {
-    bottom: 60px;
+    top: 50px;
     left: 60px;
     position: absolute;
   }
 
-  .project-description {
+  .project-type {
     color: $white-60;
     font-size: $f-size-md;
     margin-bottom: 7px;
@@ -104,7 +106,38 @@
   .project-name {
     font-size: $f-size-xxl;
     font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+  }
+
+  .project-description {
+    color: $white-90;
+    line-height: 1.4;
+    max-width: 370px;
+  }
+
+  .button {
+    background: transparent;
+    border: 1px solid $gray-light;
+    color: $gray-light;
+    font-size: $f-size-sm;
+    margin-top: 20px;
+
+    &:hover {
+      background: $gray-light-20;
+    }
+  }
+
+  .featured-photo {
+    bottom: -5px;
+    box-shadow: 1px 1px 20px $gray-dark-40;
+    position: absolute;
+    right: 80px;
+    width: 420px;
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
   }
 }
 
@@ -162,7 +195,7 @@
     right: 50px;
     opacity: 0;
     position: absolute;
-    top: 7px;
+    top: 8px;
     transition: 150ms;
     visibility: hidden;
   }

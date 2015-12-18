@@ -102,6 +102,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/home\/gradescope.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 171024,
+		"inputAbbreviatedPath": "\/assets\/images\/home\/gradescope.png",
+		"outputAbbreviatedPath": "\/assets\/images\/home\/gradescope.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/home\/guitar.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
