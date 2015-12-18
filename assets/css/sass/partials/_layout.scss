@@ -5,6 +5,26 @@
 }
 
 body {
-  background-color: $light-gray;
+  background-color: $gray-light;
   font-family: "Hind";
+}
+
+a.link {
+  border-bottom: 1px solid $gray-dark-40;
+  color: $gray-dark;
+  text-decoration: none;
+  transition: 100ms;
+
+  &.light {
+    border-bottom-color: $gray-light-40;
+    color: $gray-light;
+  }
+}
+
+a.button {
+  background: $blue-80;
+  border-radius: 2px;
+  color: $white-80;
+  padding: 10px 10px;
+  text-decoration: none;
 }

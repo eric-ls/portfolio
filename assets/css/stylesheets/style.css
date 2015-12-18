@@ -23,24 +23,49 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 body { background-color: #F3F3F3; font-family: "Hind"; }
 
+a.link { border-bottom: 1px solid rgba(58, 71, 80, 0.4); color: #3A4750; text-decoration: none; transition: 100ms; }
+a.link.light { border-bottom-color: rgba(243, 243, 243, 0.4); color: #F3F3F3; }
+
+a.button { background: rgba(33, 133, 213, 0.8); border-radius: 2px; color: rgba(255, 255, 255, 0.8); padding: 10px 10px; text-decoration: none; }
+
 .main-container { margin: 0 auto; max-width: 1000px; }
 .main-container:after { clear: both; content: ""; height: 0; visibility: hidden; display: block; }
 
 .homepage-box { margin-bottom: 20px; padding: 30px; position: relative; }
 
-.cover-container { background-color: #3A4750; height: 400px; margin-top: 20px; position: relative; }
-.cover-container .title-container { bottom: 150px; left: 80px; position: absolute; }
+.cover-container { background-color: #3A4750; height: 400px; margin-top: 20px; padding: 5px; position: relative; -webkit-user-select: none; }
+.cover-container .title-container { top: 100px; left: 80px; position: absolute; }
 .cover-container .title-container .name { font-size: 50px; font-weight: 600; margin-bottom: 10px; }
-.cover-container .title-container .description { font-size: 26px; font-weight: 300; }
+.cover-container .title-container .tagline { font-size: 26px; font-weight: 300; margin-bottom: 50px; }
+.cover-container .title-container .description { font-size: 18px; font-weight: 300; line-height: 1.4; max-width: 500px; }
+.cover-container .title-container a { display: inline-block; height: 24px; }
+.cover-container .title-container a:hover { border-bottom-color: #F3F3F3; }
 
 .title-container { color: #F3F3F3; }
 
 .featured-project { background-color: #1ca9c4; height: 300px; }
+.featured-project .project-title { bottom: 60px; left: 60px; position: absolute; }
+.featured-project .project-description { color: rgba(255, 255, 255, 0.6); font-size: 15px; margin-bottom: 7px; }
+.featured-project .project-name { font-size: 26px; font-weight: 500; margin-bottom: 10px; }
 
 .project-col { float: left; width: 50%; }
 .project-col:nth-of-type(odd) { padding-right: 10px; }
 .project-col:nth-of-type(even) { padding-left: 10px; }
-.project-col .project { background-color: #3A4750; }
 
-.project-title .project-description { color: rgba(255, 255, 255, 0.6); font-size: 15px; }
-.project-title .project-name { font-size: 22px; }
+.project { background-color: #8FACC0; height: 250px; overflow: hidden; padding: 0; position: relative; transition: 250ms; }
+.project .project-title { bottom: 0px; padding: 0 50px; position: absolute; transition: 250ms; z-index: 1; }
+.project .project-type { color: rgba(255, 255, 255, 0.6); font-size: 15px; margin-bottom: 7px; }
+.project .project-name { font-size: 26px; font-weight: 500; margin-bottom: 15px; }
+.project .project-description { color: rgba(255, 255, 255, 0.8); font-size: 15px; line-height: 1.3; opacity: 0; transition: 250ms; visibility: hidden; }
+.project .button { right: 50px; opacity: 0; position: absolute; top: 5px; transition: 250ms; visibility: hidden; }
+
+.project-image { transition: 300ms; }
+.project-image img { height: 100%; object-fit: cover; width: 100%; }
+
+.hover-overlay { background-color: #3A4750; height: 160px; left: 0; position: absolute; top: 100%; transition: 300ms; width: 100%; }
+
+.project:hover .project-title { -webkit-transform: translateY(-30px); -moz-transform: translateY(-30px); -ms-transform: translateY(-30px); -o-transform: translateY(-30px); transform: translateY(-30px); }
+.project:hover .project-image { -webkit-transform: translateY(-100px); -moz-transform: translateY(-100px); -ms-transform: translateY(-100px); -o-transform: translateY(-100px); transform: translateY(-100px); }
+.project:hover .hover-overlay { -webkit-transform: translateY(-160px); -moz-transform: translateY(-160px); -ms-transform: translateY(-160px); -o-transform: translateY(-160px); transform: translateY(-160px); }
+.project:hover .project-description { opacity: 1; visibility: visible; }
+.project:hover .button { opacity: 1; visibility: visible; }

@@ -20,10 +20,12 @@
   background-color: $gray-dark;
   height: 400px;
   margin-top: 20px;
+  padding: 5px;
   position: relative;
+  -webkit-user-select: none;
 
   .title-container {
-    bottom: 150px;
+    top: 100px;
     left: 80px;
     position: absolute;
 
@@ -33,20 +35,55 @@
       margin-bottom: 10px;
     }
 
-    .description {
+    .tagline {
       font-size: $f-size-xxl;
       font-weight: 300;
+      margin-bottom: 50px;
+    }
+
+    .description {
+      font-size: $f-size-lg;
+      font-weight: 300;
+      line-height: 1.4;
+      max-width: 500px;
+    }
+
+    a {
+      display: inline-block;
+      height: 24px;
+
+      &:hover {
+        border-bottom-color: $gray-light;
+      }
     }
   }
 }
 
 .title-container {
-  color: $light-gray;
+  color: $gray-light;
 }
 
 .featured-project {
   background-color: rgb(28, 169, 196);
   height: 300px;
+
+  .project-title {
+    bottom: 60px;
+    left: 60px;
+    position: absolute;
+  }
+
+  .project-description {
+    color: $white-60;
+    font-size: $f-size-md;
+    margin-bottom: 7px;
+  }
+
+  .project-name {
+    font-size: $f-size-xxl;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
 }
 
 .project-col {
@@ -60,19 +97,95 @@
   &:nth-of-type(even) {
     padding-left: 10px;
   }
-
-  .project {
-    background-color: $gray-dark;
-  }
 }
 
-.project-title {
-  .project-description {
+.project {
+  background-color: $blue-gray;
+  height: 250px;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  transition: 250ms;
+
+  .project-title {
+    bottom: 0px;
+    padding: 0 50px;
+    position: absolute;
+    transition: 250ms;
+    z-index: 1;
+  }
+
+  .project-type {
     color: $white-60;
     font-size: $f-size-md;
+    margin-bottom: 7px;
   }
 
   .project-name {
-    font-size: $f-size-xl;
+    font-size: $f-size-xxl;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+
+  .project-description {
+    color: $white-80;
+    font-size: $f-size-md;
+    line-height: 1.3;
+    opacity: 0;
+    transition: 250ms;
+    visibility: hidden;
+  }
+
+  .button {
+    right: 50px;
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+    transition: 250ms;
+    visibility: hidden;
+  }
+}
+
+.project-image {
+  transition: 300ms;
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.hover-overlay {
+  background-color: $gray-dark;
+  height: 160px;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  transition: 300ms;
+  width: 100%;
+}
+
+.project:hover {
+  .project-title {
+    @include transform(translateY(-30px));
+  }
+
+  .project-image {
+    @include transform(translateY(-100px));
+  }
+
+  .hover-overlay {
+    @include transform(translateY(-160px));
+  }
+
+  .project-description {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .button {
+    opacity: 1;
+    visibility: visible;
   }
 }
