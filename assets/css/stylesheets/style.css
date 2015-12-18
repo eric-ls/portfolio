@@ -79,7 +79,7 @@ a.button:hover { background-color: #2185D5; }
   .project:hover .hover-overlay { -webkit-transform: translateY(-160px); -moz-transform: translateY(-160px); -ms-transform: translateY(-160px); -o-transform: translateY(-160px); transform: translateY(-160px); }
   .project:hover .project-description { opacity: 1; visibility: visible; }
   .project:hover .button { opacity: 1; visibility: visible; } }
-@media (max-width: 970px) { .cover-container { margin-bottom: 10px; margin-top: 0; height: 500px; }
+@media (max-width: 970px) { .cover-container { margin-bottom: 10px; margin-top: 0; height: 500px; padding: 0; }
   .cover-container .title-container { padding: 30px; top: 50px; width: 100%; }
   .featured-project { height: auto; margin-bottom: 10px; padding-bottom: 0; }
   .featured-project .title-container { left: 0; position: relative; top: 0; }
