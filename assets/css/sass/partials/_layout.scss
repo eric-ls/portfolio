@@ -22,9 +22,15 @@ a.link {
 }
 
 a.button {
-  background: $blue-80;
+  background-color: $blue-80;
   border-radius: 2px;
   color: $white-80;
+  font-size: $f-size-md;
   padding: 10px 10px;
   text-decoration: none;
+  transition: 0;
+
+  &:hover {
+    background-color: $blue;
+  }
 }
