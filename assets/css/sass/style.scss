@@ -25,7 +25,7 @@
 
   .title-container {
     top: 100px;
-    left: 80px;
+    padding-left: 80px;
     position: absolute;
 
     .name {
@@ -222,26 +222,96 @@
   width: 100%;
 }
 
-.project:hover {
-  .project-title {
-    @include transform(translateY(-30px));
+@media (min-width: 970px) {
+  .project:hover {
+    .project-title {
+      @include transform(translateY(-30px));
+    }
+
+    .project-image {
+      @include transform(translateY(-100px));
+    }
+
+    .hover-overlay {
+      @include transform(translateY(-160px));
+    }
+
+    .project-description {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .button {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+@media (max-width: 970px) {
+  .cover-container {
+    margin-bottom: 10px;
+    margin-top: 0;
+    height: 500px;
+
+    .title-container {
+      padding: 30px;
+      top: 50px;
+      width: 100%;
+    }
   }
 
-  .project-image {
-    @include transform(translateY(-100px));
+  .featured-project {
+    height: auto;
+    margin-bottom: 10px;
+    padding-bottom: 0;
+
+    .title-container {
+      left: 0;
+      position: relative;
+      top: 0;
+    }
+
+    .project-description {
+      max-width: 600px;
+    }
+
+    .featured-photo {
+      margin: 0 auto;
+      margin-top: 40px;
+      position: relative;
+      right: 0;
+      width: 90%;
+    }
   }
 
-  .hover-overlay {
-    @include transform(translateY(-160px));
+  .project-col {
+    float: none;
+    width: 100%;
+
+    &:nth-of-type(odd) {
+      padding-right: 0;
+    }
+
+    &:nth-of-type(even) {
+      padding-left: 0;
+    }
   }
 
-  .project-description {
-    opacity: 1;
-    visibility: visible;
-  }
+  .project {
+    height: 200px;
+    margin-bottom: 10px;
 
-  .button {
-    opacity: 1;
-    visibility: visible;
+    .project-title {
+      bottom: 10px;
+    }
+
+    .project-description {
+      display: none;
+    }
+
+    .button {
+      display: none;
+    }
   }
 }
