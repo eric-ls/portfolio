@@ -1,0 +1,46 @@
+@import url(https://fonts.googleapis.com/css?family=Hind:400,600,500,300);
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+/* Use this for transforms Syntax example: @include transform(translateY(-50px)); */
+/* Use this for transforms Syntax example: @include appearance(none); */
+* { box-sizing: border-box; }
+
+body { background-color: #F3F3F3; font-family: "Hind"; }
+
+.main-container { margin: 0 auto; max-width: 1000px; }
+.main-container:after { clear: both; content: ""; height: 0; visibility: hidden; display: block; }
+
+.homepage-box { margin-bottom: 20px; padding: 30px; position: relative; }
+
+.cover-container { background-color: #3A4750; height: 400px; margin-top: 20px; position: relative; }
+.cover-container .title-container { bottom: 150px; left: 80px; position: absolute; }
+.cover-container .title-container .name { font-size: 50px; font-weight: 600; margin-bottom: 10px; }
+.cover-container .title-container .description { font-size: 26px; font-weight: 300; }
+
+.title-container { color: #F3F3F3; }
+
+.featured-project { background-color: #1ca9c4; height: 300px; }
+
+.project-col { float: left; width: 50%; }
+.project-col:nth-of-type(odd) { padding-right: 10px; }
+.project-col:nth-of-type(even) { padding-left: 10px; }
+.project-col .project { background-color: #3A4750; }
+
+.project-title .project-description { color: rgba(255, 255, 255, 0.6); font-size: 15px; }
+.project-title .project-name { font-size: 22px; }

@@ -1,0 +1,78 @@
+@import "partials/reset";
+@import "partials/variables";
+@import "partials/mixins";
+@import "partials/layout";
+
+.main-container {
+  margin: 0 auto;
+  max-width: 1000px;
+
+  @include clearAfter;
+}
+
+.homepage-box {
+  margin-bottom: 20px;
+  padding: 30px;
+  position: relative;
+}
+
+.cover-container {
+  background-color: $gray-dark;
+  height: 400px;
+  margin-top: 20px;
+  position: relative;
+
+  .title-container {
+    bottom: 150px;
+    left: 80px;
+    position: absolute;
+
+    .name {
+      font-size: 50px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      font-size: $f-size-xxl;
+      font-weight: 300;
+    }
+  }
+}
+
+.title-container {
+  color: $light-gray;
+}
+
+.featured-project {
+  background-color: rgb(28, 169, 196);
+  height: 300px;
+}
+
+.project-col {
+  float: left;
+  width: 50%;
+
+  &:nth-of-type(odd) {
+    padding-right: 10px;
+  }
+
+  &:nth-of-type(even) {
+    padding-left: 10px;
+  }
+
+  .project {
+    background-color: $gray-dark;
+  }
+}
+
+.project-title {
+  .project-description {
+    color: $white-60;
+    font-size: $f-size-md;
+  }
+
+  .project-name {
+    font-size: $f-size-xl;
+  }
+}
