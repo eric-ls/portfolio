@@ -57,7 +57,9 @@
       }
     }
   }
+}
 
+.social-container {
   .social-title {
     color: $white-80;
     font-size: $f-size-lg;
@@ -222,6 +224,27 @@
   width: 100%;
 }
 
+.contact-container {
+  background-color: $gray-dark;
+  padding: 50px;
+
+  .social-container {
+    float: right;
+  }
+
+  .icon-container .icon img {
+    height: 20px;
+  }
+}
+
+.contact-title {
+  color: $gray-light;
+  display: inline-block;
+  font-size: $f-size-xl;
+  font-weight: 400;
+}
+
+// desktop styles
 @media (min-width: 970px) {
   .project:hover {
     .project-title {
@@ -248,6 +271,7 @@
   }
 }
 
+// mobile stypes
 @media (max-width: 970px) {
   .cover-container {
     margin-bottom: 10px;
@@ -305,6 +329,7 @@
 
     .project-title {
       bottom: 10px;
+      padding-left: 25px;
     }
 
     .project-description {
@@ -314,5 +339,23 @@
     .button {
       display: none;
     }
+  }
+
+  .contact-container {
+    margin-bottom: 10px;
+    padding: 40px 30px;
+
+    .social-container {
+      float: none;
+    }
+
+    .icon-container {
+      text-align: center;
+    }
+  }
+
+  .contact-title {
+    font-size: $f-size-lg;
+    margin-bottom: 20px;
   }
 }
