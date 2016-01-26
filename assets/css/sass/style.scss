@@ -18,13 +18,14 @@
 
 .cover-container {
   background-color: $gray-dark;
+  height: 470px;
   margin-top: 20px;
   padding: 5px;
   position: relative;
   -webkit-user-select: none;
 
   .title-container {
-    top: 100px;
+    top: 80px;
     padding-left: 80px;
     position: absolute;
 
@@ -42,7 +43,7 @@
 
     .description {
       font-size: $f-size-lg;
-      font-weight: 300;
+      font-weight: 400;
       line-height: 1.4;
       margin-bottom: 40px;
       max-width: 500px;
@@ -50,13 +51,16 @@
 
     a {
       display: inline-block;
-      height: 24px;
 
       &:hover {
         border-bottom-color: $gray-light;
       }
     }
   }
+}
+
+.about-link {
+  margin-bottom: 20px;
 }
 
 .social-container {
@@ -100,19 +104,19 @@
   }
 
   .project-type {
-    color: $white-60;
+    color: $white-80;
     font-size: $f-size-md;
     margin-bottom: 7px;
   }
 
   .project-name {
     font-size: $f-size-xxl;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 20px;
   }
 
   .project-description {
-    color: $white-90;
+    color: $white;
     line-height: 1.4;
     max-width: 370px;
   }
@@ -174,14 +178,14 @@
   }
 
   .project-type {
-    color: $white-60;
+    color: $white-80;
     font-size: $f-size-md;
     margin-bottom: 7px;
   }
 
   .project-name {
     font-size: $f-size-xxl;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 15px;
   }
 
@@ -361,3 +365,5 @@
     margin-bottom: 20px;
   }
 }
+
+@import "about";

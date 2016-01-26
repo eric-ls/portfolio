@@ -1,0 +1,87 @@
+$paragraph-label-width: 200px;
+
+.about-container {
+  background: $white;
+  color: $gray-dark;
+  margin-top: 20px;
+  padding: 50px 80px;
+}
+
+.title-back-link {
+  border-bottom: 1px solid transparent;
+  color: $gray-dark-60;
+  display: inline-block;
+  margin-bottom: 30px;
+  padding-bottom: 2px;
+  text-decoration: none;
+  transition: 100ms;
+
+  &:hover {
+    border-bottom-color: $gray-dark-40;
+  }
+}
+
+.about-title {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about-subtitle {
+  color: $gray-dark-60;
+  font-size: $f-size-xxl;
+  font-weight: 300;
+  margin-bottom: 70px;
+}
+
+.paragraph-container {
+  margin-bottom: 60px;
+}
+
+.paragraph-label-container {
+  float: left;
+  width: $paragraph-label-width;
+
+  .paragraph-label {
+    color: $gray-dark;
+    font-size: $f-size-xl;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+}
+
+.paragraph-text-container {
+  margin-left: $paragraph-label-width;
+  width: calc(100% - #{$paragraph-label-width});
+
+  .paragraph-text {
+    color: $gray-dark-90;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 23px;
+  }
+
+  .resume-entry {
+    line-height: 1.5;
+    margin-bottom: 4px;
+  }
+
+  .resume-entry-title {
+    color: $gray-dark;
+    font-weight: 600;
+  }
+
+  a {
+    border-bottom: 1px solid $gray-dark-20;
+    color: $gray-dark;
+    display: inline-block;
+    height: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 100ms;
+
+    &:hover {
+      border-bottom-color: $gray-dark-60;
+    }
+  }
+}
