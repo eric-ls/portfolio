@@ -4,7 +4,8 @@ $paragraph-label-width: 200px;
   background: $white;
   color: $gray-dark;
   margin-top: 20px;
-  padding: 50px 80px;
+  margin-bottom: 20px;
+  padding: 50px 80px 30px;
 }
 
 .title-back-link {
@@ -36,6 +37,10 @@ $paragraph-label-width: 200px;
 
 .paragraph-container {
   margin-bottom: 60px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 }
 
 .paragraph-label-container {
@@ -52,6 +57,7 @@ $paragraph-label-width: 200px;
 
 .paragraph-text-container {
   margin-left: $paragraph-label-width;
+  margin-bottom: 30px;
   width: calc(100% - #{$paragraph-label-width});
 
   .paragraph-text {
@@ -83,5 +89,58 @@ $paragraph-label-width: 200px;
     &:hover {
       border-bottom-color: $gray-dark-60;
     }
+  }
+}
+
+.resume-list {
+  line-height: 1.5;
+  margin-bottom: 20px;
+
+  .resume-list-item {
+    margin-bottom: 4px;
+  }
+}
+
+.entry-list {
+  list-style: square inside;
+}
+
+@media (max-width: 1000px) {
+  .about-container {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 850px) {
+  .about-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .about-container {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .paragraph-container {
+    margin-bottom: 40px;
+  }
+
+  .paragraph-label-container {
+    float: none;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  .paragraph-label {
+    border-bottom: 1px solid $gray-dark-60;
+    display: inline-block;
+  }
+
+  .paragraph-text-container {
+    margin-left: 0;
+    width: 100%;
   }
 }
