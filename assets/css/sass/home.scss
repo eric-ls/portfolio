@@ -46,6 +46,32 @@
       }
     }
   }
+
+  .nav-container {
+    right: 80px;
+    position: absolute;
+    top: 85px;
+  }
+
+  .nav-item {
+    display: inline-block;
+    font-size: $f-size-lg;
+    margin: 0 7px;
+
+    .link {
+      border: 2px solid transparent;
+      font-weight: 600;
+      transition: 200ms;
+
+      &:hover {
+        border-bottom-color: $white-20;
+      }
+
+      &.active {
+        border-bottom-color: $white-60;
+      }
+    }
+  }
 }
 
 .about-link {
@@ -352,5 +378,11 @@
   .contact-title {
     font-size: $f-size-lg;
     margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-container {
+    display: none;
   }
 }
