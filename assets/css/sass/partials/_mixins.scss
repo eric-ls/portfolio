@@ -15,6 +15,14 @@
   @include prefixer(transform, $property);
 }
 
+/* Use this for transitions
+ * Syntax example:
+ *    @include transition(200ms);
+ */
+@mixin transition($property) {
+  @include prefixer(transition, $property);
+}
+
 /* Use this for transforms
  * Syntax example:
  *    @include appearance(none);
