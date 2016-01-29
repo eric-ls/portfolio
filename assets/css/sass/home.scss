@@ -297,12 +297,12 @@
 // mobile stypes
 @media (max-width: 970px) {
   .cover-container {
-    height: 500px;
     margin-bottom: 10px;
     padding: 0;
 
     .title-container {
       padding: 30px;
+      padding-top: 15px;
       top: 50px;
       width: 100%;
     }
@@ -333,15 +333,13 @@
   }
 
   .project-col {
-    float: none;
-    width: 100%;
 
     &:nth-of-type(odd) {
-      padding-right: 0;
+      padding-right: 5px;
     }
 
     &:nth-of-type(even) {
-      padding-left: 0;
+      padding-left: 5px;
     }
   }
 
@@ -386,5 +384,26 @@
 @media (max-width: 600px) {
   .nav-container {
     display: none;
+  }
+
+  .title-container {
+    .social-container {
+      .icon-container .icon {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  .project-col {
+    float: none;
+    width: 100%;
+
+    &:nth-of-type(odd) {
+      padding-right: 0;
+    }
+
+    &:nth-of-type(even) {
+      padding-left: 0;
+    }
   }
 }
