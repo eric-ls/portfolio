@@ -187,6 +187,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/assets\/images\/home\/pinterest.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4.69376e+06,
+		"inputAbbreviatedPath": "\/assets\/images\/home\/pinterest.png",
+		"outputAbbreviatedPath": "\/assets\/images\/home\/pinterest.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/assets\/images\/home\/scoreportal.jpg": {
 		"fileType": 16384,
 		"ignore": 0,

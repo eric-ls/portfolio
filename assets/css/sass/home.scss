@@ -193,6 +193,7 @@
     position: absolute;
     z-index: 1;
     @include transition(250ms);
+    @include transform(translateY(15px));
   }
 
   .project-type {
@@ -220,7 +221,7 @@
     right: 50px;
     opacity: 0;
     position: absolute;
-    top: 8px;
+    top: 13px;
     visibility: hidden;
     @include transition(150ms);
   }
