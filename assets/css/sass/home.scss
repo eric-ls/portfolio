@@ -71,6 +71,64 @@
       }
     }
   }
+
+  .work-popover-target {
+    cursor: pointer;
+  }
+}
+
+.work-popover-hover-container {
+  display: none;
+  opacity: 0;
+  padding: 20px;
+  padding-top: 0;
+  position: absolute;
+  right: -20px;
+  top: 40px;
+  transition: 200ms;
+
+  &:before {
+    content: '';
+    cursor: pointer;
+    height: 50px;
+    position: absolute;
+    top: -50px;
+    right: 10px;
+    width: 75px;
+  }
+
+  &.popover-show {
+    display: block;
+    opacity: 1;
+  }
+}
+
+.work-popover-container {
+  background: $gray-light;
+  border-radius: 3px;
+  box-shadow: 0 1px 10px $gray-dark;
+  padding: 10px 0;
+  width: 100px;
+
+  &:before {
+    background: $gray-light;
+    content: '';
+    height: 10px;
+    position: absolute;
+    top: -5px;
+    right: 45px;
+    width: 10px;
+    @include transform(rotate(45deg));
+  }
+
+  .work-item {
+    padding: 8px 15px;
+    transition: 100ms;
+
+    &:hover {
+      background: $gray-dark-10;
+    }
+  }
 }
 
 .about-link {

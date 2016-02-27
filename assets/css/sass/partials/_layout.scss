@@ -17,6 +17,12 @@ body {
   @include clearAfter;
 }
 
+.light-container {
+  background: $white;
+  color: $gray-dark;
+  padding: 50px 80px 30px;
+}
+
 a.link {
   border-bottom: 1px solid $gray-dark-40;
   color: $gray-dark;

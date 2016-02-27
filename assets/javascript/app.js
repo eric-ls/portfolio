@@ -19,6 +19,18 @@ window.onresize = function () {
   }
 };
 
+/* Controlling the work popover */
+var $toggle = document.querySelector(".work-popover-target");
+var $popover = document.querySelector(".work-popover-hover-container");
+
+$toggle.addEventListener("mouseenter", function () {
+  $popover.classList.add("popover-show");
+})
+
+$popover.addEventListener("mouseleave", function () {
+  $popover.classList.remove("popover-show");
+})
+
 /**
 * Function that tracks a click on an outbound link in Google Analytics.
 * This function takes a valid URL string as an argument, and uses that URL string
