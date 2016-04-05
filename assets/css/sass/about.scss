@@ -2,15 +2,25 @@ $paragraph-label-width: 200px;
 
 .title-back-link {
   border-bottom: 1px solid transparent;
-  color: $gray-dark-60;
+  color: $gray-dark-80;
   display: inline-block;
   margin-bottom: 30px;
+  padding-left: 4px;
   padding-bottom: 2px;
   text-decoration: none;
   transition: 100ms;
 
   &:hover {
     border-bottom-color: $gray-dark-40;
+
+    .fa {
+      @include transform(translateX(-3px));
+    }
+  }
+
+  .fa {
+    margin-right: 5px;
+    transition: 100ms;
   }
 }
 
