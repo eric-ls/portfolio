@@ -1,4 +1,7 @@
+$project-list: 1 2 3 4 5 6 7 8;
+
 .homepage-box {
+  animation: fadein 0.5s both;
   margin-bottom: 20px;
   padding: 30px;
   position: relative;
@@ -168,6 +171,7 @@
 }
 
 .featured-project {
+  animation: fadein 0.5s both 0.1s;
   background: url("../../images/home/gradescope-background.png");
   height: 300px;
   overflow: hidden;
@@ -226,6 +230,13 @@
 .project-col {
   float: left;
   width: 50%;
+
+  @each $i in $project-list {
+    &:nth-of-type(#{$i}) .project {
+      $delay: #{0.1 + ($i - 2) / 20 + s};
+      animation: fadein 0.5s both $delay;
+    }
+  }
 
   &:nth-of-type(odd) {
     padding-right: 10px;
@@ -307,6 +318,7 @@
 }
 
 .contact-container {
+  animation: fadein 0.5s both 0.45s;
   background-color: $gray-dark;
   padding: 50px;
 
@@ -407,7 +419,7 @@
     margin-bottom: 10px;
 
     .project-title {
-      bottom: 10px;
+      bottom: 30px;
       padding-left: 25px;
     }
 

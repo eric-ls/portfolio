@@ -36,14 +36,14 @@
   }
 }
 
-.photo-section-container {
+.section-container {
   margin-bottom: 90px;
-}
 
-.photo-section-title {
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 25px;
+  .section-title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
 }
 
 .photos-container {
