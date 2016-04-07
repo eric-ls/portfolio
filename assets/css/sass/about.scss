@@ -59,11 +59,11 @@ $paragraph-label-width: 200px;
 
 .paragraph-text-container {
   margin-left: $paragraph-label-width;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   width: calc(100% - #{$paragraph-label-width});
 
   .paragraph-text {
-    color: $gray-dark-90;
+    color: $gray-dark-80;
     font-size: 17px;
     line-height: 1.7;
     margin-bottom: 23px;
@@ -76,7 +76,13 @@ $paragraph-label-width: 200px;
 
   .resume-entry-title {
     color: $gray-dark;
+    display: inline-block;
     font-weight: 600;
+  }
+
+  .resume-entry-position {
+    display: inline-block;
+    margin-left: 10px;
   }
 
   a {
