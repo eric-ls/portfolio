@@ -85,6 +85,10 @@ a.button {
 }
 
 @media (max-width: 650px) {
+  body {
+    padding: 10px;
+  }
+
   .light-container {
     padding-left: 25px;
     padding-right: 25px;

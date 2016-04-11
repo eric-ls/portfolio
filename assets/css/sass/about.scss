@@ -78,11 +78,11 @@ $paragraph-label-width: 200px;
     color: $gray-dark;
     display: inline-block;
     font-weight: 600;
+    margin-right: 10px;
   }
 
   .resume-entry-position {
     display: inline-block;
-    margin-left: 10px;
   }
 
   a {
@@ -100,6 +100,28 @@ $paragraph-label-width: 200px;
   }
 }
 
+.course-header {
+  font-size: 17px;
+  margin: 15px 0;
+}
+
+.resume-courses {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 500px;
+
+  .course-title {
+    color: $gray-dark;
+    font-weight: 600;
+    margin-right: 8px;
+  }
+
+  li {
+    margin-bottom: 9px;
+    width: 50%;
+  }
+}
+
 .resume-list {
   line-height: 1.5;
   margin-bottom: 20px;
@@ -107,6 +129,16 @@ $paragraph-label-width: 200px;
   .resume-list-item {
     margin-bottom: 4px;
   }
+}
+
+.skills-container {
+  @include prefixer(column-count, 2);
+  @include prefixer(column-gap, 20px);
+
+  &>div {
+    display: inline-block;
+  }
+
 }
 
 .entry-list {
@@ -127,9 +159,8 @@ $paragraph-label-width: 200px;
 }
 
 @media (max-width: 650px) {
-  .about-container {
-    padding-left: 25px;
-    padding-right: 25px;
+  .light-container {
+    max-width: 500px;
   }
 
   .paragraph-container {
@@ -150,5 +181,14 @@ $paragraph-label-width: 200px;
   .paragraph-text-container {
     margin-left: 0;
     width: 100%;
+  }
+
+  .skills-container {
+    @include prefixer(column-count, 1);
+    @include prefixer(column-gap, 0);
+
+    &>div {
+      display: block;
+    }
   }
 }
