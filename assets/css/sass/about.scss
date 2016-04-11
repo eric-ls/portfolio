@@ -174,13 +174,21 @@ $paragraph-label-width: 200px;
   }
 
   .paragraph-label {
-    border-bottom: 1px solid $gray-dark-60;
+    border-bottom: 2px solid $gray-dark-60;
     display: inline-block;
+    line-height: 1;
+    position: relative;
   }
 
   .paragraph-text-container {
     margin-left: 0;
     width: 100%;
+  }
+
+  .resume-courses {
+    li {
+      width: 100%;
+    }
   }
 
   .skills-container {
