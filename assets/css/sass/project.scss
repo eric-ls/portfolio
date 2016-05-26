@@ -1,0 +1,138 @@
+.project-container {
+  max-width: 900px;
+
+  .project-nav {
+    background: white;
+    padding: 20px;
+
+    .title-back-link {
+      margin-bottom: 0;
+    }
+  }
+  .project-cover {
+    background: teal;
+    height: 400px;
+    padding-left: 80px;
+    position: relative;
+  }
+
+  .class {
+    .another-class {
+
+    }
+  }
+
+  .project-title-container {
+    position: absolute;
+    bottom: 70px;
+    -webkit-user-select: none;
+
+    .title {
+      animation: fadein both 0.5s;
+      background: white;
+      display: inline-block;
+      font-size: 40px;
+      font-weight: 600;
+      margin-bottom: 10px;
+      padding: 8px 8px 7px 8px;
+    }
+
+    .subtitle {
+      animation: fadein both 0.5s;
+      animation-delay: 0.2s;
+      background: white;
+      display: inline-block;
+      font-size: $f-size-xl;
+      padding: 7px;
+    }
+  }
+
+  .light-container {
+    animation: none;
+  }
+
+  .article-content {
+    h1, h2 {
+      margin-bottom: 10px;
+      margin-top: 40px;
+    }
+
+
+    h1 {
+      font-size: 35px;
+      font-weight: 600;
+    }
+
+    h2 {
+      font-size: $f-size-xl;
+      font-weight: 600;
+    }
+
+    p {
+      color: $gray-dark-80;
+      font-size: 20px;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    a.link {
+      display: inline-block;
+      line-height: 1.2;
+    }
+
+    ol, ul {
+      margin: 30px 20px 40px;
+      padding: 0 20px;
+    }
+
+    ul {
+      list-style: square;
+    }
+
+    li {
+      color: $gray-dark-80;
+      font-size: 20px;
+      line-height: 1.6;
+      margin: 15px 0;
+      padding-left: 10px;
+    }
+
+    strong {
+      font-weight: 600;
+    }
+
+    em {
+      font-style: italic;
+    }
+  }
+
+  .image-container {
+    margin: 70px 0;
+
+    &.border {
+      border: 1px solid $gray-light;
+    }
+
+    img {
+      border: 1px solid $gray-dark-20;
+      box-shadow: 1px 1px 10px $gray-dark-20;
+      height: 100%;
+      margin-bottom: 20px;
+      width: 100%;
+      object-fit: cover;
+      vertical-align: middle;
+    }
+
+    figcaption {
+      color: $gray-dark-60;
+      font-size: $f-size-sm;
+      line-height: 1.4;
+      text-align: center;
+    }
+  }
+
+  .article-bottom-nav {
+    margin-top: 50px;
+  }
+
+}

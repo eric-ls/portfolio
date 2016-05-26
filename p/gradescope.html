@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!-- Hey there! It seems like you're interested in my code. We have a lot in common :) -->
+<html>
+  <head>
+    <title>Eric Liang | Gradescope</title>
+    <meta name="application-name" content="Eric Liang's Portfolio">
+
+    <link rel="stylesheet" href="../assets/css/stylesheets/style.css">
+    <link rel="shortcut icon" href="/favicon.ico?v=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="I'm a second year design and eecs student at UC Berkeley. Always looking for new opportunities, so let's chat!" />
+
+    <meta property="og:title" content="Eric Liang's Portfolio">
+    <meta property="og:url" content="http://ericls.com">
+    <meta property="og:description" content="Second year design and eecs student at UC Berkeley.">
+    <meta property="og:image" content="http://ericls.com/cover.jpg">
+  </head>
+  <body>
+    <div class="main-container project-container">
+      <div class="project-nav">
+        <a href="/" class="title-back-link"><span class="fa fa-angle-left"></span>back to home</a>
+      </div>
+      <div class="project-cover">
+        <img src="">
+        <div class="project-title-container">
+          <h1 class="title">A Summer at Gradescope</h1><br/>
+          <h2 class="subtitle">What I learned as a design and front-end engineering intern</h2>
+        </div>
+      </div>
+      <div class="light-container article-content">
+        <h1>intro</h1>
+        <p>If you're not a Berkeley student, you most likely haven't heard of Gradescope before. Gradescope is a young Berkeley ed-tech startup founded in 2013, and its goal is to improve the grading experience for professors and students at large universities. <a class="link" target="_blank" href="https://www.youtube.com/watch?v=UullQiXIjeQ">Here's</a> an explainer video made by my awesome coworker Kevin.</p>
+        <p>Gradescope began as a solution to the tedious task of grading, and was created for use by Berkeley's CS188 class. Over the past few years, Gradescope has spread to over 50 schools, and it's been used to grade millions of questions. It's saved a lot of professors tons of headaches.</p>
+        <h2>the workflow</h2>
+        <p>Here's a quick rundown of a typical Gradescope workflow:</p>
+        <ol>
+          <li>Instructor Bob <strong>gives out an exam</strong> to his or her class, like normal.</li>
+          <li>Bob visits <em>Gradescope.com</em>, tells Gradescope that he's given a new assignment, uploads his assignment PDF, and <strong>starts creating an outline</strong>. In the outline, he tells Gradescope <em>exactly where each question is located on the test PDF</em>.</li>
+          <li>Instructor Bob and TAs <strong>scan in completed student exams</strong> and upload to Gradescope.</li>
+          <li>Instructor Bob assigns specific questions for each TA to grade, and each TA will <strong>grade</strong> all the answers for his or her assigned question. So TA Anna will grade every student's Q1, and TA Daniel will grade every student's Q2.</li>
+          <li>Once grading is done, Instructor Bob <strong>reviews the grades, releases the scores</strong>, and sends an email to each student with the announcement. For the next couple of days, Bob opens <em>regrade requests</em> -- students who believe their exam was graded incorrectly can submit a regrade request.</li>
+          <li>Bob and TAs marvel at Gradescope's awesomeness and wonder how they survived their jobs before it :)</li>
+        </ol>
+
+        <figure class="image-container">
+          <img src="../assets/images/p/gradescope/1.png" alt="">
+          <figcaption>A screenshot of the grading page. TAs can easily see which question they're reviewing, and assign points based on a clear rubric (right side).</figcaption>
+        </figure>
+
+        <p>Here's the grading page in action. Instructor Bob and TAs each see a different part of the test, depending on which question they were assigned to grade. The rubric is really cool (its located on the right sidebar). Each point deduction or addition has a clear and descriptive comment to help the TAs grade accurately. In addition, the TA can add or change up the rubric as he likes -- Gradescope will updated the changes to all submissions with that rubric item applied. So if Bob applies rubric #2 to fifty tests, but realizes that he should deduct 1 point instead of 2, he just has to change the rubric once.</p>
+        <p>If all this still sounds very foreign to you, don't worry. One of the first things I discovered as a design intern was that Gradescope is a very different product. Very few people grade exams for their job, and even if you do, Gradescope changes up a whole lot compared to the "traditional" workflow. Usually, people have to try out the product before truly understanding how it works.</p>
+        <p>But that's also why working as a design intern was so rewarding -- I couldn't assume that the users understood how to use the product. A lot of applications today are a variation of some other well-understood workflow. Gradescope isn't similar to any other piece of software, so I had to do a lot of user research and testing. Designing for Gradescope has been a pretty cool experience, and I'm excited to show you some of my work below.</p>
+
+        <h1>Project 1: Test Authoring</h1>
+        <p>I'm not a professor, but I bet that a lot of them still use Microsoft Word to write exams (totally out-of-the-blue guess, so don't quote me). One of my first projects at Gradescope was to design a custom interface for instructors to write exams.</p>
+        <h2>research</h2>
+        <p>I've taken about a million tests since first grade, but I've never really sat down and considered how they're really structured. So to start off the summer, I examined released tests from universities across the country and noted their similarities. I grouped questions into 4 different categories:</p>
+        <ol>
+          <li><strong>Choice questions:</strong> think multiple choice, choose one of the above, choose all answers that apply -- those types of questions.</li>
+          <li><strong>Input questions:</strong> these could be a simple as "fill in the blank below" or as complex as a paragraph proof of linear independence.</li>
+          <li><strong>"Order" questions:</strong> these require the student to put steps in order, like "choose the correct order of traversal in the graph using dijkstra's algorithm"</li>
+          <li><strong>List questions:</strong> stuff like "list all of the necessary enzymes required for x reaction".</li>
+        </ol>
+        <figure class="image-container">
+          <img src="../assets/images/p/gradescope/2.jpg" alt="">
+          <figcaption>initial sketches</figcaption>
+        </figure>
+        <h2>first iteration</h2>
+        <p>After the research, it was time to start sketching. Through this process, I drew inspiration from a couple of sources:</p>
+        <ol>
+          <li>I really like how <a class="link" href="http://edx.org/">edX</a> designed their question-creation interface. On edX, the professor writes questions in plain text, and the website parses and converts it to HTML elements. There was no need to choose your question input types from a complex menu, and the simple "just type" interface allows a smooth transition from previous programs an instructor might be familiar with (like Microsoft Word).</li>
+          <li>I type in markdown often, and one of my favorite websites is <a class="link" href="https://stackedit.io/editor">StackEdit</a>. A feature that I love is the scroll sync -- as you scroll either pane, the other stays in sync, so you can always see the raw markdown and the converted HTML side-by-side.</li>
+        </ol>
+
+        <p>My initial sketches drew inspiration from these sources, and I sought to create a hybrid. I wanted to design an interface that was easy to pick up, so I didn't settle for something that was completely reliant on raw text input (as was edX). edX's interface, in my opinion, was also hard to navigate, because you could only edit (in a modal) one question at a time.</p>
+
+        <figure class="image-container">
+          <img src="../assets/images/p/gradescope/3.png" alt="">
+          <figcaption>test authoring</figcaption>
+        </figure>
+
+        <p>This is the "home" view of test authoring. It uses a two-pane layout, with each side showing the same content, but formatted differently. The left side contains raw text and a basic structure, designed to make it really easy to add and organize questions. The text on the left is parsed and converted to the final exam forman on the right.</p>
+
+        <figure class="image-container">
+          <img src="../assets/images/p/gradescope/4.png" alt="">
+          <figcaption>adding new questions</figcaption>
+        </figure>
+
+        <p>Adding new questions is as easy as clicking the "new question" section and choosing one of four choices. These choices correspond to the 4 question categories listed above: choice, input, order, and list. Once the instructor clicks on one of the categories, a popover menu appears to specify the type of question. They can see a preview of the final layout on the right hand side.</p>
+        <p>I designed the preview pane because during initial testing, it was difficult for many to get used to the raw text layout. Because this page was already sectioned off into "draft" and "final" layouts, I wanted to reinforce that idea, so the popover is also split into two parts, "draft" and "final preview".</p>
+
+        <h1>Project 2: Code Grading</h1>
+        <p>My second design project at Gradescope involved one of our most highly requested features -- programming project management.</p>
+
+        <h2>design and prototyping</h2>
+        <p>After meeting with a couple of Berkeley CS professors, I learned that there were actually two parts to this design:</p>
+        <ol>
+          <li><strong>Manual code review:</strong> this include assessment of code quality and style, and required TAs to go over every student's code</li>
+          <li><strong>Autograder:</strong> this is pretty standard in most CS classes</li>
+        </ol>
+
+        <p>So from the start, I knew that the user workflow for code grading would be different from the existing Gradescope workflow. Whereas the existing workflow was very unidirectional, the workflow for grading programming projects wasn't. There was no way to define the "order" of grading. Instructors could autograde first, then review manually. Or they could review manually as submissions rolled in, then autograde.</p>
+        <p>Therefore, it was critical to design a dashboard to integrate this process and make it easy for instructors to keep track of their process in either workflow:</p>
+
+        <figure class="image-container">
+          <img src="../assets/images/p/gradescope/5.png" alt="">
+          <figcaption>the instructor dashboard for programming projects</figcaption>
+        </figure>
+
+        <p>I'm going to rewind a bit here and explain how an instructor actually sets up a programming project. Once again, meeting with professors revealed a lot about the general workflow:</p>
+
+        <ul>
+          <li>Most of the time, there's some kind of template or starter code, from which the student begins the project.</li>
+          <li>There's also projects that are completely freeform, where the students decide the code organization and files to include.</li>
+          <li>Professors like to comment in specific parts of the project, whether it's to point out an error or comment on coding style.</li>
+          <li>Many of them really enjoy Github's code-diffing interface (I'm a big fan of it too)</li>
+        </ul>
+
+        <figure class="image-container">
+          <img src="../assets/images/p/gradescope/6.png" alt="">
+        </figure>
+
+        <p>So the first step in creating a project is determining the template. The professor uploads the starter code for the project (if there is any), and marks which files they've asked the students to modify.</p>
+        <p>After that, there's a few more setting boxes to tick off - then the project is ready!</p>
+        <p>The actual code viewer is based off the existing Gradescope design - we wanted to deviate from what's expected as little as possible. Instructors and TA can easily add or subtract points based on coding style, and students can clearly see the points they've missed.</p>
+
+        <figure class="image-container">
+          <img src="../assets/images/p/gradescope/7.png" alt="">
+          <figcaption>instructor code grading view</figcaption>
+        </figure>
+
+        <figure class="image-container">
+          <img src="../assets/images/p/gradescope/8.png" alt="">
+          <figcaption>student code view</figcaption>
+        </figure>
+
+        <h1>Some other stuff</h1>
+        <ul>
+          <li>Site mobilization</li>
+          <li>Reworking and mobilizing the <a class="link" href="http://gradescope.com/about">team page</a></li>
+          <li>Working on a global <strong>help and FAQ</strong> center</li>
+          <li>Making the application sidebar faster and more useful</li>
+          <li>Daily lunches in downtown Berkeley with the team</li>
+        </ul>
+
+        <h1>Conclusion</h1>
+        <p>It was a blast working with Gradescope this summer! It was my formal introduction to working in a team-setting and iterating through designs.</p>
+        <p>Before Gradescope, I thought design was a simple, direct process. But after this summer, I learned that it really is a cyclical workflow, and that <strong>nothing is more important than iteration, iteration, and more iteration.</strong> (and user testing in between!) There were so many times where I would be proud of some design I created, just to watch it break during usability testings.</p>
+        <p>I just want to say thanks to the great Gradescope team, because they challenged me the entire summer during all of our critiques and standups. Thank you Sergey and Arjun for being great mentors!</p>
+        <p>Finally, I'm just really excited to start using Gradescope in my own classes. After a summer of developing, it's quite fun to test the changes I've made.</p>
+
+        <div class="article-bottom-nav">
+          <a href="/" class="title-back-link"><span class="fa fa-angle-left"></span>back to home</a>
+        </div>
+      </div>
+    </div>
+    <script type='text/javascript' src="assets/javascript/min/app-min.js"></script>
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-55358044-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
