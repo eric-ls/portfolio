@@ -10,21 +10,21 @@
     }
   }
   .project-cover {
-    background: teal;
     height: 400px;
-    padding-left: 80px;
     position: relative;
-  }
 
-  .class {
-    .another-class {
-
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
     }
+
   }
 
   .project-title-container {
     position: absolute;
     bottom: 70px;
+    left: 80px;
     -webkit-user-select: none;
 
     .title {
@@ -104,6 +104,25 @@
     em {
       font-style: italic;
     }
+
+    @media (max-width: 760px) {
+      h1 {
+        font-size: $f-size-xxl;
+      }
+
+      h2 {
+        font-size: $f-size-lg;
+      }
+
+      p, li {
+        font-size: 18px;
+      }
+
+      ol, ul {
+        margin-left: 15px;
+        padding: 0 10px;
+      }
+    }
   }
 
   .image-container {
@@ -135,4 +154,39 @@
     margin-top: 50px;
   }
 
+  @media (max-width: 760px) {
+    .project-title-container {
+      left: 0;
+      padding: 0 20px;
+      width: 100%;
+
+      .title {
+        font-size: $f-size-xxl;
+      }
+
+      .subtitle {
+        font-size: $f-size-lg;
+      }
+    }
+
+    .image-container {
+      margin: 50px 0;
+    }
+  }
+
+}
+
+#gradescope-project-cover {
+  &:before {
+    background: #20c5e6;
+    background: -moz-linear-gradient(bottom right, #1998B0 0%, #2CCFF0 100%);
+    background: -webkit-linear-gradient(left top, #1998B0 0%, #2CCFF0 100%);
+    background: linear-gradient(135deg, #1998B0 0%, #2CCFF0 100%);
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+  }
 }
