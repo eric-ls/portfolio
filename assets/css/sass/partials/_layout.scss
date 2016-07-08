@@ -1,96 +1,77 @@
-@import url(https://fonts.googleapis.com/css?family=Hind:400,600,500,300);
-
 * {
   box-sizing: border-box;
 }
 
-body {
-  background-color: $gray-light;
-  font-family: "Hind", "Lato", sans-serif;
-  -webkit-font-smoothing: antialiased;
+.main-container {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 
-.main-container {
-  margin: 20px auto 40px;
-  max-width: 1000px;
-
+/* Give the intro container margin to offset the project padding below */
+.all-projects {
+  margin: 0 -30px;
+  margin-bottom: 60px;
   @include clearAfter;
 }
 
-.light-container {
-  animation: fadein both 0.5s;
-  background: $white;
-  color: $gray-dark;
-  padding: 50px 80px 30px;
-}
-
-a.link {
+.link {
   border-bottom: 1px solid $gray-dark-40;
   color: $gray-dark;
+  font-weight: 400;
   text-decoration: none;
   transition: 100ms;
-
-  &.light {
-    border-bottom-color: $gray-light-40;
-    color: $gray-light;
-  }
-}
-
-a.button {
-  background-color: $blue-80;
-  border-radius: 2px;
-  color: $white-80;
-  display: inline-block;
-  font-size: $f-size-sm;
-  font-weight: 500;
-  padding: 10px 10px;
-  text-decoration: none;
-  transition: 100ms;
+  position: relative;
 
   &:hover {
-    background-color: $blue;
+    border-bottom-color: $gray-dark;
   }
 }
 
-.clearfix {
-  clear: both;
-}
+.splash-container .link {
+  &:hover {
+    color: white;
+    border-bottom-color: transparent;
+  }
 
-@keyframes fadein{
-  from {
+  &:before {
+    background: $gray-dark;
+    border-radius: 2px;
+    content: '';
+    height: 0%;
     opacity: 0;
-    @include transform(translateY(20px));
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: calc(100% + 10px);
+    transition: 150ms;
+    z-index: -1;
+    @include transform(translateX(-50%) translateY(-50%));
   }
-  to {
+
+  &:hover:before {
+    height: calc(100% + 5px);
     opacity: 1;
-    @include transform(translateY(0px));
   }
 }
 
-@media (max-width: 1000px) {
-  body {
-    padding: 10px;
-  }
-
-  .main-container {
-    margin: 0 auto;
-  }
-
-  .light-container {
-    margin: 0 auto;
-  }
+.link--arrow:after {
+  content: '\f105';
+  font-family: FontAwesome;
+  font-size: 14px;
+  margin-left: 7px;
 }
 
-@media (max-width: 850px) {
-  .light-container {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
+.link--back:before {
+  content: '\f104';
+  font-family: FontAwesome;
+  font-size: 14px;
+  margin-right: 7px;
 }
 
-@media (max-width: 650px) {
-  .light-container {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
+.mailto-link:hover:after {
+  content: '(this will open your mail client)';
+  font-family: $font-stack;
+  font-size: 12px;
+  font-weight: 300;
 }

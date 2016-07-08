@@ -5,7 +5,8 @@
     <title>Eric Liang's Portfolio</title>
     <meta name="application-name" content="Eric Liang's Portfolio">
 
-    <link rel="stylesheet" href="assets/css/stylesheets/style.css">
+    <link rel="stylesheet" href="assets/css/main.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
     <link rel="shortcut icon" href="/favicon.ico?v=1">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,169 +18,98 @@
     <meta property="og:image" content="http://ericls.com/cover.jpg">
   </head>
   <body>
-    <div class="main-container">
-      <div id="particles-js" class="homepage-box cover-container ">
-        <div class="nav-container">
-          <nav class="nav">
-            <li class="nav-item"><a class="link light active" href="/">home</a></li>
-            <li class="nav-item"><a class="link light" href="/about">about</a></li>
-          </nav>
-        </div>
-        <div class="title-container">
-          <h1 class="name">Eric Liang</h1>
-          <h2 class="tagline">design and eecs @ uc berkeley</h2>
-          <p class="description">I care about design, ux, and frontend code. Check out my projects below, or find my resume <a class="link light" href="/about">here</a>. Available for freelance - <a class="link light" href="mailto:liang.eric24@gmail.com">Lets chat!</a></p>
-          <div class="social-container">
-            <h1 class="social-title">find me online here</h1>
-            <div class="icon-container">
-              <a href="http://github.com/eric-ls" target="_blank">
-                <span class="icon"><img src="assets/images/icons/github.svg" alt="github link icon"></span>
-              </a>
-              <a href="https://medium.com/@ericliang" target="_blank">
-                <span class="icon"><img style="transform: scale(0.92);" src="assets/images/icons/medium.svg" alt="dribbble link icon"></span>
-              </a>
-              <a href="http://twitter.com/hiericliang" target="_blank">
-                <span class="icon"><img src="assets/images/icons/twitter.svg" alt="twitter link icon"></span>
-              </a>
-              <a href="http://linkedin.com/in/ericls" target="_blank">
-                <span class="icon"><img src="assets/images/icons/linkedin.svg" alt="linkedin link icon"></span>
-              </a>
-            </div>
-          </div>
+    <div class="main-container splash-container">
+      <h1 class="h1">Eric Liang</h1>
+      <h2 class="h2">design and eecs @ uc berkeley</h2>
+      <p class="splash-description">Nice to meet you! I'm a product designer and front end engineer, currently in my 3rd year at UC Berkeley. In the past, I've worked at Spotify and Gradescope. Currently looking for freelance projects.</p>
+      <div class="splash-links-container">
+        <a href="/about" class="link link--arrow">resume</a>
+        <a href="mailto:liang.eric24@gmail.com" class="link link--arrow mailto-link">contact</a>
+        <div class="social-icons">
+          <a href="http://linkedin.com/in/ericls" target="_blank" class="sm-icon">
+            <img src="assets/images/sm_icons/linkedin.svg" alt="my linkedin profile">
+          </a>
+          <a href="http://twitter.com/hiericliang" target="_blank" class="sm-icon">
+            <img src="assets/images/sm_icons/twitter.svg" alt="my twitter profile">
+          </a>
+          <a href="http://github.com/eric-ls" target="_blank" class="sm-icon">
+            <img src="assets/images/sm_icons/github.svg" alt="my github profile">
+          </a>
+          <a href="http://instagram.com/eric.ls" target="_blank" class="sm-icon">
+            <img src="assets/images/sm_icons/instagram.svg" alt="my instagram profile">
+          </a>
         </div>
       </div>
 
-      <div class="homepage-box featured-project">
-        <div class="title-container project-title">
-          <h1 class="project-type">Product Design / Front-end Eng</h1>
-          <h2 class="project-name">Product Design at Gradescope</h2>
-          <p class="project-description">Last summer, I worked at Gradescope as a product design and front end eng intern. Projects included design of test authoring and code grading pages. Also, mobilization and help center implementation.</p>
-          <a href="/p/gradescope" class="button">READ MORE</a>
+      <div class="all-projects">
+        <div class="project-container spotify-project project--hover-white-text">
+          <div class="project-background"></div>
+          <div class="logo-container">
+            <img src="assets/images/logos/spotify-black.png" class="default" alt="spotify logo">
+            <img src="assets/images/logos/spotify-white.png" class="hovered" alt="spotify logo">
+          </div>
+          <h1 class="h3 project-title">Spotify</h1>
+          <h2 class="h3 project-role">Product design</h2>
+          <p class="project-description">Intern on the Creator team, which builds products to connect artists and fans. My projects are pre-launch, but contact me for more info!</p>
+          <a href="mailto:liang.eric24@gmail.com?subject=Spotify%20project%20inquiry" class="link link--arrow">email for info</a>
         </div>
-        <div class="featured-photo">
-          <img src="assets/images/home/gradescope.png" alt="Gradescope internship photo">
+        <div class="project-container gradescope-project project--hover-white-text">
+          <div class="project-background"></div>
+          <div class="logo-container">
+            <img src="assets/images/logos/gradescope-black.png" class="default" alt="gradescope logo">
+            <img src="assets/images/logos/gradescope-white.png" class="hovered" alt="gradescope logo">
+          </div>
+          <h1 class="h3 project-title">Gradescope</h1>
+          <h2 class="h3 project-role">Design and front end engineering</h2>
+          <p class="project-description">Designed test creation and code autograding features. Implemented help center in jQuery, sitewide mobilization.</p>
+          <a href="" class="link link--arrow">read more</a>
         </div>
-      </div>
-
-      <div class="project-col">
-        <div class="homepage-box project" onclick="window.open('https://medium.com/@ericliang/guitar-heroes-cs160-project-9b70d29d9245#.wtakuttb2','mywindow');">
-          <div class="project-image">
-            <img src="assets/images/home/guitar.jpg" alt="Guitar project image">
+        <div class="project-container bp-project">
+          <div class="logo-container bp-logo">
+            <img src="assets/images/logos/bp.png" class="hovered" alt="blueprint logo">
           </div>
-          <div class="title-container project-title">
-            <h1 class="project-type">Prototyping, Design</h1>
-            <h2 class="project-name">Guitar Heroes</h2>
-            <p class="project-description">Designing and prototyping an experience with Android Wear to help beginners learn guitar. CS160 Project.</p>
-            <a href="https://medium.com/@ericliang/guitar-heroes-cs160-project-9b70d29d9245#.wtakuttb2" target="_blank" class="button" onclick="trackOutboundLink('https://medium.com/@ericliang/guitar-heroes-cs160-project-9b70d29d9245#.wtakuttb2')">READ MORE</a>
-          </div>
-          <div class="hover-overlay"></div>
+          <h1 class="h3 project-title">Blueprint</h1>
+          <h2 class="h3 project-role">Project Leader</h2>
+          <p class="project-description">Pro bono app development for local Bay Area nonprofits.</p>
+          <a href="" class="link link--arrow">see more</a>
         </div>
-      </div>
-
-      <div class="project-col">
-        <div class="homepage-box project" onclick="window.open('/p/wdd', '_self');">
-          <div class="project-image">
-            <img src="assets/images/home/wdd.jpg" alt="Web Design Decal image">
-          </div>
-          <div class="title-container project-title">
-            <h1 class="project-type">Education</h1>
-            <h2 class="project-name">Web Design Decal</h2>
-            <p class="project-description">I teach the Web Design Decal at UC Berkeley, and we've taught over 2000 students.</p>
-            <a href="/p/wdd" class="button">READ MORE</a>
-          </div>
-          <div class="hover-overlay"></div>
-        </div>
-      </div>
-
-      <div class="project-col">
-        <div class="homepage-box project" onclick="window.open('https://medium.com/@ericliang/twitter-redesign-d1948ffdc140#.8oxdck5jy','mywindow');">
-          <div class="project-image">
-            <img src="assets/images/home/twitter.png" alt="Twitter project image">
-          </div>
-          <div class="title-container project-title">
-            <h1 class="project-type">Design</h1>
-            <h2 class="project-name">Twitter Redesign</h2>
-            <p class="project-description">Changes to integrate photos better with the timeline. Completed for the KPCB Fellows program.</p>
-            <a href="https://medium.com/@ericliang/twitter-redesign-d1948ffdc140#.8oxdck5jy" target="_blank" class="button" onclick="trackOutboundLink('https://medium.com/@ericliang/twitter-redesign-d1948ffdc140#.8oxdck5jy')">READ MORE</a>
-          </div>
-          <div class="hover-overlay"></div>
+        <div class="project-container wdd-project">
+          <div class="project-background"></div>
+          <h1 class="h3 project-title">Web Design Decal</h1>
+          <h2 class="h3 project-role">Instructor</h2>
+          <p class="project-description">Teaching Berkeley students how to code beautiful websites</p>
+          <a href="" class="link link--arrow">read more</a>
         </div>
       </div>
-
-      <div class="project-col">
-        <div class="homepage-box project" onclick="window.open('http://eric-ls.github.io/photobooth','mywindow');">
-          <div class="project-image">
-            <img src="assets/images/home/photobooth.jpg" alt="Photobooth project image">
-          </div>
-          <div class="title-container project-title">
-            <h1 class="project-type">Design, Front-end</h1>
-            <h2 class="project-name">Illuminated Photobooth</h2>
-            <p class="project-description">Promo website and package customizer for my friend's photobooth business.</p>
-            <a href="http://eric-ls.github.io/photobooth" target="_blank" class="button" onclick="trackOutboundLink('http://eric-ls.github.io/photobooth')">VIEW SITE</a>
-          </div>
-          <div class="hover-overlay"></div>
-        </div>
-      </div>
-
-      <div class="project-col">
-        <div class="homepage-box project" onclick="window.open('http://hpv.berkeley.edu','mywindow');">
-          <div class="project-image">
-            <img src="assets/images/home/hpv.jpg" alt="Photobooth project image">
-          </div>
-          <div class="title-container project-title">
-            <h1 class="project-type">Design, Front-end</h1>
-            <h2 class="project-name">Cal HPV</h2>
-            <p class="project-description">Promo website for Cal Human Powered Vehicle, a competitive engineering club on campus.</p>
-            <a href="http://hpv.berkeley.edu" target="_blank" class="button" onclick="trackOutboundLink('http://hpv.berkeley.edu')">VIEW WEBSITE</a>
-          </div>
-          <div class="hover-overlay"></div>
-        </div>
-      </div>
-
-      <div class="project-col">
-        <div class="homepage-box project" onclick="window.open('https://medium.com/@ericliang/scoreportal-4188a7f0dcaf#.oafd7jhsh','mywindow');">
-          <div class="project-image">
-            <img src="assets/images/home/scoreportal.jpg" alt="Scoreportal project image">
-          </div>
-          <div class="title-container project-title">
-            <h1 class="project-type">Design</h1>
-            <h2 class="project-name">Scoreportal</h2>
-            <p class="project-description">High school project that helps students visualize and manage their grades.</p>
-            <a href="https://medium.com/@ericliang/scoreportal-4188a7f0dcaf#.oafd7jhsh" target="_blank" class="button">READ MORE</a>
-          </div>
-          <div class="hover-overlay"></div>
-        </div>
-      </div>
-
-      <div class="clearfix"></div>
-
-      <div class="homepage-box contact-container">
-        <h1 class="contact-title">Like what you see? Let's get in touch!</h1>
-        <div class="social-container">
-          <div class="icon-container">
-            <a href="mailto:liang.eric24@gmail.com">
-              <span class="icon"><img style="height: 23px" src="assets/images/icons/mail.svg" alt="email icon"></span>
-            </a>
-            <a href="http://github.com/eric-ls" target="_blank">
-              <span class="icon"><img src="assets/images/icons/github.svg" alt="github link icon"></span>
-            </a>
-            <a href="http://twitter.com/hiericliang" target="_blank">
-              <span class="icon"><img src="assets/images/icons/twitter.svg" alt="twitter link icon"></span>
-            </a>
-            <a href="http://instagram.com/eric.ls" target="_blank">
-              <span class="icon"><img src="assets/images/icons/instagram.svg" alt="instagram link icon"></span>
-            </a>
-            <a href="http://linkedin.com/in/ericls" target="_blank">
-              <span class="icon"><img src="assets/images/icons/linkedin.svg" alt="linkedin link icon"></span>
-            </a>
-          </div>
-        </div>
-      </div>
+      <h2 class="h2 other-projects-header">Other Projects</h2>
+      <ul class="other-projects-list">
+        <li>
+          <a href="https://medium.com/@ericliang/guitar-heroes-cs160-project-9b70d29d9245#.wtakuttb2" class="link other-project-title"><strong>Guitar Heroes</strong></a>
+          <label>CS160 Final Project &middot; Fall 2015</label>
+          <p class="other-projects-description">Researched, prototyped, and designed an Android Wear application to help beginners learn guitar.</p>
+        </li>
+        <li>
+          <a href="http://bizworld-staging.herokuapp.com/" class="link other-project-title"><strong>Bizworld Educator Portal</strong></a>
+          <label>Blueprint &middot; 2015-2016</label>
+          <p class="other-projects-description">An online portal for Bizworld teachers and admins to administer quizzes and collect student data. Led design and frontend in team of 5.</p>
+        </li>
+        <li>
+          <a href="http://safer-city.herokuapp.com/" class="link other-project-title"><strong>Safer City</strong></a>
+          <label>BigHack &middot; April 2016</label>
+          <p class="other-projects-description">2nd place hack! A website to raise awareness of sexual assault, gather and organize reports, and calculate the safest route home based on recent reports. Led design and frontend in team of 4. Hacked for Indian nonprofit SafeCity.</p>
+        </li>
+        <li>
+          <a href="http://hpv.berkeley.edu" class="link other-project-title"><strong>Cal HPV Website</strong></a>
+          <label>Summer 2015</label>
+          <p class="other-projects-description">Designed and implemented a static promotion website for UC Berkeley Human Powered Vehicle.</p>
+        </li>
+        <li>
+          <a href="https://medium.com/@ericliang/scoreportal-4188a7f0dcaf#.oafd7jhsh" class="link other-project-title"><strong>ScorePortal</strong></a>
+          <label>2013-2014</label>
+          <p class="other-projects-description">High School Project. Designed a website for students to track class grades and calculate passing scores.</p>
+        </li>
+      </ul>
     </div>
-
-    <script type='text/javascript' src="assets/javascript/particles.min.js"></script>
-    <script type='text/javascript' src="assets/javascript/min/app-min.js"></script>
-
     <!-- Google Analytics -->
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

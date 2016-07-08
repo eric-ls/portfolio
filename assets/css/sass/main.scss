@@ -1,0 +1,11 @@
+/* Import partial files */
+
+@import 'partials/reset';
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/fonts';
+@import 'partials/layout';
+
+/* Import page files */
+@import 'pages/splash';
+@import 'pages/about';

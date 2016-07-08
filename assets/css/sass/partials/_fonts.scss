@@ -1,0 +1,62 @@
+@font-face {
+  font-family: 'Circular';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/Circular-Light.otf');
+}
+@font-face {
+  font-family: 'Circular';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Circular-Book.otf');
+}
+@font-face {
+  font-family: 'Circular';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/Circular-Medium.otf');
+}
+@font-face {
+  font-family: 'Circular';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/Circular-Bold.otf');
+}
+
+body {
+  color: $gray-dark;
+  font-family: 'Circular', 'Helvetica', sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+::selection {
+  background: $gray-dark;
+  color: white;
+}
+::-moz-selection {
+  background: $gray-dark;
+  color: white;
+}
+
+.h1 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.h2 {
+  font-size: 22px;
+}
+
+.h3 {
+  font-size: 18px;
+}
+
+.h4 {
+  font-size: 16px;
+}
+
+strong {
+  font-weight: 500;
+}
