@@ -52,6 +52,10 @@
   padding: 30px;
   position: relative;
   transition: $splash-transition;
+
+  /* hacky method to prevent text flickering */
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
 }
 
 .project-title {
@@ -83,6 +87,7 @@
 .logo-container {
   float: left;
   margin-right: 15px;
+  margin-top: 3px;
   height: 40px;
   position: relative;
   width: 40px;
@@ -215,9 +220,8 @@
 /* Only show hover effects on desktop */
 @media (min-width: 600px) {
   .project-container:hover {
-    -webkit-backface-visibility: hidden; /* hacky method to prevent text warping */
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.14);
-    @include transform(scale(1.03));
+    @include prefixer(box-shadow, 0 0 30px rgba(0, 0, 0, 0.14));
+    @include transform(scale(1.03) rotate(0.01deg));
 
     .project-background { opacity: 1; }
     .logo-container .hovered { opacity: 1; }
@@ -225,7 +229,7 @@
   }
 
   .project--hover-white-text:hover {
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    @include prefixer(box-shadow, 0 0 30px rgba(0, 0, 0, 0.2));
 
     .project-title,
     .project-description {

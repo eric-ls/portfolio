@@ -183,18 +183,21 @@ strong {
   text-decoration: none;
   transition: 100ms;
   position: relative;
+  /* hacky method to prevent text flickering */
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
 }
-/* line 26, sass/partials/_layout.scss */
+/* line 30, sass/partials/_layout.scss */
 .link:hover {
   border-bottom-color: #3A4750;
 }
 
-/* line 32, sass/partials/_layout.scss */
+/* line 36, sass/partials/_layout.scss */
 .splash-container .link:hover {
   color: white;
   border-bottom-color: transparent;
 }
-/* line 37, sass/partials/_layout.scss */
+/* line 41, sass/partials/_layout.scss */
 .splash-container .link:before {
   background: #3A4750;
   border-radius: 2px;
@@ -213,13 +216,13 @@ strong {
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-/* line 52, sass/partials/_layout.scss */
+/* line 56, sass/partials/_layout.scss */
 .splash-container .link:hover:before {
-  height: calc(100% + 5px);
+  height: calc(100% + 7px);
   opacity: 1;
 }
 
-/* line 58, sass/partials/_layout.scss */
+/* line 62, sass/partials/_layout.scss */
 .link--arrow:after {
   content: '\f105';
   font-family: FontAwesome;
@@ -227,7 +230,7 @@ strong {
   margin-left: 7px;
 }
 
-/* line 65, sass/partials/_layout.scss */
+/* line 69, sass/partials/_layout.scss */
 .link--back:before {
   content: '\f104';
   font-family: FontAwesome;
@@ -235,7 +238,7 @@ strong {
   margin-right: 7px;
 }
 
-/* line 72, sass/partials/_layout.scss */
+/* line 76, sass/partials/_layout.scss */
 .mailto-link:hover:after {
   content: '(this will open your mail client)';
   font-family: "Circular", "Helvetica", sans-serif;
@@ -321,26 +324,29 @@ strong {
   padding: 30px;
   position: relative;
   transition: 150ms;
+  /* hacky method to prevent text flickering */
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
 }
 
-/* line 57, sass/pages/_splash.scss */
+/* line 61, sass/pages/_splash.scss */
 .project-title {
   color: #3A4750;
   font-weight: 500;
 }
 
-/* line 62, sass/pages/_splash.scss */
+/* line 66, sass/pages/_splash.scss */
 .project-role {
   color: rgba(58, 71, 80, 0.8);
 }
 
-/* line 66, sass/pages/_splash.scss */
+/* line 70, sass/pages/_splash.scss */
 .project-description {
   color: rgba(58, 71, 80, 0.8);
   margin: 20px 0;
 }
 
-/* line 71, sass/pages/_splash.scss */
+/* line 75, sass/pages/_splash.scss */
 .project-background {
   border-radius: 3px;
   height: 100%;
@@ -353,15 +359,16 @@ strong {
   z-index: -1;
 }
 
-/* line 83, sass/pages/_splash.scss */
+/* line 87, sass/pages/_splash.scss */
 .logo-container {
   float: left;
   margin-right: 15px;
+  margin-top: 3px;
   height: 40px;
   position: relative;
   width: 40px;
 }
-/* line 90, sass/pages/_splash.scss */
+/* line 95, sass/pages/_splash.scss */
 .logo-container img {
   height: 100%;
   width: 100%;
@@ -369,13 +376,13 @@ strong {
   position: absolute;
   transition: 150ms;
 }
-/* line 98, sass/pages/_splash.scss */
+/* line 103, sass/pages/_splash.scss */
 .logo-container .hovered {
   opacity: 0;
 }
 
 /* Spotify project background styles */
-/* line 102, sass/pages/_splash.scss */
+/* line 107, sass/pages/_splash.scss */
 .spotify-project .project-background {
   background: -moz-linear-gradient(-45deg, #2B44A6 0%, #2FE48F 100%);
   /* FF3.6-15 */
@@ -385,39 +392,39 @@ strong {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
-/* line 108, sass/pages/_splash.scss */
+/* line 113, sass/pages/_splash.scss */
 .spotify-project:hover {
   color: white;
 }
 
 /* Gradescope project background styles */
-/* line 113, sass/pages/_splash.scss */
+/* line 118, sass/pages/_splash.scss */
 .gradescope-project .project-background {
   background: url("../images/gs-bg.png");
 }
 
-/* line 117, sass/pages/_splash.scss */
+/* line 122, sass/pages/_splash.scss */
 .gradescope-project:hover {
   color: white;
 }
 
 /* Blueprint animation styles */
-/* line 122, sass/pages/_splash.scss */
+/* line 127, sass/pages/_splash.scss */
 .bp-project {
   float: left;
   width: 50%;
 }
-/* line 126, sass/pages/_splash.scss */
+/* line 131, sass/pages/_splash.scss */
 .bp-project .logo-container {
   position: absolute;
 }
-/* line 130, sass/pages/_splash.scss */
+/* line 135, sass/pages/_splash.scss */
 .bp-project .project-title,
 .bp-project .project-role {
   transition: 150ms;
 }
 
-/* line 136, sass/pages/_splash.scss */
+/* line 141, sass/pages/_splash.scss */
 .bp-logo {
   -webkit-transform: rotate(-180deg);
   -moz-transform: rotate(-180deg);
@@ -428,152 +435,158 @@ strong {
   transition: 400ms;
 }
 
-/* line 142, sass/pages/_splash.scss */
+/* line 147, sass/pages/_splash.scss */
 .wdd-project {
   float: right;
   width: 50%;
 }
 
-/* line 148, sass/pages/_splash.scss */
+/* line 153, sass/pages/_splash.scss */
 .other-projects-header {
   color: rgba(58, 71, 80, 0.6);
   margin-bottom: 20px;
 }
 
-/* line 153, sass/pages/_splash.scss */
+/* line 158, sass/pages/_splash.scss */
 .other-projects-list {
   margin-bottom: 140px;
 }
-/* line 156, sass/pages/_splash.scss */
+/* line 161, sass/pages/_splash.scss */
 .other-projects-list li {
   margin-bottom: 40px;
 }
-/* line 157, sass/pages/_splash.scss */
+/* line 162, sass/pages/_splash.scss */
 .other-projects-list label {
   color: rgba(58, 71, 80, 0.8);
 }
 
-/* line 160, sass/pages/_splash.scss */
+/* line 165, sass/pages/_splash.scss */
 .other-project-title {
   margin-right: 20px;
 }
 
-/* line 164, sass/pages/_splash.scss */
+/* line 169, sass/pages/_splash.scss */
 .other-projects-description {
   margin-top: 10px;
 }
 
 @media (max-width: 500px) {
-  /* line 169, sass/pages/_splash.scss */
+  /* line 174, sass/pages/_splash.scss */
   .all-projects {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 20px;
   }
 
-  /* line 175, sass/pages/_splash.scss */
+  /* line 180, sass/pages/_splash.scss */
   .project-container {
     margin-bottom: 50px;
     padding: 0;
   }
 
-  /* line 181, sass/pages/_splash.scss */
+  /* line 186, sass/pages/_splash.scss */
   .other-projects-list label {
     display: block;
   }
-  /* line 185, sass/pages/_splash.scss */
+  /* line 190, sass/pages/_splash.scss */
   .other-projects-list .other-project-title {
     display: inline-block;
     margin-bottom: 10px;
   }
 }
 @media (max-width: 750px) {
-  /* line 193, sass/pages/_splash.scss */
+  /* line 198, sass/pages/_splash.scss */
   body {
     padding: 0 15px;
   }
 
-  /* line 197, sass/pages/_splash.scss */
+  /* line 202, sass/pages/_splash.scss */
   .splash-container {
     margin: 30px auto;
     max-width: 500px;
   }
 
-  /* line 202, sass/pages/_splash.scss */
+  /* line 207, sass/pages/_splash.scss */
   .splash-links-container {
     margin-bottom: 50px;
   }
 
-  /* line 206, sass/pages/_splash.scss */
+  /* line 211, sass/pages/_splash.scss */
   .bp-project {
     width: 100%;
   }
 
-  /* line 210, sass/pages/_splash.scss */
+  /* line 215, sass/pages/_splash.scss */
   .wdd-project {
     width: 100%;
   }
 }
 /* Only show hover effects on desktop */
 @media (min-width: 600px) {
-  /* line 217, sass/pages/_splash.scss */
-  .project-container:hover {
-    -webkit-backface-visibility: hidden;
-    /* hacky method to prevent text warping */
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.14);
-    -webkit-transform: scale(1.03);
-    -moz-transform: scale(1.03);
-    -ms-transform: scale(1.03);
-    -o-transform: scale(1.03);
-    transform: scale(1.03);
-  }
   /* line 222, sass/pages/_splash.scss */
+  .project-container:hover {
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.14);
+    -ms-box-shadow: 0 0 30px rgba(0, 0, 0, 0.14);
+    -o-box-shadow: 0 0 30px rgba(0, 0, 0, 0.14);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.14);
+    -webkit-transform: scale(1.03) rotate(0.01deg);
+    -moz-transform: scale(1.03) rotate(0.01deg);
+    -ms-transform: scale(1.03) rotate(0.01deg);
+    -o-transform: scale(1.03) rotate(0.01deg);
+    transform: scale(1.03) rotate(0.01deg);
+  }
+  /* line 226, sass/pages/_splash.scss */
   .project-container:hover .project-background {
     opacity: 1;
   }
-  /* line 223, sass/pages/_splash.scss */
+  /* line 227, sass/pages/_splash.scss */
   .project-container:hover .logo-container .hovered {
     opacity: 1;
   }
-  /* line 224, sass/pages/_splash.scss */
+  /* line 228, sass/pages/_splash.scss */
   .project-container:hover .logo-container .default {
     opacity: 0;
   }
 
-  /* line 227, sass/pages/_splash.scss */
+  /* line 231, sass/pages/_splash.scss */
   .project--hover-white-text:hover {
+    -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    -ms-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    -o-box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
   }
-  /* line 230, sass/pages/_splash.scss */
+  /* line 234, sass/pages/_splash.scss */
   .project--hover-white-text:hover .project-title,
   .project--hover-white-text:hover .project-description {
     color: white;
   }
-  /* line 235, sass/pages/_splash.scss */
+  /* line 239, sass/pages/_splash.scss */
   .project--hover-white-text:hover .project-role {
     color: rgba(255, 255, 255, 0.8);
   }
-  /* line 237, sass/pages/_splash.scss */
+  /* line 241, sass/pages/_splash.scss */
   .project--hover-white-text:hover .link {
     border-bottom-color: rgba(255, 255, 255, 0.4);
     color: white;
   }
-  /* line 241, sass/pages/_splash.scss */
+  /* line 245, sass/pages/_splash.scss */
   .project--hover-white-text:hover .link:hover:before {
     background: #F3F3F3;
     color: #3A4750;
   }
-  /* line 246, sass/pages/_splash.scss */
+  /* line 250, sass/pages/_splash.scss */
   .project--hover-white-text:hover .link:hover {
     color: #3A4750;
   }
 
-  /* line 252, sass/pages/_splash.scss */
+  /* line 256, sass/pages/_splash.scss */
   .project--hover-white-text .link:hover {
     border-bottom-color: #FFFFFF;
   }
 
-  /* line 257, sass/pages/_splash.scss */
+  /* line 261, sass/pages/_splash.scss */
   .bp-project:hover .project-title,
   .bp-project:hover .project-role {
     -webkit-transform: translateX(55px);
@@ -582,7 +595,7 @@ strong {
     -o-transform: translateX(55px);
     transform: translateX(55px);
   }
-  /* line 262, sass/pages/_splash.scss */
+  /* line 266, sass/pages/_splash.scss */
   .bp-project:hover .bp-logo {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);

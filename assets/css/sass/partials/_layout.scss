@@ -23,6 +23,10 @@
   transition: 100ms;
   position: relative;
 
+  /* hacky method to prevent text flickering */
+  -webkit-backface-visibility: hidden;
+  -webkit-transform-style: preserve-3d;
+
   &:hover {
     border-bottom-color: $gray-dark;
   }
@@ -50,7 +54,7 @@
   }
 
   &:hover:before {
-    height: calc(100% + 5px);
+    height: calc(100% + 7px);
     opacity: 1;
   }
 }
