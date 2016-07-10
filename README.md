@@ -2,4 +2,4 @@ Portfolio
 ===
 Technologies used:
 - scss
-- [surge.sh](surge.sh) (hosting)
+- [surge.sh](http://surge.sh) (hosting)
