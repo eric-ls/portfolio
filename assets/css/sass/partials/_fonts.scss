@@ -22,8 +22,15 @@
   font-weight: 600;
   src: url('../fonts/Circular-Bold.otf');
 }
+@font-face {
+  font-family: 'Circular';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/Circular-Black.otf');
+}
 
 body {
+  background-color: #F7F7F7;
   color: $gray-dark;
   font-family: 'Circular', 'Helvetica', sans-serif;
   font-size: 17px;

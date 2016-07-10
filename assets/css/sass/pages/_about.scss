@@ -1,15 +1,5 @@
 $paragraph-label-width: 200px;
 
-.about-back-link {
-  color: $gray-dark-60;
-  display: inline-block;
-  margin-bottom: 20px;
-
-  &:hover {
-    color: $gray-dark;
-  }
-}
-
 .pdf-resume-notice {
   font-weight: 400;
 }
@@ -45,6 +35,7 @@ $paragraph-label-width: 200px;
   .paragraph-label {
     color: $gray-dark;
     font-weight: 400;
+    font-style: italic;
     line-height: 1.2;
   }
 }

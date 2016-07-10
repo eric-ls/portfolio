@@ -101,8 +101,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: 600;
   src: url("../fonts/Circular-Bold.otf");
 }
-/* line 26, sass/partials/_fonts.scss */
+@font-face {
+  font-family: 'Circular';
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Circular-Black.otf");
+}
+/* line 32, sass/partials/_fonts.scss */
 body {
+  background-color: #F7F7F7;
   color: #3A4750;
   font-family: 'Circular', 'Helvetica', sans-serif;
   font-size: 17px;
@@ -110,40 +117,40 @@ body {
   line-height: 1.4;
 }
 
-/* line 34, sass/partials/_fonts.scss */
+/* line 41, sass/partials/_fonts.scss */
 ::selection {
   background: #3A4750;
   color: white;
 }
 
-/* line 38, sass/partials/_fonts.scss */
+/* line 45, sass/partials/_fonts.scss */
 ::-moz-selection {
   background: #3A4750;
   color: white;
 }
 
-/* line 43, sass/partials/_fonts.scss */
+/* line 50, sass/partials/_fonts.scss */
 .h1 {
   font-size: 30px;
   font-weight: 600;
 }
 
-/* line 48, sass/partials/_fonts.scss */
+/* line 55, sass/partials/_fonts.scss */
 .h2 {
   font-size: 22px;
 }
 
-/* line 52, sass/partials/_fonts.scss */
+/* line 59, sass/partials/_fonts.scss */
 .h3 {
   font-size: 18px;
 }
 
-/* line 56, sass/partials/_fonts.scss */
+/* line 63, sass/partials/_fonts.scss */
 .h4 {
   font-size: 16px;
 }
 
-/* line 60, sass/partials/_fonts.scss */
+/* line 67, sass/partials/_fonts.scss */
 strong {
   font-weight: 500;
 }
@@ -176,6 +183,39 @@ strong {
 }
 
 /* line 18, sass/partials/_layout.scss */
+.navbar {
+  border-bottom: 1px solid rgba(58, 71, 80, 0.2);
+  margin-bottom: 50px;
+  padding: 5px;
+}
+/* line 36, sass/partials/_mixins.scss */
+.navbar:after {
+  clear: both;
+  content: "";
+  height: 0;
+  visibility: hidden;
+  display: block;
+}
+
+/* line 25, sass/partials/_layout.scss */
+.navbar-link {
+  color: rgba(58, 71, 80, 0.4);
+  display: inline-block;
+  float: left;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 5px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 100ms;
+}
+/* line 37, sass/partials/_layout.scss */
+.navbar-link:hover {
+  color: rgba(58, 71, 80, 0.8);
+}
+
+/* line 42, sass/partials/_layout.scss */
 .link {
   border-bottom: 1px solid rgba(58, 71, 80, 0.4);
   color: #3A4750;
@@ -187,17 +227,17 @@ strong {
   -webkit-backface-visibility: hidden;
   -webkit-transform-style: preserve-3d;
 }
-/* line 30, sass/partials/_layout.scss */
+/* line 54, sass/partials/_layout.scss */
 .link:hover {
   border-bottom-color: #3A4750;
 }
 
-/* line 36, sass/partials/_layout.scss */
+/* line 60, sass/partials/_layout.scss */
 .splash-container .link:hover {
   color: white;
   border-bottom-color: transparent;
 }
-/* line 41, sass/partials/_layout.scss */
+/* line 65, sass/partials/_layout.scss */
 .splash-container .link:before {
   background: #3A4750;
   border-radius: 2px;
@@ -216,13 +256,13 @@ strong {
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-/* line 56, sass/partials/_layout.scss */
+/* line 80, sass/partials/_layout.scss */
 .splash-container .link:hover:before {
   height: calc(100% + 7px);
   opacity: 1;
 }
 
-/* line 62, sass/partials/_layout.scss */
+/* line 86, sass/partials/_layout.scss */
 .link--arrow:after {
   content: '\f105';
   font-family: FontAwesome;
@@ -230,7 +270,7 @@ strong {
   margin-left: 7px;
 }
 
-/* line 69, sass/partials/_layout.scss */
+/* line 93, sass/partials/_layout.scss */
 .link--back:before {
   content: '\f104';
   font-family: FontAwesome;
@@ -238,7 +278,7 @@ strong {
   margin-right: 7px;
 }
 
-/* line 76, sass/partials/_layout.scss */
+/* line 100, sass/partials/_layout.scss */
 .mailto-link:hover:after {
   content: '(this will open your mail client)';
   font-family: "Circular", "Helvetica", sans-serif;
@@ -606,33 +646,22 @@ strong {
   }
 }
 /* line 3, sass/pages/_about.scss */
-.about-back-link {
-  color: rgba(58, 71, 80, 0.6);
-  display: inline-block;
-  margin-bottom: 20px;
-}
-/* line 8, sass/pages/_about.scss */
-.about-back-link:hover {
-  color: #3A4750;
-}
-
-/* line 13, sass/pages/_about.scss */
 .pdf-resume-notice {
   font-weight: 400;
 }
 
-/* line 17, sass/pages/_about.scss */
+/* line 7, sass/pages/_about.scss */
 .about-container {
   margin-top: 40px;
   max-width: 800px;
 }
 
-/* line 22, sass/pages/_about.scss */
+/* line 12, sass/pages/_about.scss */
 .resume-title {
   margin-bottom: 30px;
 }
 
-/* line 26, sass/pages/_about.scss */
+/* line 16, sass/pages/_about.scss */
 .about-subtitle {
   color: rgba(58, 71, 80, 0.6);
   font-size: 26px;
@@ -640,95 +669,96 @@ strong {
   margin-bottom: 70px;
 }
 
-/* line 33, sass/pages/_about.scss */
+/* line 23, sass/pages/_about.scss */
 .paragraph-container {
   margin-bottom: 60px;
 }
-/* line 36, sass/pages/_about.scss */
+/* line 26, sass/pages/_about.scss */
 .paragraph-container:last-of-type {
   margin-bottom: 0;
 }
 
-/* line 41, sass/pages/_about.scss */
+/* line 31, sass/pages/_about.scss */
 .paragraph-label-container {
   float: left;
   width: 200px;
 }
-/* line 45, sass/pages/_about.scss */
+/* line 35, sass/pages/_about.scss */
 .paragraph-label-container .paragraph-label {
   color: #3A4750;
   font-weight: 400;
+  font-style: italic;
   line-height: 1.2;
 }
 
-/* line 52, sass/pages/_about.scss */
+/* line 43, sass/pages/_about.scss */
 .paragraph-text-container {
   margin-left: 200px;
   margin-bottom: 40px;
   width: calc(100% - 200px);
 }
-/* line 57, sass/pages/_about.scss */
+/* line 48, sass/pages/_about.scss */
 .paragraph-text-container .paragraph-text {
   color: rgba(58, 71, 80, 0.8);
   font-size: 16px;
   line-height: 1.7;
   margin-bottom: 23px;
 }
-/* line 64, sass/pages/_about.scss */
+/* line 55, sass/pages/_about.scss */
 .paragraph-text-container .resume-entry {
   line-height: 1.5;
   margin-bottom: 4px;
 }
-/* line 69, sass/pages/_about.scss */
+/* line 60, sass/pages/_about.scss */
 .paragraph-text-container .resume-entry-title {
   color: #3A4750;
   display: inline-block;
   font-weight: 500;
   margin-right: 10px;
 }
-/* line 76, sass/pages/_about.scss */
+/* line 67, sass/pages/_about.scss */
 .paragraph-text-container .resume-entry-position {
   display: inline-block;
 }
 
-/* line 81, sass/pages/_about.scss */
+/* line 72, sass/pages/_about.scss */
 .course-header {
   font-size: 16px;
   margin: 15px 0;
 }
 
-/* line 86, sass/pages/_about.scss */
+/* line 77, sass/pages/_about.scss */
 .resume-courses {
   display: flex;
   flex-flow: row wrap;
   font-size: 15px;
   max-width: 500px;
 }
-/* line 92, sass/pages/_about.scss */
+/* line 83, sass/pages/_about.scss */
 .resume-courses .course-title {
   color: #3A4750;
   font-weight: 400;
   margin-right: 8px;
 }
-/* line 98, sass/pages/_about.scss */
+/* line 89, sass/pages/_about.scss */
 .resume-courses li {
   margin-bottom: 9px;
   width: 50%;
 }
 
-/* line 104, sass/pages/_about.scss */
+/* line 95, sass/pages/_about.scss */
 .resume-list {
   line-height: 1.5;
   margin-bottom: 20px;
 }
-/* line 108, sass/pages/_about.scss */
+/* line 99, sass/pages/_about.scss */
 .resume-list .resume-list-item {
   font-size: 15px;
   line-height: 1.6;
   margin-bottom: 4px;
 }
 
-/* line 115, sass/pages/_about.scss */
+/* line 106, sass/pages/_about.scss */
 .skills-container {
   -webkit-column-count: 2;
   -moz-column-count: 2;
@@ -742,24 +772,24 @@ strong {
   column-gap: 20px;
 }
 
-/* line 120, sass/pages/_about.scss */
+/* line 111, sass/pages/_about.scss */
 .entry-list {
   list-style: square inside;
 }
 
 @media (max-width: 650px) {
-  /* line 125, sass/pages/_about.scss */
+  /* line 116, sass/pages/_about.scss */
   .paragraph-container {
     margin-bottom: 40px;
   }
 
-  /* line 129, sass/pages/_about.scss */
+  /* line 120, sass/pages/_about.scss */
   .paragraph-label-container {
     float: none;
     margin-bottom: 12px;
     width: 100%;
   }
-  /* line 134, sass/pages/_about.scss */
+  /* line 125, sass/pages/_about.scss */
   .paragraph-label-container .paragraph-label {
     display: inline-block;
     font-weight: 700;
@@ -767,18 +797,18 @@ strong {
     position: relative;
   }
 
-  /* line 143, sass/pages/_about.scss */
+  /* line 134, sass/pages/_about.scss */
   .paragraph-text-container {
     margin-left: 0;
     width: 100%;
   }
 
-  /* line 149, sass/pages/_about.scss */
+  /* line 140, sass/pages/_about.scss */
   .resume-courses li {
     width: 100%;
   }
 
-  /* line 154, sass/pages/_about.scss */
+  /* line 145, sass/pages/_about.scss */
   .skills-container {
     -webkit-column-count: 1;
     -moz-column-count: 1;
@@ -791,8 +821,19 @@ strong {
     -o-column-gap: 0;
     column-gap: 0;
   }
-  /* line 158, sass/pages/_about.scss */
+  /* line 149, sass/pages/_about.scss */
   .skills-container > div {
     display: block;
   }
+}
+/* line 1, sass/pages/_article.scss */
+.article-container {
+  margin: 40px auto;
+  max-width: 900px;
+}
+
+/* line 6, sass/pages/_article.scss */
+.content {
+  margin: 20px auto;
+  max-width: 750px;
 }

@@ -15,6 +15,30 @@
   @include clearAfter;
 }
 
+.navbar {
+  border-bottom: 1px solid $gray-dark-20;
+  margin-bottom: 50px;
+  padding: 5px;
+  @include clearAfter;
+}
+
+.navbar-link {
+  color: $gray-dark-40;
+  display: inline-block;
+  float: left;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 5px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 100ms;
+
+  &:hover {
+    color: $gray-dark-80;
+  }
+}
+
 .link {
   border-bottom: 1px solid $gray-dark-40;
   color: $gray-dark;
