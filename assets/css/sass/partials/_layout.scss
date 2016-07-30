@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 0 15px;
+}
+
 .main-container {
   margin-left: auto;
   margin-right: auto;
@@ -20,6 +24,18 @@
   margin-bottom: 50px;
   padding: 5px;
   @include clearAfter;
+}
+
+.navbar--light {
+  border-bottom-color: $gray-light-40;
+
+  .navbar-link {
+    color: $gray-light-60;
+  }
+
+  .navbar-link:hover {
+    color: $gray-light;
+  }
 }
 
 .navbar-link {
@@ -97,9 +113,33 @@
   margin-right: 7px;
 }
 
+.mailto-link {
+  cursor: pointer;
+}
+
 .mailto-link:hover:after {
-  content: '(this will open your mail client)';
+  content: '(click to copy)';
   font-family: $font-stack;
-  font-size: 12px;
   font-weight: 300;
+}
+
+.mailto-link--success:hover:after {
+  content: '(success!)';
+  font-family: $font-stack;
+}
+
+.mailto-link--safari:hover:after {
+  content: '(this will open your mail client)';
+  font-size: 12px;
+  font-family: $font-stack;
+}
+
+@media (max-width: 650px) {
+  .navbar {
+    margin-bottom: 30px;
+  }
+
+  .mailto-link {
+    display: none;
+  }
 }

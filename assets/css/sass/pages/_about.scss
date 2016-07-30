@@ -113,6 +113,10 @@ $paragraph-label-width: 200px;
 }
 
 @media (max-width: 650px) {
+  .about-container {
+    margin-top: 20px;
+  }
+  
   .paragraph-container {
     margin-bottom: 40px;
   }
