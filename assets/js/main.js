@@ -1,5 +1,5 @@
-var isChrome  = navigator.userAgent.indexOf('Chrome') > -1;
-var isFirefox = navigator.userAgent.indexOf('Firefox') > -1;
+var isChrome  = navigator.userAgent.indexOf("Chrome") > -1;
+var isFirefox = navigator.userAgent.indexOf("Firefox") > -1;
 var isSafari  = navigator.userAgent.indexOf("Safari") > -1;
 var isOpera   = navigator.userAgent.toLowerCase().indexOf("op") > -1;
 if ((isChrome)&&(isSafari)) {isSafari=false;}
@@ -28,11 +28,11 @@ if (isSafari || isFirefox) {
     window.getSelection().addRange(range)
 
     try {
-      var successful = document.execCommand('copy');
-      var msg = successful ? 'successful' : 'unsuccessful';
-      console.log('Copy email command was ' + msg);
+      var successful = document.execCommand("copy");
+      var msg = successful ? "successful" : "unsuccessful";
+      console.log("Copy email command was " + msg);
     } catch(err) {
-      console.log('Oops, unable to copy');
+      console.log("Oops, unable to copy");
     }
 
     if (successful) {

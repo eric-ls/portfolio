@@ -103,20 +103,16 @@ $paragraph-label-width: 200px;
   }
 }
 
-.skills-container {
-  @include prefixer(column-count, 2);
-  @include prefixer(column-gap, 20px);
-}
-
 .entry-list {
-  list-style: square inside;
+  list-style: square outside;
+  margin-left: 20px;
 }
 
 @media (max-width: 650px) {
   .about-container {
     margin-top: 20px;
   }
-  
+
   .paragraph-container {
     margin-bottom: 40px;
   }

@@ -800,42 +800,29 @@ body {
 }
 
 /* line 106, sass/pages/_about.scss */
-.skills-container {
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  -ms-column-count: 2;
-  -o-column-count: 2;
-  column-count: 2;
-  -webkit-column-gap: 20px;
-  -moz-column-gap: 20px;
-  -ms-column-gap: 20px;
-  -o-column-gap: 20px;
-  column-gap: 20px;
-}
-
-/* line 111, sass/pages/_about.scss */
 .entry-list {
-  list-style: square inside;
+  list-style: square outside;
+  margin-left: 20px;
 }
 
 @media (max-width: 650px) {
-  /* line 116, sass/pages/_about.scss */
+  /* line 112, sass/pages/_about.scss */
   .about-container {
     margin-top: 20px;
   }
 
-  /* line 120, sass/pages/_about.scss */
+  /* line 116, sass/pages/_about.scss */
   .paragraph-container {
     margin-bottom: 40px;
   }
 
-  /* line 124, sass/pages/_about.scss */
+  /* line 120, sass/pages/_about.scss */
   .paragraph-label-container {
     float: none;
     margin-bottom: 12px;
     width: 100%;
   }
-  /* line 129, sass/pages/_about.scss */
+  /* line 125, sass/pages/_about.scss */
   .paragraph-label-container .paragraph-label {
     display: inline-block;
     font-weight: 700;
@@ -843,18 +830,18 @@ body {
     position: relative;
   }
 
-  /* line 138, sass/pages/_about.scss */
+  /* line 134, sass/pages/_about.scss */
   .paragraph-text-container {
     margin-left: 0;
     width: 100%;
   }
 
-  /* line 144, sass/pages/_about.scss */
+  /* line 140, sass/pages/_about.scss */
   .resume-courses li {
     width: 100%;
   }
 
-  /* line 149, sass/pages/_about.scss */
+  /* line 145, sass/pages/_about.scss */
   .skills-container {
     -webkit-column-count: 1;
     -moz-column-count: 1;
@@ -867,7 +854,7 @@ body {
     -o-column-gap: 0;
     column-gap: 0;
   }
-  /* line 153, sass/pages/_about.scss */
+  /* line 149, sass/pages/_about.scss */
   .skills-container > div {
     display: block;
   }
