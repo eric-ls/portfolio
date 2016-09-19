@@ -16,6 +16,16 @@
     <meta property="og:url" content="http://ericls.com">
     <meta property="og:description" content="Eric Liang is a third year design and eecs student at UC Berkeley.">
     <meta property="og:image" content="http://ericls.com/cover.jpg">
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-55358044-2', 'auto');
+      ga('send', 'pageview');
+    </script>
   </head>
   <body>
     <div class="main-container about-container">
@@ -29,9 +39,9 @@
         </div>
 
         <div class="paragraph-text-container">
-          <p class="paragraph-text pdf-resume-notice"><a class="link" href="https://www.dropbox.com/s/wjjlpve729psez2/main_resume.pdf?dl=0">For a PDF resume, click here.</a></p>
+          <p class="paragraph-text pdf-resume-notice"><a class="link" onclick="ga('send', 'event', 'Outbound Link', 'click', 'Resume PDF');" href="https://www.dropbox.com/s/sban4vwjptn6jcn/main_resume.pdf?dl=0">For a PDF resume, click here.</a></p>
 
-          <p class="paragraph-text">I'm a designer, front-end engineer, and EECS student from UC Berkeley. At Berkeley, I teach <a class="link" href="http://teaching.paulos.net/cs160_SP2016/">User Interface Design</a> and the <a class="link" href="http://wdd.io" target="_blank">Web Design Decal</a>, and also project lead for <a class="link" href="http://calblueprint.org" target="_blank">Cal Blueprint</a>, where we develop applications for local nonprofits, pro bono.</p>
+          <p class="paragraph-text">I'm a designer, front-end engineer, and EECS student from UC Berkeley. At Berkeley, I teach <a class="link" target="_blank" href="http://cs160.ninja">User Interface Design</a> and the <a class="link" href="http://wdd.io" target="_blank">Web Design Decal</a>, and also project lead for <a class="link" href="http://calblueprint.org" target="_blank">Cal Blueprint</a>, where we develop pro bono applications for nonprofits, and promote technology for social good.</p>
 
           <p class="paragraph-text">In my free time, I enjoy running the <a class="link" href="https://www.instagram.com/p/4GIFdEEru-/" target="_blank">Berkeley fire trail</a>, boba milk tea, ultimate frisbee, and <a class="link" href="http://instagram.com/eric.ls" target="_blank">landscape photography</a>.</p>
 
@@ -66,7 +76,7 @@
         </div>
 
         <div class="paragraph-text-container">
-          <h3 class="paragraph-text resume-entry resume-entry-title">Cal Blueprint</h3>
+          <h3 class="paragraph-text resume-entry resume-entry-title">Blueprint</h3>
           <p class="paragraph-text resume-entry resume-entry-position">Project Leader & Developer</p>
           <p class="paragraph-text resume-entry">September 2015 - current</p>
           <ul class="resume-list entry-list">
@@ -119,6 +129,8 @@
             <li><span class="course-title">CS170</span>Algorithms</li>
             <li><span class="course-title">CS61B</span>Data Structures</li>
             <li><span class="course-title">CS70</span>Discrete Math & Probability</li>
+            <li><span class="course-title">CS168</span>Internet and Networks</li>
+            <li><span class="course-title">CS188</span>Artificial Intelligence</li>
           </ul>
         </div>
       </div>
@@ -128,13 +140,17 @@
           <h2 class="h3 paragraph-label">teaching</h2>
         </div>
         <div class="paragraph-text-container">
-          <h3 class="paragraph-text resume-entry resume-entry-title">CS160 - User Interface Design</h3>
+          <h3 class="paragraph-text resume-entry resume-entry-title">User Interface Design (CS160/260A)</h3>
           <p class="paragraph-text resume-entry resume-entry-position">Undergraduate Student Instructor</p>
           <p class="paragraph-text resume-entry">August 2016 - current</p>
+          <ul class="resume-list entry-list">
+            <li class="resume-list-item">Taught weekly sections, held office hours, organized class studio activities, and developed course assignments</li>
+            <li class="resume-list-item">Designed, developed, and managed <a href="http://cs160.ninja" class="link" target="_blank">course website</a></li>
+          </ul>
 
         </div>
         <div class="paragraph-text-container">
-          <h3 class="paragraph-text resume-entry resume-entry-title">CS198 - Web Design Decal</h3>
+          <h3 class="paragraph-text resume-entry resume-entry-title">Web Design Decal (CS198)</h3>
           <p class="paragraph-text resume-entry resume-entry-position">Instructor</p>
           <p class="paragraph-text resume-entry">January 2015 - current</p>
           <ul class="resume-list entry-list">
@@ -145,14 +161,5 @@
         </div>
       </div>
     </div>
-    <!-- Google Analytics -->
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      ga('create', 'UA-55358044-2', 'auto');
-      ga('send', 'pageview');
-    </script>
   </body>
 </html>

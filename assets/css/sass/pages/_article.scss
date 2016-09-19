@@ -2,6 +2,7 @@
   font-size: 19px;
   line-height: 1.7;
   margin: 40px auto;
+  max-width: 900px;
 }
 
 /* For paragraphs of text */
@@ -11,7 +12,7 @@
 
   h1 {
     font-size: 22px;
-    margin-bottom: 14tarpx;
+    margin-bottom: 14px;
   }
 
   p {
@@ -101,7 +102,6 @@
 }
 
 .problem-statement {
-  color: #10a8c5;
   font-size: 22px;
   font-weight: 600;
 }

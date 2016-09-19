@@ -6,6 +6,48 @@ body {
   padding: 0 15px;
 }
 
+/* Margin spacings */
+$side-list: "top", "right", "bottom", "left";
+$xxs: 6px;
+$xs: 10px;
+$sm: 14px;
+$md: 18px;
+$lg: 28px;
+$xl: 40px;
+$xxl: 54px;
+
+.margin--xxs { margin: $xxs; }
+.margin--xs { margin: $xs; }
+.margin--sm { margin: $sm; }
+.margin--md { margin: $md; }
+.margin--lg { margin: $lg; }
+.margin--xl { margin: $xl; }
+.margin--xxl { margin: $xxl; }
+
+@each $side in $side-list {
+  .margin-#{$side}--xxs {
+    margin-#{$side}: $xxs;
+  }
+  .margin-#{$side}--xs {
+    margin-#{$side}: $xs;
+  }
+  .margin-#{$side}--sm {
+    margin-#{$side}: $sm;
+  }
+  .margin-#{$side}--md {
+    margin-#{$side}: $md;
+  }
+  .margin-#{$side}--lg {
+    margin-#{$side}: $lg;
+  }
+  .margin-#{$side}--xl {
+    margin-#{$side}: $xl;
+  }
+  .margin-#{$side}--xxl {
+    margin-#{$side}: $xxl;
+  }
+}
+
 .main-container {
   margin-left: auto;
   margin-right: auto;
@@ -72,7 +114,7 @@ body {
   }
 }
 
-.splash-container .link {
+.splash-container .link, {
   &:hover {
     color: white;
     border-bottom-color: transparent;

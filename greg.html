@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- Hey there! It seems like you're interested in my code. We have a lot in common :) -->
+<html>
+  <head>
+    <title>Eric Liang's Portfolio</title>
+    <meta name="application-name" content="Eric Liang's Portfolio">
+
+    <link rel="stylesheet" href="assets/css/main.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/favicon.ico?v=1">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Eric Liang is a third year design and eecs student at UC Berkeley." />
+
+    <meta property="og:title" content="Eric Liang's Portfolio">
+    <meta property="og:url" content="http://ericls.com">
+    <meta property="og:description" content="Eric Liang is a third year design and eecs student at UC Berkeley.">
+    <meta property="og:image" content="http://ericls.com/cover.jpg">
+  </head>
+  <body>
+    <div class="main-container interview-container" style="margin: 40px auto; margin-top: 80px; max-width: 700px;">
+      <h1 class="h1 greeting">Hey Greg!
+        <div class="interview-welcome--emoji">
+          <img src="assets/images/interview/wave_emoji.png" alt="waving emoji">
+        </div>
+      </h1>
+      <h2 class="h3">Thanks for visiting! I made this page as a supplement to our chat. The links below direct to some of the projects I may talk about:</h2>
+      <ul class="margin-top--lg">
+        <li><a class="link" href="#spotify">Spotify Artist Playlists</a></li>
+        <li><a class="link" href="/projects/portal">WDD Portal</a></li>
+        <li><a class="link" href="https://medium.com/@ericliang/a-summer-at-gradescope-2d8891b27a26#.aqffedxfm">Gradescope</a></li>
+      </ul>
+      <h1 class="h1 spotify margin-bottom--xxs" id="spotify">Spotify</h1>
+      <p class="h3 margin-bottom--lg">Product Design Intern, Summer 2016</p>
+      <h2 class="h2 margin-bottom--xs">Intro</h2>
+      <p>I worked on the Creator team, which builds products to connect Artists and Fans. The Creator team is structured around the artists' core needs:</p>
+      <div class="article-img" style="width: 500px;">
+        <img src="assets/images/interview/creator-diagram.png" alt="creator team diagram">
+      </div>
+      <h2 class="h2 margin-bottom--sm">Artist Playlists Redesign</h2>
+      <p>Artist Playlists are just regular playlists created by the artist <a href="https://open.spotify.com/user/siaofficial/playlist/7t49q1aEwdRHg6TKqM8Mi3" target="blank">(here's an example from Sia).</a> Through these playlists, fans can listen to their artist's favorite songs and connect through music. However, there were a couple of issues with the current design.</p>
+
+      <section class="problem-section">
+        <h2 class="h2 margin-top--xxl">Problem</h2>
+        <p class="p-em margin-bottom--xl">How can we increase artist-to-fan engagement and allow artists to grow their audience on Spotify?</p>
+        <p>Spotify artist Net Promoter Score (aNPS): <strong>-37</strong></p>
+        <p class="margin-bottom--xs">Artist have no control over their Spotify experience:</p>
+        <p class="margin-left--lg">"What can I do? I can't to affect whether I'm featured on a Spotify playlist , or help my song blow up or even support friends." - XYLØ</p>
+      </section>
+
+      <section class="hypothesis-section">
+        <h2 class="h2 margin-top--xxl">Hypothesis</h2>
+        <p class="p-em">A music-first broadcast channel with guaranteed reach, that artists own.</p>
+
+        <h3 class="h3 margin-bottom--sm">Goals</h3>
+        <ul class="margin-bottom--xl">
+          <li>Build something native to the Spotify experience (music)</li>
+          <li>Give all artists a voice, and powerful tools to reach fans, whatever size</li>
+          <li>Provide feedback loops that let artists "feel" the presence of their fans</li>
+        </ul>
+
+        <h3 class="h3 margin-bottom--sm">Features</h3>
+        <ul class="margin-bottom--xl">
+          <li>Different types of media, like photos and video</li>
+          <li>Fan "reactions", to generate feedback loops</li>
+        </ul>
+      </section>
+
+      <h2 class="h2">Success Metric</h2>
+      <p class="p-em">50% of top 5k Monthly Active Artists by end-of-year 2017</p>
+      <section class="design-sprint-section">
+        <h2 class="h2">Design Sprint</h2>
+        <p>We kicked off the project with the <a href="http://www.gv.com/sprint/" target="_blank">Google Ventures Design Sprint</a>, working with a small team of engineers, designers, and PMs to go from concept to working <strong>product vision</strong> prototype.</p>
+        <p class="margin-bottom--xl">Lots of sketching and whiteboarding involved!</p>
+        <div class="img-container margin-bottom--xl"><img src="assets/images/interview/sprint-1.jpg" alt=""></div>
+        <div class="img-container margin-bottom--xxl"><img src="assets/images/interview/sprint-2.jpg" alt=""></div>
+        <p>We sketched different user flows, concepts, and narrowed down the concept to a couple of executable ideas.</p>
+        <p>In the end, we branched off into two mediums of artist engagement: video and audio. For the rest of the week, I set out to prototype a vision for integrating <strong>video</strong> with artist playlists.</p>
+      </section>
+      <section class="video-prototypes-section">
+        <h2 class="h2 margin-top--xl">Video Concept - User Flow</h2>
+      </section>
+    </div>
+    <div class="video-prototype-images">
+      <div class="img-container"><img src="assets/images/interview/v-1.jpg" alt=""></div>
+      <div class="img-container"><img src="assets/images/interview/v-2.jpg" alt=""></div>
+      <div class="img-container"><img src="assets/images/interview/v-3.jpg" alt=""></div>
+      <div class="img-container"><img src="assets/images/interview/v-4.jpg" alt=""></div>
+    </div>
+    <div class="main-container splash-container interview-container">
+      <p>With this very first iteration, I was trying to address the following needs:</p>
+      <ul class="margin-bottom--xxl">
+        <li>Stay on the "music-first" format</li>
+        <li>How can users interact with the media and toggle between music / video?</li>
+        <li>How can we incorporate feedback in a meaningful and useful way?</li>
+      </ul>
+      <h2 class="h2">Video Concept - Prototyping</h2>
+      <p>If the FramerJS prototype doesn't work, try <a target="_blank" href="http://share.framerjs.com/wa3exldiueml/">this link</a> or check out <a href="https://youtu.be/Udx1Uj114H0" target="_blank">this video</a>!</p>
+      <iframe src="assets/images/interview/grande.framer/index.html" class="framer"></iframe>
+      <h2 class="h2">User Testing</h2>
+      <p>Since our prototype / design was very similar to social media today (like Snapchat, Instagram), we chose users who prominently followed artists on traditional social media. We also tested the prototype with a mix of free and paid users.</p>
+      <div class="img-container margin-top--xxl margin-bottom--xxl"><img src="assets/images/interview/testing-1.jpg" alt=""></div>
+      <p class="p-em">Users didn't understand that the playlist was created by the artist!</p>
+      <p>After playing with the prototype, they still didn't associate the new playlist with the artist themselves. This was a huge potential turnoff to users, because then there was essentially <strong>no value proposition</strong>, since the entire point of artist playlists was to increase artist-to-fan engagement.</p>
+      <h3 class="h3">Other Learnings</h3>
+      <ul>
+        <li>The video content is key, and difficult to test for</li>
+        <li>Some users were confused by songs that weren't by the playlist artist (e.g. Ariana Grande's song in Meghan Trainor's playlist)</li>
+      </ul>
+
+      <h2 class="h2 margin-top--xxl">Iteration 2</h2>
+      <p>Before working on the next iteration, I though of some fundamental principles the design had to fulfill. What kind of feelings did we want artist playlists to evoke?</p>
+      <p class="p-em margin-top--lg margin-bottom--xxl">Personal, authentic, informal, real</p>
+      <h3 class="h3">New Ideas</h3>
+      <ul>
+        <li>Added an introduction video by an artist</li>
+        <li>Replaced the playlist cover image to a series of images shot by the artist, not a professional photo</li>
+        <li>Slightly altered the copy / wording to use more first-person pronouns ("Check out my playlist!")</li>
+      </ul>
+      <p class="margin-top--xl">If the FramerJS prototype doesn't work, try <a target="_blank" href="http://share.framerjs.com/i3dxydg8j139/">this link</a> or check out <a href="https://youtu.be/S5EOcv7Yhmg" target="_blank">this video!</a></p>
+      <iframe src="assets/images/interview/trainor.framer/index.html" class="framer"></iframe>
+
+      <hr>
+      <h2 class="h2 margin-top--xxl">Audio Prototypes</h2>
+      <p>After testing the vision prototypes for video, I started to explore different media to include - this time, <strong>audio commentary by the artist</strong>. Since the project was long-term, the team wanted to start with something more feasible and testable.</p>
+
+      <div class="audio-gif-container">
+        <p class="description">Audio state switching</p>
+        <div class="gif-container">
+          <video width="375" height="667" controls loop">
+            <source src="assets/images/interview/a-3.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="audio-gif-container">
+        <p class="description">Integration with current iOS design</p>
+        <div class="gif-container">
+          <video width="375" height="667" controls loop>
+            <source src="assets/images/interview/a-4.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="audio-gif-container">
+        <p class="description">Integration with Playlist to Shows (a work in progress by another team)</p>
+        <div class="gif-container">
+          <video width="375" height="667" controls loop>
+            <source src="assets/images/interview/a-5.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <h2 class="h2">Conclusion</h2>
+      <p>The team at Spotify is currently working on an Artist-facing creation app, and also integrating some of my designs into the consumer app. They plan on testing with a small group of artists and users and iterating before launching next year.</p>
+    </div>
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-55358044-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </body>
+</html>
