@@ -8,48 +8,55 @@
 /* For paragraphs of text */
 .content {
   margin: 20px auto;
+  margin-top: 0;
   max-width: 750px;
 
   h1 {
     font-size: 22px;
     margin-bottom: 14px;
   }
-
-  p {
-    margin-bottom: 25px;
-  }
 }
 
 .article-title {
-  margin: 30px auto 15px;
+  margin: 30px auto 5px;
 
   h1 {
     display: inline-block;
-    font-size: 60px;
+    font-size: 36px;
     font-weight: 700;
-    margin-right: 20px;
+    margin-right: 15px;
+    margin-bottom: 0;
   }
 
   h2 {
     color: $gray-dark-60;
     display: inline-block;
-    font-size: 48px;
+    font-size: 32px;
     font-weight: 300;
   }
 }
 
 .article-subtitle {
   color: $gray-dark-40;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   text-transform: uppercase;
 }
 
 .article-summary {
-  font-size: 26px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 300;
   line-height: 1.6;
+}
+
+.article-list-title {
+  font-size: 18px;
+}
+
+.article-list {
+  list-style: square;
+  padding-left: 30px;
 }
 
 .article-img {
@@ -104,4 +111,21 @@
 .problem-statement {
   font-size: 22px;
   font-weight: 600;
+}
+
+@media (max-width: 500px) {
+  .article-title {
+
+    h1 {
+      font-size: 28px;
+    }
+
+    h2 {
+      font-size: 24px;
+    }
+  }
+
+  .article-subtitle {
+    font-size: 16px;
+  }
 }

@@ -1,47 +1,22 @@
+.spotify-body {
+  padding: 0;
+}
+
 #spotify-article {
+  line-height: 1.6;
+  padding: 0 15px 80px;
+
   .navbar {
     padding-top: 40px;
   }
 
   .spotify-title-container {
-    animation: fadein 1s both;
-    animation-delay: 250ms;
-    background: -moz-linear-gradient(-45deg, #2B44A6 0%, #2FE48F 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #2B44A6 0%,#2FE48F 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #2B44A6 0%,#2FE48F 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    margin: -40px -15px 0;
-    padding-bottom: 280px;
+    height: 100vh;
+    line-height: 1.6;
     opacity: 0;
     z-index: -1;
   }
 
-  .article-title {
-    h1 {
-      color: $gray-light;
-    }
-
-    h2 {
-      color: $gray-light-80;
-    }
-  }
-
-  .article-subtitle {
-    color: $gray-light-60;
-  }
-
-  .article-summary {
-    color: $gray-light;
-  }
-
-  .main-img {
-    animation: slideup 500ms cubic-bezier(0.4, 0, 0.2, 1) both;
-    animation-delay: 700ms;
-    box-shadow: 0 0 10px $gray-dark-40;
-    margin-top: -200px;
-    opacity: 0;
-    position: relative;
-    z-index: 2;
-  }
 }
 
 @keyframes fadein {

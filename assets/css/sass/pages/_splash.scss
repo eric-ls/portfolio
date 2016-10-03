@@ -82,6 +82,7 @@
   opacity: 0;
   transition: $splash-transition;
   z-index: -1;
+  @include transform(scale(0.95));
 }
 
 .logo-container {
@@ -216,16 +217,25 @@
 /* Only show hover effects on desktop */
 @media (min-width: 600px) {
   .project-container:hover {
-    @include prefixer(box-shadow, 0 0 30px rgba(0, 0, 0, 0.14));
-    @include transform(scale(1.03) rotate(0.01deg));
 
-    .project-background { opacity: 1; }
+    .project-background {
+      opacity: 1;
+      @include transform(scale(1) rotate(0.01deg));
+    }
+
+    .background--gray {
+      background: $blue-gray-20;
+    }
+
     .logo-container .hovered { opacity: 1; }
     .logo-container .default { opacity: 0; }
   }
 
   .project--hover-white-text:hover {
-    @include prefixer(box-shadow, 0 0 30px rgba(0, 0, 0, 0.2));
+
+    .project-background {
+      // @include prefixer(box-shadow, 0 0 30px rgba(0, 0, 0, 0.2));
+    }
 
     .project-title,
     .project-description {
@@ -239,7 +249,7 @@
       color: white;
 
       &:hover:before {
-        background: $gray-light; 
+        background: $gray-light;
         color: $gray-dark;
       }
 
@@ -250,7 +260,7 @@
   }
 
   .project--hover-white-text .link:hover {
-    border-bottom-color: $white;
+    border-bottom-color: transparent;
   }
 
   .bp-project:hover {
