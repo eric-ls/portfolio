@@ -58,6 +58,12 @@
   -webkit-transform-style: preserve-3d;
 }
 
+.project--half {
+  float: left;
+  overflow: hidden;
+  width: 50%;
+}
+
 .project-title {
   color: $gray-dark;
   font-weight: 600;
@@ -88,7 +94,7 @@
 .logo-container {
   float: left;
   margin-right: 15px;
-  margin-top: 3px;
+  margin-top: 6px;
   height: 40px;
   position: relative;
   width: 40px;
@@ -126,8 +132,6 @@
 
 /* Blueprint animation styles */
 .bp-project {
-  float: left;
-  width: 50%;
 
   .logo-container {
     position: absolute;
@@ -144,12 +148,6 @@
   opacity: 0;
   transition: 400ms;
 }
-
-.wdd-project {
-  float: right;
-  width: 50%;
-}
-
 
 .other-projects-header {
   color: $gray-dark-60;
