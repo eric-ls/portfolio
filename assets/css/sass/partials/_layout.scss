@@ -130,7 +130,7 @@ $xxl: 54px;
     top: 50%;
     left: 50%;
     width: calc(100% + 10px);
-    transition: 150ms;
+    transition: 100ms;
     z-index: -1;
     @include transform(translateX(-50%) translateY(-50%));
   }

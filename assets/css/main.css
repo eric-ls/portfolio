@@ -77,80 +77,49 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
  * Syntax example:
  *    @include appearance(none);
  */
-@font-face {
-  font-family: 'Circular';
-  font-style: normal;
-  font-weight: 300;
-  src: url("../fonts/Circular-Light.otf");
-}
-@font-face {
-  font-family: 'Circular';
-  font-style: normal;
-  font-weight: 400;
-  src: url("../fonts/Circular-Book.otf");
-}
-@font-face {
-  font-family: 'Circular';
-  font-style: normal;
-  font-weight: 500;
-  src: url("../fonts/Circular-Medium.otf");
-}
-@font-face {
-  font-family: 'Circular';
-  font-style: normal;
-  font-weight: 600;
-  src: url("../fonts/Circular-Bold.otf");
-}
-@font-face {
-  font-family: 'Circular';
-  font-style: normal;
-  font-weight: 700;
-  src: url("../fonts/Circular-Black.otf");
-}
-/* line 32, sass/partials/_fonts.scss */
+/* line 1, sass/partials/_fonts.scss */
 body {
-  background-color: #F7F7F7;
+  background-color: #FDFDFD;
   color: #3A4750;
-  font-family: 'Circular', 'Helvetica', sans-serif;
   font-size: 17px;
   font-weight: 300;
   line-height: 1.4;
 }
 
-/* line 41, sass/partials/_fonts.scss */
+/* line 9, sass/partials/_fonts.scss */
 ::selection {
   background: #3A4750;
   color: white;
 }
 
-/* line 45, sass/partials/_fonts.scss */
+/* line 13, sass/partials/_fonts.scss */
 ::-moz-selection {
   background: #3A4750;
   color: white;
 }
 
-/* line 50, sass/partials/_fonts.scss */
+/* line 18, sass/partials/_fonts.scss */
 .h1 {
   font-size: 30px;
   font-weight: 600;
 }
 
-/* line 55, sass/partials/_fonts.scss */
+/* line 23, sass/partials/_fonts.scss */
 .h2 {
   font-size: 22px;
 }
 
-/* line 59, sass/partials/_fonts.scss */
+/* line 27, sass/partials/_fonts.scss */
 .h3 {
   font-size: 18px;
 }
 
-/* line 63, sass/partials/_fonts.scss */
+/* line 31, sass/partials/_fonts.scss */
 .h4 {
   font-size: 16px;
 }
 
-/* line 67, sass/partials/_fonts.scss */
+/* line 35, sass/partials/_fonts.scss */
 strong {
   font-weight: 500;
 }
@@ -442,7 +411,7 @@ body {
   top: 50%;
   left: 50%;
   width: calc(100% + 10px);
-  transition: 150ms;
+  transition: 100ms;
   z-index: -1;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
@@ -518,7 +487,7 @@ body {
 
 /* line 7, sass/pages/_splash.scss */
 .splash-description {
-  color: #3A4750;
+  color: rgba(58, 71, 80, 0.8);
   font-size: 18px;
   line-height: 1.6;
   margin-top: 40px;
@@ -594,7 +563,7 @@ body {
 /* line 61, sass/pages/_splash.scss */
 .project-title {
   color: #3A4750;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 /* line 66, sass/pages/_splash.scss */
@@ -923,7 +892,7 @@ body {
 .paragraph-text-container .resume-entry-title {
   color: #3A4750;
   display: inline-block;
-  font-weight: 500;
+  font-weight: 600;
   margin-right: 10px;
 }
 /* line 67, sass/pages/_about.scss */
@@ -1379,44 +1348,4 @@ p {
   to {
     opacity: 1;
   }
-}
-/* line 2, sass/articles/_gradescope.scss */
-#gradescope-article .navbar {
-  padding-top: 40px;
-}
-/* line 6, sass/articles/_gradescope.scss */
-#gradescope-article .gradescope-title-container {
-  animation: fadein 1s both;
-  animation-delay: 250ms;
-  background: url("../images/gs-bg.png");
-  margin: -40px -15px 0;
-  padding-bottom: 280px;
-  opacity: 0;
-  z-index: -1;
-}
-/* line 17, sass/articles/_gradescope.scss */
-#gradescope-article .article-title h1 {
-  color: #F3F3F3;
-}
-/* line 21, sass/articles/_gradescope.scss */
-#gradescope-article .article-title h2 {
-  color: rgba(243, 243, 243, 0.8);
-}
-/* line 26, sass/articles/_gradescope.scss */
-#gradescope-article .article-subtitle {
-  color: rgba(243, 243, 243, 0.6);
-}
-/* line 30, sass/articles/_gradescope.scss */
-#gradescope-article .article-summary {
-  color: #F3F3F3;
-}
-/* line 34, sass/articles/_gradescope.scss */
-#gradescope-article .main-img {
-  animation: slideup 500ms cubic-bezier(0.4, 0, 0.2, 1) both;
-  animation-delay: 400ms;
-  box-shadow: 0 0 10px rgba(58, 71, 80, 0.4);
-  margin-top: -200px;
-  opacity: 0;
-  position: relative;
-  z-index: 2;
 }
