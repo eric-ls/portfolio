@@ -529,7 +529,7 @@ body {
   display: inline-block;
   float: left;
   height: 20px;
-  opacity: 0.7;
+  opacity: 0.6;
   width: 34px;
   padding: 0 7px;
   transition: 150ms;
@@ -739,18 +739,13 @@ body {
   }
 
   /* line 206, sass/pages/_splash.scss */
-  .bp-project {
-    width: 100%;
-  }
-
-  /* line 210, sass/pages/_splash.scss */
-  .wdd-project {
+  .project--half {
     width: 100%;
   }
 }
 /* Only show hover effects on desktop */
 @media (min-width: 600px) {
-  /* line 219, sass/pages/_splash.scss */
+  /* line 215, sass/pages/_splash.scss */
   .project-container:hover .project-background {
     opacity: 1;
     -webkit-transform: scale(1) rotate(0.01deg);
@@ -759,49 +754,49 @@ body {
     -o-transform: scale(1) rotate(0.01deg);
     transform: scale(1) rotate(0.01deg);
   }
-  /* line 224, sass/pages/_splash.scss */
+  /* line 220, sass/pages/_splash.scss */
   .project-container:hover .background--gray {
     background: rgba(143, 172, 192, 0.2);
   }
-  /* line 228, sass/pages/_splash.scss */
+  /* line 224, sass/pages/_splash.scss */
   .project-container:hover .logo-container .hovered {
     opacity: 1;
   }
-  /* line 229, sass/pages/_splash.scss */
+  /* line 225, sass/pages/_splash.scss */
   .project-container:hover .logo-container .default {
     opacity: 0;
   }
 
-  /* line 238, sass/pages/_splash.scss */
+  /* line 234, sass/pages/_splash.scss */
   .project--hover-white-text:hover .project-title,
   .project--hover-white-text:hover .project-description {
     color: white;
   }
-  /* line 243, sass/pages/_splash.scss */
+  /* line 239, sass/pages/_splash.scss */
   .project--hover-white-text:hover .project-role {
     color: rgba(255, 255, 255, 0.8);
   }
-  /* line 245, sass/pages/_splash.scss */
+  /* line 241, sass/pages/_splash.scss */
   .project--hover-white-text:hover .link {
     border-bottom-color: rgba(255, 255, 255, 0.4);
     color: white;
   }
-  /* line 249, sass/pages/_splash.scss */
+  /* line 245, sass/pages/_splash.scss */
   .project--hover-white-text:hover .link:hover:before {
     background: #F3F3F3;
     color: #3A4750;
   }
-  /* line 254, sass/pages/_splash.scss */
+  /* line 250, sass/pages/_splash.scss */
   .project--hover-white-text:hover .link:hover {
     color: #3A4750;
   }
 
-  /* line 260, sass/pages/_splash.scss */
+  /* line 256, sass/pages/_splash.scss */
   .project--hover-white-text .link:hover {
     border-bottom-color: transparent;
   }
 
-  /* line 265, sass/pages/_splash.scss */
+  /* line 261, sass/pages/_splash.scss */
   .bp-project:hover .project-title,
   .bp-project:hover .project-role {
     -webkit-transform: translateX(55px);
@@ -810,7 +805,7 @@ body {
     -o-transform: translateX(55px);
     transform: translateX(55px);
   }
-  /* line 270, sass/pages/_splash.scss */
+  /* line 266, sass/pages/_splash.scss */
   .bp-project:hover .bp-logo {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);

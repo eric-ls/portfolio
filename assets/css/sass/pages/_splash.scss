@@ -32,7 +32,7 @@
   display: inline-block;
   float: left;
   height: 20px;
-  opacity: 0.7;
+  opacity: 0.6;
   width: 34px;
   padding: 0 7px;
   transition: 150ms;
@@ -203,11 +203,7 @@
     margin-bottom: 50px;
   }
 
-  .bp-project {
-    width: 100%;
-  }
-
-  .wdd-project {
+  .project--half {
     width: 100%;
   }
 }
