@@ -1298,3 +1298,32 @@ p {
 .audio-gif-container .description {
   width: calc(100% - 375px);
 }
+
+/* line 1, sass/pages/_404.scss */
+.container-404 {
+  max-width: 500px;
+  padding: 50px 0;
+  text-align: center;
+}
+/* line 6, sass/pages/_404.scss */
+.container-404 .img-container {
+  position: relative;
+}
+
+/* line 11, sass/pages/_404.scss */
+.img-404-happy {
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  transition: 50ms;
+}
+/* line 18, sass/pages/_404.scss */
+.img-404-happy:hover {
+  opacity: 1;
+}
+
+/* line 23, sass/pages/_404.scss */
+.title-404 {
+  font-size: 48px;
+}
