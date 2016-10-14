@@ -5,40 +5,48 @@ var isOpera   = navigator.userAgent.toLowerCase().indexOf("op") > -1;
 if ((isChrome)&&(isSafari)) {isSafari=false;}
 if ((isChrome)&&(isOpera)) {isChrome=false;}
 
-var mailBtn = document.querySelector(".mailto-link");
-var mailBtnText = "";
+/* Spotify gradient animation on hover */
+var spotifyHovered = false;
+var spotify = document.querySelector(".spotify-project");
+var spotifyBG = spotify.querySelector("#spotify-bg");
+var bgWidth = spotify.offsetWidth;
 
-mailBtn.addEventListener("mouseover", function(event) {
-  mailBtnText = this.innerHTML;
-  mailBtn.innerHTML = "liang.eric24@gmail.com";
-})
-
-mailBtn.addEventListener("mouseleave", function(event) {
-  mailBtn.innerHTML = mailBtnText;
-  mailBtn.classList.remove("mailto-link--success");
-})
-
-if (isSafari || isFirefox) {
-  mailBtn.classList.add("mailto-link--safari");
-  mailBtn.href = "mailto:liang.eric24@gmail.com";
-} else {
-  mailBtn.addEventListener("click", function(event) {
-    var range = document.createRange();
-    range.selectNode(mailBtn)
-    window.getSelection().addRange(range)
-
-    try {
-      var successful = document.execCommand("copy");
-      var msg = successful ? "successful" : "unsuccessful";
-      console.log("Copy email command was " + msg);
-    } catch(err) {
-      console.log("Oops, unable to copy");
-    }
-
-    if (successful) {
-      mailBtn.classList.add("mailto-link--success");
-    }
-
-    window.getSelection().removeAllRanges();
+if (!isSafari) {
+  spotify.addEventListener("mousemove", function(event) {
+    var mousePercent = (event.layerX / bgWidth) * 100;
+    var blue = modulate(mousePercent, [0, 100], [-5, 30]);
+    var green = modulate(mousePercent, [0, 100], [90, 110]);
+    var degree = modulate(mousePercent, [0, 100], [135, 150]);
+    spotifyBG.style.background = `linear-gradient(${degree}deg,#2B44A6 ${blue}%,#2FE48F ${green}%)`;
+    spotifyBG.style.background = `-moz-linear-gradient(${degree+180}deg,#2B44A6 ${blue}%,#2FE48F ${green}%)`;
   })
 }
+
+/* FramerJS Modulate Function */
+var modulate = function(value, rangeA, rangeB, limit) {
+  var fromHigh, fromLow, result, toHigh, toLow;
+  if (limit == null) {
+    limit = false;
+  }
+  fromLow = rangeA[0], fromHigh = rangeA[1];
+  toLow = rangeB[0], toHigh = rangeB[1];
+  result = toLow + (((value - fromLow) / (fromHigh - fromLow)) * (toHigh - toLow));
+  if (limit === true) {
+    if (toLow < toHigh) {
+      if (result < toLow) {
+        return toLow;
+      }
+      if (result > toHigh) {
+        return toHigh;
+      }
+    } else {
+      if (result > toLow) {
+        return toLow;
+      }
+      if (result < toHigh) {
+        return toHigh;
+      }
+    }
+  }
+  return result;
+};

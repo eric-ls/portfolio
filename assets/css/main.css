@@ -446,33 +446,13 @@ body {
   cursor: pointer;
 }
 
-/* line 162, sass/partials/_layout.scss */
-.mailto-link:hover:after {
-  content: '(click to copy)';
-  font-family: "Circular", "Helvetica", sans-serif;
-  font-weight: 300;
-}
-
-/* line 168, sass/partials/_layout.scss */
-.mailto-link--success:hover:after {
-  content: '(success!)';
-  font-family: "Circular", "Helvetica", sans-serif;
-}
-
-/* line 173, sass/partials/_layout.scss */
-.mailto-link--safari:hover:after {
-  content: '(this will open your mail client)';
-  font-size: 12px;
-  font-family: "Circular", "Helvetica", sans-serif;
-}
-
 @media (max-width: 650px) {
-  /* line 180, sass/partials/_layout.scss */
+  /* line 163, sass/partials/_layout.scss */
   .navbar {
     margin-bottom: 30px;
   }
 
-  /* line 184, sass/partials/_layout.scss */
+  /* line 167, sass/partials/_layout.scss */
   .mailto-link {
     display: none;
   }
@@ -553,6 +533,7 @@ body {
   border-radius: 4px;
   margin-bottom: 20px;
   padding: 30px;
+  overflow: hidden;
   position: relative;
   transition: 150ms;
   /* hacky method to prevent text flickering */
@@ -560,31 +541,31 @@ body {
   -webkit-transform-style: preserve-3d;
 }
 
-/* line 61, sass/pages/_splash.scss */
+/* line 62, sass/pages/_splash.scss */
 .project--half {
   float: left;
   overflow: hidden;
   width: 50%;
 }
 
-/* line 67, sass/pages/_splash.scss */
+/* line 68, sass/pages/_splash.scss */
 .project-title {
   color: #3A4750;
   font-weight: 600;
 }
 
-/* line 72, sass/pages/_splash.scss */
+/* line 73, sass/pages/_splash.scss */
 .project-role {
   color: rgba(58, 71, 80, 0.8);
 }
 
-/* line 76, sass/pages/_splash.scss */
+/* line 77, sass/pages/_splash.scss */
 .project-description {
   color: rgba(58, 71, 80, 0.8);
   margin: 20px 0;
 }
 
-/* line 81, sass/pages/_splash.scss */
+/* line 82, sass/pages/_splash.scss */
 .project-background {
   border-radius: 3px;
   height: 100%;
@@ -602,7 +583,7 @@ body {
   transform: scale(0.95);
 }
 
-/* line 94, sass/pages/_splash.scss */
+/* line 95, sass/pages/_splash.scss */
 .logo-container {
   float: left;
   margin-right: 15px;
@@ -611,7 +592,7 @@ body {
   position: relative;
   width: 40px;
 }
-/* line 102, sass/pages/_splash.scss */
+/* line 103, sass/pages/_splash.scss */
 .logo-container img {
   height: 100%;
   width: 100%;
@@ -619,50 +600,48 @@ body {
   position: absolute;
   transition: 150ms;
 }
-/* line 110, sass/pages/_splash.scss */
+/* line 111, sass/pages/_splash.scss */
 .logo-container .hovered {
   opacity: 0;
 }
 
 /* Spotify project background styles */
-/* line 114, sass/pages/_splash.scss */
+/* line 115, sass/pages/_splash.scss */
 .spotify-project .project-background {
+  -webkit-backface-visibility: hidden;
   background: -moz-linear-gradient(-45deg, #2B44A6 0%, #2FE48F 100%);
-  /* FF3.6-15 */
   background: -webkit-linear-gradient(-45deg, #2B44A6 0%, #2FE48F 100%);
-  /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg, #2B44A6 0%, #2FE48F 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
-/* line 120, sass/pages/_splash.scss */
+/* line 122, sass/pages/_splash.scss */
 .spotify-project:hover {
   color: white;
 }
 
 /* Gradescope project background styles */
-/* line 125, sass/pages/_splash.scss */
+/* line 127, sass/pages/_splash.scss */
 .gradescope-project .project-background {
   background: url("../images/gs-bg.png");
 }
 
-/* line 129, sass/pages/_splash.scss */
+/* line 131, sass/pages/_splash.scss */
 .gradescope-project:hover {
   color: white;
 }
 
 /* Blueprint animation styles */
-/* line 136, sass/pages/_splash.scss */
+/* line 138, sass/pages/_splash.scss */
 .bp-project .logo-container {
   position: absolute;
 }
-/* line 140, sass/pages/_splash.scss */
+/* line 142, sass/pages/_splash.scss */
 .bp-project .project-title,
 .bp-project .project-role {
   transition: 150ms;
 }
 
-/* line 146, sass/pages/_splash.scss */
+/* line 148, sass/pages/_splash.scss */
 .bp-logo {
   -webkit-transform: rotate(-180deg);
   -moz-transform: rotate(-180deg);
@@ -673,79 +652,79 @@ body {
   transition: 400ms;
 }
 
-/* line 152, sass/pages/_splash.scss */
+/* line 154, sass/pages/_splash.scss */
 .other-projects-header {
   color: rgba(58, 71, 80, 0.6);
   margin-bottom: 20px;
 }
 
-/* line 157, sass/pages/_splash.scss */
+/* line 159, sass/pages/_splash.scss */
 .other-projects-list {
   margin-bottom: 140px;
 }
-/* line 160, sass/pages/_splash.scss */
+/* line 162, sass/pages/_splash.scss */
 .other-projects-list li {
   margin-bottom: 40px;
 }
-/* line 161, sass/pages/_splash.scss */
+/* line 163, sass/pages/_splash.scss */
 .other-projects-list label {
   color: rgba(58, 71, 80, 0.8);
 }
 
-/* line 164, sass/pages/_splash.scss */
+/* line 166, sass/pages/_splash.scss */
 .other-project-title {
   margin-right: 20px;
 }
 
-/* line 168, sass/pages/_splash.scss */
+/* line 170, sass/pages/_splash.scss */
 .other-projects-description {
   margin-top: 10px;
 }
 
 @media (max-width: 500px) {
-  /* line 173, sass/pages/_splash.scss */
+  /* line 175, sass/pages/_splash.scss */
   .all-projects {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 20px;
   }
 
-  /* line 179, sass/pages/_splash.scss */
+  /* line 181, sass/pages/_splash.scss */
   .project-container {
     margin-bottom: 50px;
     padding: 0;
   }
 
-  /* line 185, sass/pages/_splash.scss */
+  /* line 187, sass/pages/_splash.scss */
   .other-projects-list label {
     display: block;
   }
-  /* line 189, sass/pages/_splash.scss */
+  /* line 191, sass/pages/_splash.scss */
   .other-projects-list .other-project-title {
     display: inline-block;
     margin-bottom: 10px;
   }
 }
 @media (max-width: 750px) {
-  /* line 197, sass/pages/_splash.scss */
+  /* line 199, sass/pages/_splash.scss */
   .splash-container {
     margin: 30px auto;
     max-width: 500px;
   }
 
-  /* line 202, sass/pages/_splash.scss */
+  /* line 204, sass/pages/_splash.scss */
   .splash-links-container {
     margin-bottom: 50px;
   }
 
-  /* line 206, sass/pages/_splash.scss */
+  /* line 208, sass/pages/_splash.scss */
   .project--half {
     width: 100%;
   }
 }
 /* Only show hover effects on desktop */
 @media (min-width: 600px) {
-  /* line 215, sass/pages/_splash.scss */
+  /* line 217, sass/pages/_splash.scss */
   .project-container:hover .project-background {
     opacity: 1;
     -webkit-transform: scale(1) rotate(0.01deg);
@@ -754,49 +733,49 @@ body {
     -o-transform: scale(1) rotate(0.01deg);
     transform: scale(1) rotate(0.01deg);
   }
-  /* line 220, sass/pages/_splash.scss */
+  /* line 222, sass/pages/_splash.scss */
   .project-container:hover .background--gray {
     background: rgba(143, 172, 192, 0.2);
   }
-  /* line 224, sass/pages/_splash.scss */
+  /* line 226, sass/pages/_splash.scss */
   .project-container:hover .logo-container .hovered {
     opacity: 1;
   }
-  /* line 225, sass/pages/_splash.scss */
+  /* line 227, sass/pages/_splash.scss */
   .project-container:hover .logo-container .default {
     opacity: 0;
   }
 
-  /* line 234, sass/pages/_splash.scss */
+  /* line 232, sass/pages/_splash.scss */
   .project--hover-white-text:hover .project-title,
   .project--hover-white-text:hover .project-description {
     color: white;
   }
-  /* line 239, sass/pages/_splash.scss */
+  /* line 237, sass/pages/_splash.scss */
   .project--hover-white-text:hover .project-role {
     color: rgba(255, 255, 255, 0.8);
   }
-  /* line 241, sass/pages/_splash.scss */
+  /* line 239, sass/pages/_splash.scss */
   .project--hover-white-text:hover .link {
     border-bottom-color: rgba(255, 255, 255, 0.4);
     color: white;
   }
-  /* line 245, sass/pages/_splash.scss */
+  /* line 243, sass/pages/_splash.scss */
   .project--hover-white-text:hover .link:hover:before {
     background: #F3F3F3;
     color: #3A4750;
   }
-  /* line 250, sass/pages/_splash.scss */
+  /* line 248, sass/pages/_splash.scss */
   .project--hover-white-text:hover .link:hover {
     color: #3A4750;
   }
 
-  /* line 256, sass/pages/_splash.scss */
+  /* line 254, sass/pages/_splash.scss */
   .project--hover-white-text .link:hover {
     border-bottom-color: transparent;
   }
 
-  /* line 261, sass/pages/_splash.scss */
+  /* line 259, sass/pages/_splash.scss */
   .bp-project:hover .project-title,
   .bp-project:hover .project-role {
     -webkit-transform: translateX(55px);
@@ -805,7 +784,7 @@ body {
     -o-transform: translateX(55px);
     transform: translateX(55px);
   }
-  /* line 266, sass/pages/_splash.scss */
+  /* line 264, sass/pages/_splash.scss */
   .bp-project:hover .bp-logo {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -1297,6 +1276,17 @@ p {
 /* line 134, sass/pages/_interview.scss */
 .audio-gif-container .description {
   width: calc(100% - 375px);
+}
+
+/* line 1, sass/pages/_contact.scss */
+.contact-container {
+  max-width: 500px;
+  margin-top: 40px;
+}
+
+/* line 6, sass/pages/_contact.scss */
+.contact-list-item {
+  margin-bottom: 5px;
 }
 
 /* line 1, sass/pages/_404.scss */

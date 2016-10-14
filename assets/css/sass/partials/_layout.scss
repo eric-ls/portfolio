@@ -159,23 +159,6 @@ $xxl: 54px;
   cursor: pointer;
 }
 
-.mailto-link:hover:after {
-  content: '(click to copy)';
-  font-family: $font-stack;
-  font-weight: 300;
-}
-
-.mailto-link--success:hover:after {
-  content: '(success!)';
-  font-family: $font-stack;
-}
-
-.mailto-link--safari:hover:after {
-  content: '(this will open your mail client)';
-  font-size: 12px;
-  font-family: $font-stack;
-}
-
 @media (max-width: 650px) {
   .navbar {
     margin-bottom: 30px;
