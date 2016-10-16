@@ -16,7 +16,7 @@ if (!isSafari) {
     var mousePercent = (event.layerX / bgWidth) * 100;
     var blue = modulate(mousePercent, [0, 100], [-5, 30]);
     var green = modulate(mousePercent, [0, 100], [90, 110]);
-    var degree = modulate(mousePercent, [0, 100], [135, 150]);
+    var degree = modulate(mousePercent, [0, 100], [90, 150]);
     spotifyBG.style.background = `linear-gradient(${degree}deg,#2B44A6 ${blue}%,#2FE48F ${green}%)`;
     spotifyBG.style.background = `-moz-linear-gradient(${degree+180}deg,#2B44A6 ${blue}%,#2FE48F ${green}%)`;
   })

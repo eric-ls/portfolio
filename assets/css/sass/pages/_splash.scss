@@ -160,14 +160,17 @@
   margin-bottom: 140px;
 
   li { margin-bottom: 40px; }
-  label { color: $gray-dark-80; }
 }
 
 .other-project-title {
   margin-right: 20px;
 }
 
-.other-projects-description {
+.other-project-detail {
+  color: $gray-dark-50;
+}
+
+.other-project-description {
   margin-top: 10px;
 }
 

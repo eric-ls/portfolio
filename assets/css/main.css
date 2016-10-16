@@ -666,65 +666,66 @@ body {
 .other-projects-list li {
   margin-bottom: 40px;
 }
-/* line 163, sass/pages/_splash.scss */
-.other-projects-list label {
-  color: rgba(58, 71, 80, 0.8);
-}
 
-/* line 166, sass/pages/_splash.scss */
+/* line 165, sass/pages/_splash.scss */
 .other-project-title {
   margin-right: 20px;
 }
 
-/* line 170, sass/pages/_splash.scss */
-.other-projects-description {
+/* line 169, sass/pages/_splash.scss */
+.other-project-detail {
+  color: rgba(58, 71, 80, 0.5);
+}
+
+/* line 173, sass/pages/_splash.scss */
+.other-project-description {
   margin-top: 10px;
 }
 
 @media (max-width: 500px) {
-  /* line 175, sass/pages/_splash.scss */
+  /* line 178, sass/pages/_splash.scss */
   .all-projects {
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 20px;
   }
 
-  /* line 181, sass/pages/_splash.scss */
+  /* line 184, sass/pages/_splash.scss */
   .project-container {
     margin-bottom: 50px;
     padding: 0;
   }
 
-  /* line 187, sass/pages/_splash.scss */
+  /* line 190, sass/pages/_splash.scss */
   .other-projects-list label {
     display: block;
   }
-  /* line 191, sass/pages/_splash.scss */
+  /* line 194, sass/pages/_splash.scss */
   .other-projects-list .other-project-title {
     display: inline-block;
     margin-bottom: 10px;
   }
 }
 @media (max-width: 750px) {
-  /* line 199, sass/pages/_splash.scss */
+  /* line 202, sass/pages/_splash.scss */
   .splash-container {
     margin: 30px auto;
     max-width: 500px;
   }
 
-  /* line 204, sass/pages/_splash.scss */
+  /* line 207, sass/pages/_splash.scss */
   .splash-links-container {
     margin-bottom: 50px;
   }
 
-  /* line 208, sass/pages/_splash.scss */
+  /* line 211, sass/pages/_splash.scss */
   .project--half {
     width: 100%;
   }
 }
 /* Only show hover effects on desktop */
 @media (min-width: 600px) {
-  /* line 217, sass/pages/_splash.scss */
+  /* line 220, sass/pages/_splash.scss */
   .project-container:hover .project-background {
     opacity: 1;
     -webkit-transform: scale(1) rotate(0.01deg);
@@ -733,49 +734,49 @@ body {
     -o-transform: scale(1) rotate(0.01deg);
     transform: scale(1) rotate(0.01deg);
   }
-  /* line 222, sass/pages/_splash.scss */
+  /* line 225, sass/pages/_splash.scss */
   .project-container:hover .background--gray {
     background: rgba(143, 172, 192, 0.2);
   }
-  /* line 226, sass/pages/_splash.scss */
+  /* line 229, sass/pages/_splash.scss */
   .project-container:hover .logo-container .hovered {
     opacity: 1;
   }
-  /* line 227, sass/pages/_splash.scss */
+  /* line 230, sass/pages/_splash.scss */
   .project-container:hover .logo-container .default {
     opacity: 0;
   }
 
-  /* line 232, sass/pages/_splash.scss */
+  /* line 235, sass/pages/_splash.scss */
   .project--hover-white-text:hover .project-title,
   .project--hover-white-text:hover .project-description {
     color: white;
   }
-  /* line 237, sass/pages/_splash.scss */
+  /* line 240, sass/pages/_splash.scss */
   .project--hover-white-text:hover .project-role {
     color: rgba(255, 255, 255, 0.8);
   }
-  /* line 239, sass/pages/_splash.scss */
+  /* line 242, sass/pages/_splash.scss */
   .project--hover-white-text:hover .link {
     border-bottom-color: rgba(255, 255, 255, 0.4);
     color: white;
   }
-  /* line 243, sass/pages/_splash.scss */
+  /* line 246, sass/pages/_splash.scss */
   .project--hover-white-text:hover .link:hover:before {
     background: #F3F3F3;
     color: #3A4750;
   }
-  /* line 248, sass/pages/_splash.scss */
+  /* line 251, sass/pages/_splash.scss */
   .project--hover-white-text:hover .link:hover {
     color: #3A4750;
   }
 
-  /* line 254, sass/pages/_splash.scss */
+  /* line 257, sass/pages/_splash.scss */
   .project--hover-white-text .link:hover {
     border-bottom-color: transparent;
   }
 
-  /* line 259, sass/pages/_splash.scss */
+  /* line 262, sass/pages/_splash.scss */
   .bp-project:hover .project-title,
   .bp-project:hover .project-role {
     -webkit-transform: translateX(55px);
@@ -784,7 +785,7 @@ body {
     -o-transform: translateX(55px);
     transform: translateX(55px);
   }
-  /* line 264, sass/pages/_splash.scss */
+  /* line 267, sass/pages/_splash.scss */
   .bp-project:hover .bp-logo {
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
@@ -972,7 +973,7 @@ body {
   font-size: 19px;
   line-height: 1.7;
   margin: 40px auto;
-  max-width: 900px;
+  max-width: 750px;
 }
 
 /* For paragraphs of text */
@@ -1208,7 +1209,7 @@ p {
 .p-em {
   color: #2185D5;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.4;
 }
 
@@ -1280,7 +1281,7 @@ p {
 
 /* line 1, sass/pages/_contact.scss */
 .contact-container {
-  max-width: 500px;
+  max-width: 600px;
   margin-top: 40px;
 }
 
