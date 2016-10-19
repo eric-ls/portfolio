@@ -26,11 +26,22 @@
   background: rgba(#017bd7, 0.2);
 }
 
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .home-title {
   margin-top: 65px;
   text-align: center;
 
   h1 {
+    animation: fadein 0.5s both;
+    animation-delay: 0.2s;
     font-size: 34px;
     font-weight: 800;
     letter-spacing: 2px;
@@ -38,11 +49,15 @@
   }
 
   h2 {
+    animation: fadein 0.5s both;
+    animation-delay: 0.25s;
     color: $gray-dark-60;
     font-size: 20px;
   }
 
   p {
+    animation: fadein 0.5s both;
+    animation-delay: 0.3s;
     color: $gray-dark-70;
     font-size: 19px;
     line-height: 1.9;
@@ -56,6 +71,8 @@
   }
 
   .links-container {
+    animation: fadein 0.5s both;
+    animation-delay: 0.35s;
     font-size: 18px;
     font-weight: 500;
 
@@ -88,9 +105,16 @@
 .home-work {
   margin-top: 50px;
   padding-top: 40px;
+
+  h1 {
+    animation: fadein 0.5s both;
+    animation-delay: 0.4s;
+  }
 }
 
 .work-grid {
+  animation: fadein 0.5s both;
+  animation-delay: 0.45s;
   display: flex;
   flex-flow: row wrap;
 }
@@ -180,6 +204,8 @@
 }
 
 .home-about {
+  animation: fadein 0.5s both;
+  animation-delay: 0.5s;
   margin-top: 30px;
   padding-top: 40px;
 }
@@ -193,6 +219,8 @@
 }
 
 .home-contact {
+  animation: fadein 0.5s both;
+  animation-delay: 0.55s;
   margin-bottom: 80px;
   margin-top: 30px;
   padding-top: 40px;
