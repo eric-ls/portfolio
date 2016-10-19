@@ -1,5 +1,4 @@
 body {
-  background-color: #FDFDFD;
   color: $gray-dark;
   font-size: 17px;
   font-weight: 300;
@@ -15,23 +14,44 @@ body {
   color: white;
 }
 
-.h1 {
-  font-size: 30px;
-  font-weight: 600;
+.serif {
+  font-family: "Palantino", "Georgia", sans-serif;
 }
 
-.h2 {
-  font-size: 22px;
+.link {
+  border-bottom: 1px solid $gray-dark-20;
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: 1px solid $gray-dark;
+    color: $gray-dark;
+  }
 }
 
-.h3 {
-  font-size: 18px;
-}
+.inline-link {
+  color: inherit;
+  position: relative;
+  text-decoration: none;
+  transition: 80ms;
 
-.h4 {
-  font-size: 16px;
-}
+  &:after {
+    background: $blue-20;
+    bottom: -2px;
+    content: "";
+    height: 8px;
+    left: 0;
+    position: absolute;
+    transition: 60ms;
+    width: 100%;
+    z-index: -1;
+  }
 
-strong {
-  font-weight: 500;
+  &:hover {
+    color: $gray-dark;
+  }
+
+  &:hover:after {
+    height: calc(100% + 3px);
+  }
 }
