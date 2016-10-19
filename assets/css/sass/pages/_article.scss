@@ -1,65 +1,57 @@
 .article-container {
-  font-size: 19px;
-  line-height: 1.7;
-  margin: 40px auto;
-  max-width: 750px;
-}
+  margin-bottom: 50px;
 
-/* For paragraphs of text */
-.content {
-  margin: 20px auto;
-  margin-top: 0;
-  max-width: 750px;
-
-  h1 {
-    font-size: 22px;
-    margin-bottom: 14px;
+  .content {
+    @extend .serif;
+    color: $gray-dark;
+    line-height: 1.7;
+    margin: 0 auto;
+    max-width: 700px;
   }
 }
 
 .article-title {
-  margin: 30px auto 5px;
+  margin-top: 40px;
+  text-align: center;
 
   h1 {
-    display: inline-block;
-    font-size: 36px;
-    font-weight: 700;
-    margin-right: 15px;
-    margin-bottom: 0;
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
   }
 
   h2 {
     color: $gray-dark-60;
-    display: inline-block;
-    font-size: 32px;
-    font-weight: 300;
+    font-size: 20px;
+  }
+
+  p {
+    color: $gray-dark-70;
+    font-size: 19px;
+    line-height: 1.9;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+  }
+
+  .emphasis {
+    color: $gray-dark;
+  }
+
+  .links-container {
+    font-size: 18px;
+    font-weight: 500;
+
+    .link {
+      margin: 0 10px;
+    }
   }
 }
 
-.article-subtitle {
-  color: $gray-dark-40;
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 50px;
-  text-transform: uppercase;
-}
-
-.article-summary {
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1.6;
-}
-
-.article-list-title {
-  font-size: 18px;
-}
-
-.article-list {
-  list-style: square;
-  padding-left: 30px;
-}
-
 .article-img {
+  margin-left: auto;
+  margin-right: auto;
   text-align: right;
 
   img {
@@ -77,54 +69,7 @@
   }
 }
 
-.full-bleed-img {
-  max-width: 1100px;
-  height: 650px;
-}
-
-.inline-left-img {
-  float: left;
-  @include clearAfter;
-}
-
-.section-spacing {
-  height: 40px;
-}
-
-.problem {
-  margin: 40px auto;
-}
-
-.problem-title {
-  background: rgba(#10a8c5, 0.8);
-  border-radius: 3px;
-  color: white;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-  padding: 5px 10px;
-}
-
-.problem-statement {
-  font-size: 22px;
-  font-weight: 600;
-}
-
-@media (max-width: 500px) {
-  .article-title {
-
-    h1 {
-      font-size: 28px;
-    }
-
-    h2 {
-      font-size: 24px;
-    }
-  }
-
-  .article-subtitle {
-    font-size: 16px;
-  }
+.article-list {
+  list-style: square;
+  padding-left: 30px;
 }

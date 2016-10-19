@@ -3,49 +3,42 @@
 }
 
 body {
-  padding: 0 15px;
+  padding: 0;
 }
 
 /* Margin spacings */
-$side-list: "top", "right", "bottom", "left";
 $xxs: 6px;
-$xs: 10px;
-$sm: 14px;
-$md: 18px;
-$lg: 28px;
+$xs: 12px;
+$sm: 16px;
+$md: 24px;
+$lg: 32px;
 $xl: 40px;
 $xxl: 54px;
+$xxxl: 68px;
 
-.margin--xxs { margin: $xxs; }
-.margin--xs { margin: $xs; }
-.margin--sm { margin: $sm; }
-.margin--md { margin: $md; }
-.margin--lg { margin: $lg; }
-.margin--xl { margin: $xl; }
-.margin--xxl { margin: $xxl; }
+$space-names: 'xxs', 'xs', 'sm', 'md', 'lg', 'xl', 'xxl', 'xxxl';
+$space-list: $xxs, $xs, $sm, $md, $lg, $xl, $xxl, $xxxl;
 
-@each $side in $side-list {
-  .margin-#{$side}--xxs {
-    margin-#{$side}: $xxs;
+@each $value in $space-list {
+  $i: index($space-list, $value);
+  $name: nth($space-names, $i);
+
+  .margin-#{$name} { margin: $xxs; }
+
+  .marginTopBot-#{$name} {
+    margin-top: #{$value};
+    margin-bottom: #{$value};
   }
-  .margin-#{$side}--xs {
-    margin-#{$side}: $xs;
+
+  .marginLeftRight-#{$name} {
+    margin-left: #{$value};
+    margin-right: #{$value};
   }
-  .margin-#{$side}--sm {
-    margin-#{$side}: $sm;
-  }
-  .margin-#{$side}--md {
-    margin-#{$side}: $md;
-  }
-  .margin-#{$side}--lg {
-    margin-#{$side}: $lg;
-  }
-  .margin-#{$side}--xl {
-    margin-#{$side}: $xl;
-  }
-  .margin-#{$side}--xxl {
-    margin-#{$side}: $xxl;
-  }
+
+  .marginTop-#{$name} { margin-top: #{$value} }
+  .marginBot-#{$name} { margin-bottom: #{$value} }
+  .marginLeft-#{$name} { margin-left: #{$value} }
+  .marginRight-#{$name} { margin-right: #{$value} }
 }
 
 .main-container {
@@ -54,30 +47,11 @@ $xxl: 54px;
   position: relative;
 }
 
-/* Give the intro container margin to offset the project padding below */
-.all-projects {
-  margin: 0 -30px;
-  margin-bottom: 60px;
-  @include clearAfter;
-}
-
 .navbar {
   border-bottom: 1px solid $gray-dark-20;
   margin-bottom: 50px;
   padding: 5px;
   @include clearAfter;
-}
-
-.navbar--light {
-  border-bottom-color: $gray-light-40;
-
-  .navbar-link {
-    color: $gray-light-60;
-  }
-
-  .navbar-link:hover {
-    color: $gray-light;
-  }
 }
 
 .navbar-link {
@@ -94,77 +68,5 @@ $xxl: 54px;
 
   &:hover {
     color: $gray-dark-80;
-  }
-}
-
-.link {
-  border-bottom: 1px solid $gray-dark-40;
-  color: $gray-dark;
-  font-weight: 400;
-  text-decoration: none;
-  transition: 100ms;
-  position: relative;
-
-  /* hacky method to prevent text flickering */
-  -webkit-backface-visibility: hidden;
-  -webkit-transform-style: preserve-3d;
-
-  &:hover {
-    border-bottom-color: $gray-dark;
-  }
-}
-
-.splash-container .link, {
-  &:hover {
-    color: white;
-    border-bottom-color: transparent;
-  }
-
-  &:before {
-    background: $gray-dark;
-    border-radius: 2px;
-    content: '';
-    height: 0%;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: calc(100% + 10px);
-    transition: 100ms;
-    z-index: -1;
-    @include transform(translateX(-50%) translateY(-50%));
-  }
-
-  &:hover:before {
-    height: calc(100% + 7px);
-    opacity: 1;
-  }
-}
-
-.link--arrow:after {
-  content: '\f105';
-  font-family: FontAwesome;
-  font-size: 14px;
-  margin-left: 7px;
-}
-
-.link--back:before {
-  content: '\f104';
-  font-family: FontAwesome;
-  font-size: 14px;
-  margin-right: 7px;
-}
-
-.mailto-link {
-  cursor: pointer;
-}
-
-@media (max-width: 650px) {
-  .navbar {
-    margin-bottom: 30px;
-  }
-
-  .mailto-link {
-    display: none;
   }
 }

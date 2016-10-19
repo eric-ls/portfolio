@@ -32,94 +32,95 @@
     </script>
   </head>
   <body>
-    <div class="main-container splash-container">
-      <h1 class="h1">Eric Liang</h1>
-      <h2 class="h2">Product designer</h2>
-      <p class="splash-description">Nice to meet you! I'm a product designer and front end engineer in my 3rd year at UC Berkeley. I'll be joining Facebook Design next summer, and in the past I've designed at Spotify and Gradescope. Currently looking for freelance projects!</p>
-      <div class="splash-links-container">
-        <a href="/about" class="link link--arrow">about</a>
-        <a href="/contact" class="link link--arrow">contact</a>
-        <div class="social-icons">
-          <a onclick="ga('send','event','Outbound Link','click','Linkedin');" href="http://linkedin.com/in/ericls" target="_blank" class="sm-icon">
-            <img src="assets/images/sm_icons/linkedin.svg" alt="my linkedin profile">
-          </a>
-          <a onclick="ga('send','event','Outbound Link','click','Twitter');" href="http://twitter.com/hiericliang" target="_blank" class="sm-icon">
-            <img src="assets/images/sm_icons/twitter.svg" alt="my twitter profile">
-          </a>
-          <a onclick="ga('send','event','Outbound Link','click','Dribbble');" href="https://dribbble.com/ericls" target="_blank" class="sm-icon">
-            <img src="assets/images/sm_icons/dribbble.svg" alt="my dribbble profile">
-          </a>
-          <a onclick="ga('send','event','Outbound Link','click','Instagram');" href="http://instagram.com/eric.ls" target="_blank" class="sm-icon">
-            <img src="assets/images/sm_icons/instagram.svg" alt="my instagram profile">
-          </a>
+    <div class="main-container home-container">
+      <section class="home-title">
+        <h1>Eric Liang</h1>
+        <h2>Product Designer</h2>
+        <p class="serif marginTop-xxl"><span class="emphasis">Nice to meet you!</span> I'm a product designer and front end engineer in my 3rd year at UC Berkeley. I'm joining <a class="inline-link facebook-link" href="http://facebook.design">Facebook Design</a> next summer, and in the past I've designed at <a class="inline-link spotify-link" href="http://spotify.com">Spotify</a> and <a class="inline-link gradescope-link" href="http://gradescope.com">Gradescope</a>.</p>
+        <div class="links-container marginTop-lg">
+          <a href="#work" class="link">work</a>
+          <a href="#about" class="link">about</a>
+          <a href="#contact" class="link">contact</a>
         </div>
-      </div>
+      </section>
+      <section class="home-work" id="work">
+        <h1 class="section-title title--line-under marginBot-xxl">Work</h1>
+        <div class="work-grid">
+          <a href="/spotify" class="work-item spotify-item">
+            <div class="work-item-img">
+              <div class="work-icon spotify-icon"></div>
+              <img src="assets/images/home/office2.jpg">
+            </div>
+            <h2>Spotify</h2>
+            <h3>Product Design Intern</h3>
+          </a>
+          <a href="https://blog.gradescope.com/a-summer-at-gradescope-2d8891b27a26#.rwshcs9gl" class="work-item gs-item">
+            <div class="work-item-img">
+              <div class="work-icon gs-icon"></div>
+            </div>
+            <h2>Gradescope</h2>
+            <h3>Design & Engineering</h3>
+          </a>
+          <a href="http://calblueprint.org" class="work-item bp-item">
+            <div class="work-item-img">
+              <div class="work-icon bp-icon"></div>
 
-      <div class="all-projects">
-        <div class="project-container spotify-project project--hover-white-text">
-          <div class="project-background" id="spotify-bg"></div>
-          <div class="logo-container">
-            <img src="assets/images/logos/spotify-green.png" class="default" alt="spotify logo">
-            <img src="assets/images/logos/spotify-white.png" class="hovered" alt="spotify logo">
-          </div>
-          <h1 class="h3 project-title">Spotify</h1>
-          <h2 class="h3 project-role">Product Design Intern</h2>
-          <p class="project-description">Intern on the Creator team, which builds products to connect artists and fans. My projects are pre-launch, but contact me for more info!</p>
-          <a href="/spotify" class="link link--arrow">read more</a>
+              <img src="assets/images/home/bp.jpg">
+            </div>
+            <h2>Blueprint</h2>
+            <h3>Developing for Nonprofits</h3>
+          </a>
+          <a href="http://wdd.io" class="work-item wdd-item">
+            <div class="work-item-img"><img src="assets/images/home/wdd.jpg"></div>
+            <h2>Web Design Decal</h2>
+            <h3>Instructor</h3>
+          </a>
         </div>
-        <div class="project-container gradescope-project project--hover-white-text">
-          <div class="project-background"></div>
-          <div class="logo-container">
-            <img src="assets/images/logos/gradescope-blue.png" class="default" alt="gradescope logo">
-            <img src="assets/images/logos/gradescope-white.png" class="hovered" alt="gradescope logo">
-          </div>
-          <h1 class="h3 project-title">Gradescope</h1>
-          <h2 class="h3 project-role">Design & Frontend Eng Intern</h2>
-          <p class="project-description">Designed test creation and code autograding features. Implemented help center, sitewide mobilization.</p>
-          <a onclick="ga('send','event','Outbound Link','click','Gradescope Project');" href="https://medium.com/@ericliang/a-summer-at-gradescope-2d8891b27a26#.aqffedxfm" target="_blank" class="link link--arrow">read more</a>
-        </div>
-        <div class="project-container project--half bp-project">
-          <div class="project-background background--gray"></div>
-          <div class="logo-container bp-logo">
-            <img src="assets/images/logos/bp.png" class="hovered" alt="blueprint logo">
-          </div>
-          <h1 class="h3 project-title">Blueprint</h1>
-          <h2 class="h3 project-role">Project Leader</h2>
-          <p class="project-description">Pro bono app development for local Bay Area nonprofits.</p>
-          <a onclick="ga('send','event','Outbound Link','click','Blueprint Website');" href="http://calblueprint.org" target="_blank" class="link link--arrow">learn more</a>
-        </div>
-        <div class="project-container project--half">
-          <div class="project-background background--gray"></div>
-          <h1 class="h3 project-title">User Interface Design (CS160)</h1>
-          <h2 class="h3 project-role">Student Instructor</h2>
-          <p class="project-description">Undergraduate Student Instructor for Intro to HCI class at UC Berkeley.</p>
-          <a onclick="ga('send','event','Outbound Link','click','CS160 Website');" href="http://cs160.ninja" target="_blank" class="link link--arrow">course website</a>
-        </div>
-      </div>
-      <h2 class="h2 other-projects-header">Other Stuff</h2>
-      <ul class="other-projects-list">
-        <li>
-          <a href="projects/portal" target="_blank" class="link other-project-title"><strong>Web Design Decal Portal</strong></a>
-          <label class="other-project-detail">Summer 2016</label>
-          <p class="other-project-description">Redesigned student portal for the Web Design class I teach at UC Berkeley.</p>
-        </li>
-        <li>
-          <a href="https://medium.com/@ericliang/guitar-heroes-cs160-project-9b70d29d9245#.wtakuttb2" target="_blank" class="link other-project-title"><strong>Guitar Heroes</strong></a>
-          <label class="other-project-detail">CS160 Final Project &middot; Fall 2015</label>
-          <p class="other-project-description">Researched, prototyped, and designed an Android Wear application to help beginners learn guitar.</p>
-        </li>
-        <li>
-          <a href="http://bizworld-staging.herokuapp.com/" target="_blank" class="link other-project-title"><strong>Bizworld Educator Portal</strong></a>
-          <label class="other-project-detail">Blueprint &middot; 2015-2016</label>
-          <p class="other-project-description">An online portal for Bizworld teachers and admins to administer quizzes and collect student data. Led design and frontend in team of 5.</p>
-        </li>
-        <li>
-          <a href="http://cs160.ninja" target="_blank" class="link other-project-title"><strong>CS160 Course Website</strong></a>
-          <label class="other-project-detail">Summer 2016</label>
-          <p class="other-project-description">Designed and implemented a static website for CS160 class at UC Berkeley.</p>
-        </li>
-      </ul>
+      </section>
+      <section class="home-about" id="about">
+        <h1 class="section-title title--line-under marginBot-xxl">About</h1>
+        <p class="about-text">I'm a designer, front-end engineer, and EECS student from UC Berkeley. At Berkeley, I teach <a class="inline-link cs160-link" href="http://cs160.ninja">User Interface Design</a> and the <a class="inline-link wdd-link" href="http://wdd.io">Web Design Decal</a>, and also project lead for <a class="inline-link bp-link" href="http://calblueprint.org">Blueprint</a>, where we develop (pro bono) applications for nonprofits and promote technology for social good.</p>
+        <p class="about-text">In my free time, I enjoy running the <a class="inline-link" href="https://www.instagram.com/p/4GIFdEEru-/">Berkeley fire trail</a>, boba milk tea, ultimate frisbee, and landscape photography.</p>
+        <p class="about-text"><a href="assets/resume.pdf" class="inline-link spotify-link">If you'd like to see my resume, click here.</a></p>
+      </section>
+      <section class="home-contact" id="contact">
+        <h1 class="section-title title--line-under marginBot-xxl">Contact</h1>
+        <p class="contact-text marginBot-sm">Primary Email:</p>
+        <span class="contact-email marginBot-xxl">liang.eric24@gmail.com</span>
+        <p class="contact-text marginBot-sm">Social Media:</p>
+        <ul class="social-media-container">
+          <li>
+            <a class="link" href="http://linkedin.com/in/ericls">
+              <img src="assets/images/icons/linkedin.svg">
+              <h2>linkedin</h2>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="http://twitter.com/hiericliang">
+              <img src="assets/images/icons/twitter.svg">
+              <h2>twitter</h2>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="http://dribbble.com/ericls">
+              <img src="assets/images/icons/dribbble.svg">
+              <h2>dribbble</h2>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="http://instagram.com/eric.ls">
+              <img src="assets/images/icons/instagram.svg">
+              <h2>instagram</h2>
+            </a>
+          </li>
+          <li>
+            <a class="link" href="https://www.facebook.com/liang.eric24">
+              <img src="assets/images/icons/facebook.svg">
+              <h2>facebook</h2>
+            </a>
+          </li>
+        </ul>
+      </section>
     </div>
-    <script src="assets/js/main.js"></script>
   </body>
 </html>
