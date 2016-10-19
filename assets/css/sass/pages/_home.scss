@@ -194,7 +194,8 @@
 
 .home-contact {
   margin-bottom: 80px;
-  padding-top: 70px;
+  margin-top: 30px;
+  padding-top: 40px;
   text-align: center;
 }
 
@@ -282,5 +283,44 @@
     background: -moz-linear-gradient(-45deg, #2B44A6 0%, #2FE48F 100%);
     background: -webkit-linear-gradient(-45deg, #2B44A6 0%,#2FE48F 100%);
     background: linear-gradient(135deg, rgba(#de6868, 0.1), rgba(#de6868, 0.8));
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .home-title {
+    margin-top: 40px;
+
+    h1 {
+      font-size: 28px;
+    }
+
+    h2 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 17px;
+      margin-top: 30px;
+      text-align: left;
+    }
+  }
+
+  .home-work {
+    margin-top: 20px;
+  }
+
+  .work-item {
+    margin: 0;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .home-about {
+    padding-top: 20px;
   }
 }
