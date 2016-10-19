@@ -286,12 +286,14 @@
   }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   body {
     padding-left: 15px;
     padding-right: 15px;
   }
+}
 
+@media (max-width: 600px) {
   .home-title {
     margin-top: 40px;
 
@@ -323,4 +325,35 @@
   .home-about {
     padding-top: 20px;
   }
+
+  .inline-link {
+
+    &:after {
+      display: none;
+    }
+  }
+
+  .facebook-link {
+    border-bottom: 2px solid rgba(#4267b2, 0.7);
+  }
+  .spotify-link {
+    border-bottom: 2px solid rgba(#1ed760, 0.7);
+  }
+
+  .gradescope-link {
+    border-bottom: 2px solid rgba(#1CA9C4, 0.7);
+  }
+
+  .cs160-link {
+    border-bottom: 2px solid rgba(52,152,219, 0.7);
+  }
+
+  .wdd-link {
+    border-bottom: 2px solid rgba(#de6868, 0.7);
+  }
+
+  .bp-link {
+    border-bottom: 2px solid rgba(#017bd7, 0.7);
+  }
+
 }

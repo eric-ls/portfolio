@@ -810,47 +810,83 @@ body {
   background: linear-gradient(135deg, rgba(222, 104, 104, 0.1), rgba(222, 104, 104, 0.8));
 }
 
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   /* line 290, sass/pages/_home.scss */
   body {
     padding-left: 15px;
     padding-right: 15px;
   }
-
-  /* line 295, sass/pages/_home.scss */
+}
+@media (max-width: 600px) {
+  /* line 297, sass/pages/_home.scss */
   .home-title {
     margin-top: 40px;
   }
-  /* line 298, sass/pages/_home.scss */
+  /* line 300, sass/pages/_home.scss */
   .home-title h1 {
     font-size: 28px;
   }
-  /* line 302, sass/pages/_home.scss */
+  /* line 304, sass/pages/_home.scss */
   .home-title h2 {
     font-size: 20px;
   }
-  /* line 306, sass/pages/_home.scss */
+  /* line 308, sass/pages/_home.scss */
   .home-title p {
     font-size: 17px;
     margin-top: 30px;
     text-align: left;
   }
 
-  /* line 313, sass/pages/_home.scss */
+  /* line 315, sass/pages/_home.scss */
   .home-work {
     margin-top: 20px;
   }
 
-  /* line 317, sass/pages/_home.scss */
+  /* line 319, sass/pages/_home.scss */
   .work-item {
     margin: 0;
     margin-bottom: 10px;
     width: 100%;
   }
 
-  /* line 323, sass/pages/_home.scss */
+  /* line 325, sass/pages/_home.scss */
   .home-about {
     padding-top: 20px;
+  }
+
+  /* line 331, sass/pages/_home.scss */
+  .inline-link:after {
+    display: none;
+  }
+
+  /* line 336, sass/pages/_home.scss */
+  .facebook-link {
+    border-bottom: 2px solid rgba(66, 103, 178, 0.7);
+  }
+
+  /* line 339, sass/pages/_home.scss */
+  .spotify-link {
+    border-bottom: 2px solid rgba(30, 215, 96, 0.7);
+  }
+
+  /* line 343, sass/pages/_home.scss */
+  .gradescope-link {
+    border-bottom: 2px solid rgba(28, 169, 196, 0.7);
+  }
+
+  /* line 347, sass/pages/_home.scss */
+  .cs160-link {
+    border-bottom: 2px solid rgba(52, 152, 219, 0.7);
+  }
+
+  /* line 351, sass/pages/_home.scss */
+  .wdd-link {
+    border-bottom: 2px solid rgba(222, 104, 104, 0.7);
+  }
+
+  /* line 355, sass/pages/_home.scss */
+  .bp-link {
+    border-bottom: 2px solid rgba(1, 123, 215, 0.7);
   }
 }
 /* line 1, sass/pages/_article.scss */
