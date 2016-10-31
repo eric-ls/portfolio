@@ -15,6 +15,8 @@
   text-align: center;
 
   h1 {
+    animation: fadein 0.5s both;
+    animation-delay: 0.1s;
     font-size: 34px;
     font-weight: 800;
     letter-spacing: 2px;
@@ -22,11 +24,15 @@
   }
 
   h2 {
+    animation: fadein 0.5s both;
+    animation-delay: 0.15s;
     color: $gray-dark-60;
     font-size: 20px;
   }
 
   p {
+    animation: fadein 0.5s both;
+    animation-delay: 0.2s;
     color: $gray-dark-70;
     font-size: 19px;
     line-height: 1.9;
@@ -47,6 +53,11 @@
       margin: 0 10px;
     }
   }
+}
+
+.article-body {
+  animation: fadein 0.5s both;
+  animation-delay: 0.3s;
 }
 
 .article-img {
