@@ -66,6 +66,7 @@
   text-align: right;
 
   img {
+    box-shadow: 0 5px 20px $gray-dark-20;
     border-radius: 3px;
     height: 100%;
     width: 100%;
@@ -83,4 +84,19 @@
 .article-list {
   list-style: square;
   padding-left: 30px;
+}
+
+.article-section-title {
+  color: $gray-dark;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.code-block {
+  background: $blue-gray-10;
+  color: $gray-dark-80;
+  display: inline-block;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 14px;
+  padding: 10px;
 }
