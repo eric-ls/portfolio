@@ -498,7 +498,7 @@ body {
 
 /* Link Colors */
 /* line 6, sass/pages/_home.scss */
-.facebook-link:after {
+.f-link:after {
   background: rgba(66, 103, 178, 0.2);
 }
 
