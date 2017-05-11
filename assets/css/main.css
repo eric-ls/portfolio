@@ -101,7 +101,7 @@ body {
 
 /* line 20, sass/partials/_fonts.scss */
 .serif, .work-item h3, .about-text, .contact-text, .social-media-container h2, .article-container .content {
-  font-family: "Lora", "Palantino", "Georgia", serif;
+  font-family: "Palantino", "Lora", "Georgia", serif;
 }
 
 /* line 24, sass/partials/_fonts.scss */
