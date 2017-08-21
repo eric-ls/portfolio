@@ -44,8 +44,8 @@
     animation-delay: 0.2s;
     font-size: 34px;
     font-weight: 800;
-    letter-spacing: 2px;
-    text-transform: uppercase;
+    // letter-spacing: 2px;
+    // text-transform: uppercase;
   }
 
   h2 {
@@ -70,6 +70,40 @@
     color: $gray-dark;
   }
 
+
+  .social-media-container {
+    animation: fadein 0.5s both;
+    animation-delay: 0.35s;
+
+    li {
+      display: inline-block;
+      margin: 0 8px;
+      opacity: 0.6;
+      transition: 100ms;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    a {
+      border-bottom: none;
+      display: inline-block;
+      text-decoration: none;
+    }
+
+    img {
+      transition: 100ms;
+      width: 20px;
+    }
+
+    h2 {
+      @extend .serif;
+      font-size: 13px;
+      margin-top: 5px;
+    }
+  }
+
   .links-container {
     animation: fadein 0.5s both;
     animation-delay: 0.35s;
@@ -85,10 +119,10 @@
 .section-title {
   font-size: 30px;
   font-weight: 800;
-  letter-spacing: 2px;
+  // letter-spacing: 2px;
   position: relative;
   text-align: center;
-  text-transform: uppercase;
+  // text-transform: uppercase;
 }
 
 .title--line-under:after {
@@ -243,35 +277,6 @@
   font-size: 19px;
   font-weight: 500;
   padding: 15px 20px;
-}
-
-.social-media-container {
-  li {
-    display: inline-block;
-    margin: 0 10px;
-    margin-bottom: 15px;
-    opacity: 0.6;
-    transition: 100ms;
-
-    &:hover {
-      opacity: 1;
-    }
-  }
-
-  a {
-    display: inline-block;
-  }
-
-  img {
-    transition: 100ms;
-    width: 28px;
-  }
-
-  h2 {
-    @extend .serif;
-    font-size: 13px;
-    margin-top: 5px;
-  }
 }
 
 .fb-white-photo {
