@@ -1,5 +1,5 @@
 .home-container {
-  max-width: 800px;
+  max-width: 750px;
 }
 
 /* Link Colors */
@@ -128,6 +128,8 @@
 }
 
 .home-work {
+  animation: fadein 0.5s both;
+  animation-delay: 0.45s;
   margin-top: 30px;
   padding-top: 30px;
 
@@ -137,24 +139,27 @@
   }
 }
 
+.work-section-title {
+  font-size: 18px;
+  font-weight: 600;
+}
+
 .work-grid {
-  animation: fadein 0.5s both;
-  animation-delay: 0.45s;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row;
   margin-left: -20px;
   margin-right: -20px;
 }
 
 .work-item {
   color: inherit;
+  flex: 1;
   margin: 5px;
   margin-bottom: 25px;
   padding: 15px;
   padding-bottom: 25px;
   position: relative;
   text-decoration: none;
-  width: calc(50% - 10px);
   -webkit-backface-visibility: hidden;
   -webkit-transform-style: preserve-3d;
 
@@ -192,6 +197,28 @@
   &:hover:after {
     opacity: 1;
     @include transform(scale(1));
+  }
+}
+
+.other-work {
+  .work-item {
+    h2 {
+      font-size: 17px;
+      font-weight: 500;
+    }
+
+    h3 {
+      font-size: 14px;
+    }
+  }
+
+  .work-item-img {
+    height: 130px;
+  }
+
+  .work-icon {
+    width: 45px;
+    height: 45px;
   }
 }
 
@@ -261,10 +288,27 @@
 }
 
 /* Special styles for projects */
+.facebook-item .work-item-img {
+  background-color: #EDF2FA;
+  transition: 120ms;
+}
+
 .facebook-item:hover {
-  .fb-white-photo {
-    opacity: 0;
+  .fb-thumb-icon {
+    transform: translateX(-50%)
+               translateY(-65%)
+               rotate(-10deg);
   }
+
+  .work-item-img {
+    background-color: #4267B2;
+  }
+}
+
+.fb-thumb-icon {
+  background-image: url("../images/icons/thumb.png");
+  width: 65px;
+  transition: 120ms;
 }
 
 .spotify-item {
@@ -290,14 +334,17 @@
   background-image: url("../images/icons/gradescope-white.png");
 }
 
-.bp-item {
-  .work-item-img:before {
-    background: $white-80;
+.bp-item:hover {
+  .bp-icon {
+    transform: translateX(-50%)
+               translateY(-50%)
+               rotate(180deg);
   }
 }
 
 .bp-icon {
   background-image: url("../images/icons/bp.png");
+  transition: 700ms;
 }
 
 .wdd-item {
@@ -383,5 +430,14 @@
     a { border-bottom: 0; }
     h2 { display: none; }
   }
+}
 
+@media (max-width: 450px) {
+  .work-grid {
+    flex-flow: row wrap;
+  }
+
+  .work-item {
+    flex: initial;
+  }
 }
