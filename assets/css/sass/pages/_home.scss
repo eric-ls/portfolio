@@ -157,7 +157,6 @@
   margin: 5px;
   margin-bottom: 25px;
   padding: 15px;
-  padding-bottom: 25px;
   position: relative;
   text-decoration: none;
   -webkit-backface-visibility: hidden;
@@ -198,6 +197,10 @@
     opacity: 1;
     @include transform(scale(1));
   }
+}
+
+.work-item.empty-item:after {
+  content: none;
 }
 
 .other-work {
