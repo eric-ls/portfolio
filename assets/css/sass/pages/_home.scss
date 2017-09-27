@@ -57,7 +57,7 @@
     animation-delay: 0.3s;
     color: $gray-dark-70;
     font-size: 19px;
-    line-height: 1.9;
+    line-height: 1.7;
   }
 
   .emphasis {
@@ -111,7 +111,7 @@
 }
 
 .section-title {
-  font-size: 26px;
+  font-size: 21px;
   font-weight: 800;
   position: relative;
 }
@@ -137,11 +137,6 @@
     animation: fadein 0.5s both;
     animation-delay: 0.4s;
   }
-}
-
-.work-section-title {
-  font-size: 18px;
-  font-weight: 600;
 }
 
 .work-grid {
