@@ -33,29 +33,59 @@ body {
   }
 }
 
-.inline-link {
-  color: inherit;
+$animation-time: 0.4s;
+
+.homepage-link {
+  color: $blue;
+  display: inline-block;
+  font-weight: 600;
   position: relative;
   text-decoration: none;
-  transition: 80ms;
 
-  &:after {
-    background: $blue-20;
-    bottom: -2px;
-    content: "";
-    height: 8px;
-    left: 0;
+  &:before {
+    background: $blue-10;
+    content: '';
+    display: block;
     position: absolute;
-    transition: 60ms;
-    width: 100%;
-    z-index: -1;
+    left: 5px;
+    bottom: -2px;
+    height: 15px;
+    width: 0;
+    -webkit-transition: width 0s ease, background $animation-time ease;
+            transition: width 0s ease, background $animation-time ease;
   }
 
-  &:hover {
-    color: $gray-dark;
+  &:after {
+    background: $blue-10;
+    content: '';
+    display: block;
+    position: absolute;
+    right: -5px;
+    bottom: -2px;
+    height: 15px;
+    width: 0;
+    -webkit-transition: width $animation-time ease;
+            transition: width $animation-time ease;
+  }
+
+  &:hover:before {
+    width: 100%;
+    -webkit-transition: width $animation-time ease;
+            transition: width $animation-time ease;
   }
 
   &:hover:after {
-    height: calc(100% + 3px);
+    background: transparent;
+    width: 100%;
+    -webkit-transition: all 0s ease;
+            transition: all 0s ease;
+  }
+}
+
+@media (max-width: 600px) {
+  .homepage-link {
+    &:before, &:after {
+      content: none;
+    }
   }
 }
