@@ -78,6 +78,10 @@
     font-weight: 200;
     margin: 10px auto;
   }
+
+  &.no-shadow img {
+    box-shadow: none;
+  }
 }
 
 .article-list {
