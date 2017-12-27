@@ -1,12 +1,12 @@
 .article-container {
   margin-bottom: 50px;
+  max-width: 700px;
 
   .content {
     @extend .serif;
     color: $gray-dark;
     line-height: 1.7;
     margin: 0 auto;
-    max-width: 700px;
   }
 }
 
