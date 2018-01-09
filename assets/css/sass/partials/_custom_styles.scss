@@ -1,31 +1,10 @@
 /* Link Colors */
-.f-link {
-  color: $blue;
-  &:before, &:after {
-    background: $blue-10;
-  }
-}
-
-.spotify-link {
-  color: $spotify-link;
-  &:before, &:after {
-    background: $spotify-link-bg;
-  }
-}
-
-.gradescope-link {
-  color: $gradescope-link;
-  &:before, &:after {
-    background: $gradescope-link-bg;
-  }
-}
-
-.wdd-link {
-  color: $wdd-link;
-  &:before, &:after {
-    background: $wdd-link-bg;
-  }
-}
+.f-link { @include linkColor($blue); }
+.spotify-link { @include linkColor($spotify-link, 0.15); }
+.gradescope-link { @include linkColor($gradescope-link, 0.15); }
+.red-link { @include linkColor($red-link); }
+.teal-link { @include linkColor(#1abc9c, 0.15); }
+.orange-link { @include linkColor(#e67e22, 0.15); }
 
 
 /* Special styles for projects */

@@ -41,3 +41,11 @@
     display: block;
   }
 }
+
+// Homepage link color mixin
+@mixin linkColor($color, $opacity: 0.1) {
+  color: $color;
+  &:before, &:after {
+    background: rgba($color, $opacity);
+  }
+}
