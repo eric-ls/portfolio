@@ -5,6 +5,7 @@
 .red-link { @include linkColor($red-link); }
 .teal-link { @include linkColor(#1abc9c, 0.15); }
 .orange-link { @include linkColor(#e67e22, 0.15); }
+.gray-link { @include linkColor($gray-dark); }
 
 
 /* Special styles for projects */

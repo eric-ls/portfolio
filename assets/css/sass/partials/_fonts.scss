@@ -18,10 +18,6 @@ body {
   color: white;
 }
 
-.serif {
-  font-family: "Palantino", "Lora", "Georgia", serif;
-}
-
 .link {
   border-bottom: 1px solid $gray-dark-40;
   color: inherit;
@@ -38,7 +34,7 @@ $animation-time: 0.4s;
 .homepage-link {
   color: $blue;
   display: inline-block;
-  font-weight: 600;
+  font-weight: 400;
   position: relative;
   text-decoration: none;
 

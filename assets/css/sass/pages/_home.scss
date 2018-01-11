@@ -62,7 +62,7 @@
 }
 
 .section-title {
-  font-size: 21px;
+  font-size: 20px;
   font-weight: 800;
   position: relative;
 }
@@ -93,7 +93,7 @@
   -webkit-transform-style: preserve-3d;
 
   h2 {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 600;
   margin-left: 5px;
   -webkit-backface-visibility: hidden;
@@ -101,7 +101,6 @@
   }
 
   h3 {
-    @extend .serif;
     color: $gray-dark-60;
     font-size: 15px;
     margin-left: 5px;
@@ -136,7 +135,7 @@
 .other-work {
   .work-item {
     h2 {
-      font-size: 17px;
+      font-size: 16px;
       font-weight: 500;
     }
 
