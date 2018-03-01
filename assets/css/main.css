@@ -112,7 +112,12 @@ body {
   color: #3A4750;
 }
 
-/* line 35, sass/partials/_fonts.scss */
+/* line 33, sass/partials/_fonts.scss */
+strong {
+  font-weight: 600;
+}
+
+/* line 39, sass/partials/_fonts.scss */
 .homepage-link {
   color: #2185D5;
   display: inline-block;
@@ -120,7 +125,7 @@ body {
   position: relative;
   text-decoration: none;
 }
-/* line 42, sass/partials/_fonts.scss */
+/* line 46, sass/partials/_fonts.scss */
 .homepage-link:before {
   background: rgba(33, 133, 213, 0.1);
   content: '';
@@ -133,7 +138,7 @@ body {
   -webkit-transition: width 0s ease, background 0.4s ease;
   transition: width 0s ease, background 0.4s ease;
 }
-/* line 55, sass/partials/_fonts.scss */
+/* line 59, sass/partials/_fonts.scss */
 .homepage-link:after {
   background: rgba(33, 133, 213, 0.1);
   content: '';
@@ -146,13 +151,13 @@ body {
   -webkit-transition: width 0.4s ease;
   transition: width 0.4s ease;
 }
-/* line 68, sass/partials/_fonts.scss */
+/* line 72, sass/partials/_fonts.scss */
 .homepage-link:hover:before {
   width: 100%;
   -webkit-transition: width 0.4s ease;
   transition: width 0.4s ease;
 }
-/* line 74, sass/partials/_fonts.scss */
+/* line 78, sass/partials/_fonts.scss */
 .homepage-link:hover:after {
   background: transparent;
   width: 100%;
@@ -161,7 +166,7 @@ body {
 }
 
 @media (max-width: 600px) {
-  /* line 84, sass/partials/_fonts.scss */
+  /* line 88, sass/partials/_fonts.scss */
   .homepage-link:before, .homepage-link:after {
     content: none;
   }
@@ -942,7 +947,7 @@ body {
   height: 100%;
   width: 100%;
   object-fit: cover;
-  max-height: 400px;
+  max-height: 500px;
 }
 /* line 74, sass/pages/_article.scss */
 .article-img label {
