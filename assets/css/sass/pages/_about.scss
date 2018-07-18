@@ -12,23 +12,6 @@
   margin-bottom: 25px;
 }
 
-.prof-img {
-  width: 200px;
-
-  img {
-    border-radius: 4px;
-    box-shadow: 0 0 15px $gray-dark-10;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-}
-
-.about-text-container {
-  width: calc(100% - 200px);
-  padding-left: 35px;
-}
-
 @media (max-width: 600px) {
   .home-about {
     display: block;
