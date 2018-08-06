@@ -822,11 +822,9 @@ body {
 .home-about {
   animation: fadein 0.5s both;
   animation-delay: 0.3s;
-  display: flex;
-  align-items: flex-start;
 }
 
-/* line 8, sass/pages/_about.scss */
+/* line 6, sass/pages/_about.scss */
 .about-text {
   color: rgba(58, 71, 80, 0.7);
   font-size: 18px;
@@ -835,19 +833,19 @@ body {
 }
 
 @media (max-width: 600px) {
-  /* line 16, sass/pages/_about.scss */
+  /* line 14, sass/pages/_about.scss */
   .home-about {
     display: block;
     padding-top: 10px;
   }
 
-  /* line 21, sass/pages/_about.scss */
+  /* line 19, sass/pages/_about.scss */
   .prof-img {
     margin-bottom: 20px;
     height: 200px;
   }
 
-  /* line 26, sass/pages/_about.scss */
+  /* line 24, sass/pages/_about.scss */
   .about-text-container {
     padding-left: 0;
     width: 100%;
