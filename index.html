@@ -1,101 +1,46 @@
 <!DOCTYPE html>
-<!-- Hey there! I hope you have a wonderful day :) -->
 <html>
   <head>
     <title>Eric Liang</title>
-    <meta name="application-name" content="Eric Liang's Portfolio">
+    <meta name="application-name" content="Eric Liang's Website">
 
     <link rel="stylesheet" href="assets/css/main.min.css">
     <link rel="shortcut icon" href="/favicon.ico?v=1">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Eric Liang is a fourth year design and eecs student at UC Berkeley." />
-
-    <meta property="og:title" content="Eric Liang's Portfolio">
-    <meta property="og:url" content="http://ericls.com">
-    <meta property="og:description" content="Eric Liang is a fourth year design and eecs student at UC Berkeley.">
-    <meta property="og:image" content="http://ericls.com/cover.jpg">
   </head>
   <body>
-    <div class="main-container home-container">
-      <section class="home-title">
-        <div class="home-header marginBot-sm">
-          <h1 class="title-name"><a href="/">Eric Liang</a></h1>
-          <div class="title-links">
-            <ul>
-              <li><a class="active" href="/">Home</a></li>
-              <li><a class="" href="about">About</a></li>
-            </ul>
-          </div>
-        </div>
-        <p class="title-description"><em>Hello!</em> I'm a product designer at <a class="homepage-link f-link" href="https://facebook.com">Facebook</a> and a recent graduate from UC Berkeley. Previously, I was a developer at <a class="homepage-link" target="_blank" href="http://calblueprint.org">Blueprint</a> and a product design intern at <a class="homepage-link spotify-link" href="http://spotify.com">Spotify</a>.</p>
-      </section>
-
-      <section class="work-section">
-        <h2 class="section-title marginBot-md">Experience</h2>
-        <div class="work-grid marginBot-sm">
-          <a href="/fb" class="work-item facebook-item ga-link" ga-name="Facebook Page">
-            <div class="work-item-img">
-              <div class="work-icon fb-thumb-icon"></div>
-            </div>
-            <h2>Facebook - Messenger Kids</h2>
-            <h3>Product Design Intern</h3>
-          </a>
-          <a href="/spotify" class="work-item spotify-item ga-link" ga-name="Spotify Page">
-            <div class="work-item-img">
-              <div class="work-icon spotify-icon"></div>
-              <img src="assets/images/home/office2.jpg">
-            </div>
-            <h2>Spotify for Artists</h2>
-            <h3>Product Design Intern</h3>
-          </a>
-        </div>
-
-        <div class="work-grid other-work">
-          <a href="/blueprint" class="work-item bp-item ga-link" ga-name="BP Redesign">
-            <div class="work-item-img">
-              <div class="work-icon bp-icon"></div>
-              <img src="assets/images/home/bpsite.jpg">
-            </div>
-            <h2>Blueprint</h2>
-            <h3>Technology for Nonprofits</h3>
-          </a>
-
-          <a href="/replate" class="work-item ga-link" ga-name="Replate">
-            <div class="work-item-img"><img src="assets/images/home/replate.png"></div>
-            <h2>Replate</h2>
-            <h3>Design & Fullstack</h3>
-          </a>
-
-          <a href="/wdd" class="work-item wdd-item ga-link" ga-name="WDD Page">
-            <div class="work-item-img"><img src="assets/images/home/wdd.jpg"></div>
-            <h2>Web Design Decal</h2>
-            <h3>Instructor</h3>
-          </a>
-        </div>
-
-        <div class="work-grid other-work marginBot-xl">
-          <a href="https://blog.gradescope.com/a-summer-at-gradescope-2d8891b27a26" class="work-item ga-link" target="_blank" ga-name="Gradescope">
-            <h2>Gradescope</h2>
-            <h3>Design & Engineering</h3>
-          </a>
-
-          <a href="http://cs160.ninja/f16/" class="work-item ga-link" ga-name="CS160">
-            <h2>Berkeley CS160</h2>
-            <h3>Undergrad Student Instructor</h3>
-          </a>
-          <div class="work-item empty-item"></div>
-        </div>
-      </section>
-
-      <section class="social-media-container marginTopBot-lg">
-      	<ul>
-          <li><a target="_blank" href="http://linkedin.com/in/ericls">Linkedin</a></li>
-          <li><a target="_blank" href="https://www.facebook.com/liang.eric24">Facebook</a></li>
-          <li><a target="_blank" href="http://twitter.com/_ericliang">Twitter</a></li>
-          <li><a target="_blank" href="http://instagram.com/eric.ls">Instagram</a></li>
-        </ul>
-      </section>
+    <div class="main-container">
+      <h1 class="title">Eric Liang</h1>
+      <p class="desc">Product Designer working on Newsfeed at <a href="http://facebook.design" style="color: #4267b2;">Facebook</a>.
+        Also designing for <a href="http://replate.org" style="color: #22B081;">Replate</a>.
+        Recent Berkeley grad.</p>
+      <ul class="work-container">
+        <a href="http://facebook.design" class="fb"><li>
+          Product Design, Facebook
+          <span class="year">Now</span>
+        </li></a>
+        <a href="http://replate.org" class="replate"><li>
+          Design & Engineering, Replate
+          <span class="year">Now</span>
+        </li></a>
+        <a href="http://calblueprint.org" class="bp"><li>
+          Engineering, Blueprint
+          <span class="year">2018</span>
+        </li></a>
+        <a href="http://artists.spotify.com" class="spotify"><li>
+          Product Design, Spotify
+          <span class="year">2016</span>
+        </li></a>
+        <a href="http://wdd.io" class="wdd"><li>
+          Instructor, Web Design Decal
+          <span class="year">2016</span>
+        </li></a>
+        <a href="http://wdd.io" class="wdd"><li>
+          Design, Gradescope
+          <span class="year">2015</span>
+        </li></a>
+      </ul>
     </div>
 
     <!-- Google Analytics -->
@@ -107,8 +52,5 @@
       ga('create', 'UA-55358044-2', 'auto');
       ga('send', 'pageview');
     </script>
-
-    <!-- Page Script -->
-    <script src="assets/js/script.js"></script>
   </body>
 </html>
