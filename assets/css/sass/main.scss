@@ -1,21 +1,18 @@
 /* Import partial files */
 
 @import 'partials/reset';
-@import 'partials/variables';
-@import 'partials/mixins';
-@import 'partials/fonts';
-@import 'partials/layout';
 
-/* Import page components */
-@import 'components/navbar';
-@import 'components/footer';
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+}
+
+@import 'partials/variables';
+@import 'partials/fonts';
 
 /* Import page files */
 @import 'pages/home';
-@import 'pages/about';
 @import 'pages/article';
-@import 'pages/stuff';
-@import 'pages/404';
-
-/* Import custom styles for pages */
-@import 'partials/custom_styles';
