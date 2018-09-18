@@ -99,47 +99,51 @@ body {
 /* line 13, sass/pages/_home.scss */
 .main-container .desc {
   color: rgba(58, 71, 80, 0.9);
-  margin-bottom: 36px;
+  margin-bottom: 24px;
+}
+/* line 18, sass/pages/_home.scss */
+.main-container hr {
+  opacity: 0.4;
 }
 
-/* line 20, sass/pages/_home.scss */
+/* line 24, sass/pages/_home.scss */
 .work-container a {
   color: rgba(58, 71, 80, 0.7);
   display: block;
   padding: 8px 0;
   text-decoration: none;
 }
-/* line 26, sass/pages/_home.scss */
+/* line 30, sass/pages/_home.scss */
 .work-container a:hover {
   text-decoration: underline;
 }
-/* line 31, sass/pages/_home.scss */
+/* line 35, sass/pages/_home.scss */
 .work-container .work-title {
   font-weight: 500;
 }
-/* line 35, sass/pages/_home.scss */
+/* line 39, sass/pages/_home.scss */
 .work-container .year {
   float: right;
   font-family: "Roboto Mono";
   font-size: 18px;
 }
-/* line 41, sass/pages/_home.scss */
+/* line 45, sass/pages/_home.scss */
 .work-container .fb:hover {
   color: #4267b2;
 }
-/* line 42, sass/pages/_home.scss */
+/* line 46, sass/pages/_home.scss */
 .work-container .replate:hover {
   color: #22B081;
 }
-/* line 43, sass/pages/_home.scss */
+/* line 47, sass/pages/_home.scss */
 .work-container .bp:hover {
   color: #187BE5;
 }
-/* line 44, sass/pages/_home.scss */
+/* line 48, sass/pages/_home.scss */
 .work-container .spotify:hover {
   color: #1DB954;
 }
-/* line 45, sass/pages/_home.scss */
+/* line 49, sass/pages/_home.scss */
 .work-container .wdd:hover {
   color: #de6868;
 }
