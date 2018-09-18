@@ -1,5 +1,6 @@
 /* Import partial files */
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
 /* line 1, sass/partials/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -76,7 +77,7 @@ body {
   padding: 0;
 }
 
-/* line 4, sass/partials/_fonts.scss */
+/* line 5, sass/partials/_fonts.scss */
 body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
