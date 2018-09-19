@@ -6,3 +6,16 @@ body {
   font-family: 'Roboto', sans-serif;
   line-height: 1.5;
 }
+
+strong {
+  font-weight: 600;
+}
+
+.link {
+  color: $blue;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

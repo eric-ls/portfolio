@@ -1,55 +1,11 @@
-.article-container {
-  margin-bottom: 50px;
-  max-width: 700px;
-
-  .content {
-    color: $black;
-    line-height: 1.7;
-    margin: 0 auto;
-  }
+.nav-link {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 16px;
 }
 
-.article-title {
-  margin-top: 40px;
-
-  h1 {
-    animation: fadein 0.5s both;
-    animation-delay: 0.1s;
-    font-size: 28px;
-    font-weight: 800;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
-
-  h2 {
-    animation: fadein 0.5s both;
-    animation-delay: 0.15s;
-    color: $black-60;
-    font-size: 20px;
-  }
-
-  p {
-    animation: fadein 0.5s both;
-    animation-delay: 0.2s;
-    color: $black-70;
-    font-size: 19px;
-    line-height: 1.9;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .emphasis {
-    color: $black;
-  }
-
-  .links-container {
-    font-size: 18px;
-    font-weight: 500;
-
-    .link {
-      margin: 0 10px;
-    }
-  }
+.article-container {
+  .title { margin-bottom: 12px; }
 }
 
 .article-body {
@@ -57,14 +13,21 @@
   animation-delay: 0.3s;
 }
 
+.article-content {
+  color: black;
+  font-size: 16px;
+  margin-top: 36px;
+
+  p {
+    margin-bottom: 16px;
+  }
+}
+
 .article-img {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto;
   text-align: right;
 
   img {
-    box-shadow: 0 5px 20px $black-20;
-    border-radius: 3px;
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -77,14 +40,11 @@
     font-weight: 200;
     margin: 10px auto;
   }
-
-  &.no-shadow img {
-    box-shadow: none;
-  }
 }
 
 .article-list {
   list-style: square;
+  margin-bottom: 16px;
   padding-left: 30px;
 }
 

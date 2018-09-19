@@ -83,6 +83,21 @@ body {
   line-height: 1.5;
 }
 
+/* line 10, sass/partials/_fonts.scss */
+strong {
+  font-weight: 600;
+}
+
+/* line 14, sass/partials/_fonts.scss */
+.link {
+  color: #2185D5;
+  text-decoration: none;
+}
+/* line 18, sass/partials/_fonts.scss */
+.link:hover {
+  text-decoration: underline;
+}
+
 /* Import page files */
 /* line 1, sass/pages/_home.scss */
 .main-container {
@@ -150,108 +165,69 @@ body {
 }
 
 /* line 1, sass/pages/_article.scss */
-.article-container {
-  margin-bottom: 50px;
-  max-width: 700px;
-}
-/* line 5, sass/pages/_article.scss */
-.article-container .content {
-  color: #3A4750;
-  line-height: 1.7;
-  margin: 0 auto;
+.nav-link {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 16px;
 }
 
-/* line 12, sass/pages/_article.scss */
-.article-title {
-  margin-top: 40px;
-}
-/* line 15, sass/pages/_article.scss */
-.article-title h1 {
-  animation: fadein 0.5s both;
-  animation-delay: 0.1s;
-  font-size: 28px;
-  font-weight: 800;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-/* line 24, sass/pages/_article.scss */
-.article-title h2 {
-  animation: fadein 0.5s both;
-  animation-delay: 0.15s;
-  color: rgba(58, 71, 80, 0.6);
-  font-size: 20px;
-}
-/* line 31, sass/pages/_article.scss */
-.article-title p {
-  animation: fadein 0.5s both;
-  animation-delay: 0.2s;
-  color: rgba(58, 71, 80, 0.7);
-  font-size: 19px;
-  line-height: 1.9;
-  margin-left: auto;
-  margin-right: auto;
-}
-/* line 41, sass/pages/_article.scss */
-.article-title .emphasis {
-  color: #3A4750;
-}
-/* line 45, sass/pages/_article.scss */
-.article-title .links-container {
-  font-size: 18px;
-  font-weight: 500;
-}
-/* line 49, sass/pages/_article.scss */
-.article-title .links-container .link {
-  margin: 0 10px;
+/* line 8, sass/pages/_article.scss */
+.article-container .title {
+  margin-bottom: 12px;
 }
 
-/* line 55, sass/pages/_article.scss */
+/* line 11, sass/pages/_article.scss */
 .article-body {
   animation: fadein 0.5s both;
   animation-delay: 0.3s;
 }
 
-/* line 60, sass/pages/_article.scss */
+/* line 16, sass/pages/_article.scss */
+.article-content {
+  color: black;
+  font-size: 16px;
+  margin-top: 36px;
+}
+/* line 21, sass/pages/_article.scss */
+.article-content p {
+  margin-bottom: 16px;
+}
+
+/* line 26, sass/pages/_article.scss */
 .article-img {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px auto;
   text-align: right;
 }
-/* line 65, sass/pages/_article.scss */
+/* line 30, sass/pages/_article.scss */
 .article-img img {
-  box-shadow: 0 5px 20px rgba(58, 71, 80, 0.2);
-  border-radius: 3px;
   height: 100%;
   width: 100%;
   object-fit: cover;
   max-height: 500px;
 }
-/* line 74, sass/pages/_article.scss */
+/* line 37, sass/pages/_article.scss */
 .article-img label {
   color: rgba(58, 71, 80, 0.8);
   font-size: 13px;
   font-weight: 200;
   margin: 10px auto;
 }
-/* line 81, sass/pages/_article.scss */
-.article-img.no-shadow img {
-  box-shadow: none;
-}
 
-/* line 86, sass/pages/_article.scss */
+/* line 45, sass/pages/_article.scss */
 .article-list {
   list-style: square;
+  margin-bottom: 16px;
   padding-left: 30px;
 }
 
-/* line 91, sass/pages/_article.scss */
+/* line 51, sass/pages/_article.scss */
 .article-section-title {
   color: #3A4750;
   font-size: 22px;
   font-weight: 700;
 }
 
-/* line 97, sass/pages/_article.scss */
+/* line 57, sass/pages/_article.scss */
 .code-block {
   background: rgba(143, 172, 192, 0.1);
   color: rgba(58, 71, 80, 0.8);
