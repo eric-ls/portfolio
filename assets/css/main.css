@@ -164,6 +164,16 @@ strong {
   color: #de6868;
 }
 
+/* line 52, sass/pages/_home.scss */
+.social-container {
+  margin: 20px auto;
+  font-size: 18px;
+}
+/* line 56, sass/pages/_home.scss */
+.social-container .link {
+  margin-right: 12px;
+}
+
 /* line 1, sass/pages/_article.scss */
 .nav-link {
   display: block;
@@ -223,11 +233,12 @@ strong {
 /* line 51, sass/pages/_article.scss */
 .article-section-title {
   color: #3A4750;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 700;
+  margin-bottom: 8px;
 }
 
-/* line 57, sass/pages/_article.scss */
+/* line 58, sass/pages/_article.scss */
 .code-block {
   background: rgba(143, 172, 192, 0.1);
   color: rgba(58, 71, 80, 0.8);
