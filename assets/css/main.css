@@ -232,13 +232,12 @@ strong {
 
 /* line 51, sass/pages/_article.scss */
 .article-section-title {
-  color: #3A4750;
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 8px;
 }
 
-/* line 58, sass/pages/_article.scss */
+/* line 57, sass/pages/_article.scss */
 .code-block {
   background: rgba(143, 172, 192, 0.1);
   color: rgba(58, 71, 80, 0.8);
