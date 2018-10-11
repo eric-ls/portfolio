@@ -5,7 +5,7 @@
   padding: 40px 10px;
 
   .title {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 800;
     margin-bottom: 28px;
   }
@@ -21,6 +21,8 @@
 }
 
 .work-container {
+  margin-top: 36px;
+
   a {
     color: $black-70;
     display: block;
@@ -50,7 +52,7 @@
 }
 
 .social-container {
-  margin: 20px auto;
+  margin: 12px auto;
   font-size: 18px;
 
   .link { margin-right: 12px; }
