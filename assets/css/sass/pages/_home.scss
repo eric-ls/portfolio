@@ -28,27 +28,46 @@
     display: block;
     padding: 8px 0;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 
-    &:hover {
+    &:hover .company {
       text-decoration: underline;
     }
   }
-
-  .work-title {
+  
+  .company {
+    color: $black-90;
     font-weight: 500;
   }
 
-  .year {
-    float: right;
-    font-family: "Roboto Mono";
-    font-size: 18px;
+  .slash {
+    font-weight: 300;
+    color: $black-60;
+    margin: 0 5px;
   }
 
-  .fb:hover { color: #4267b2; }
+  .role {
+    color: $black-60;
+  }
+
+  .year {
+    margin-left: auto;
+    font-family: "Roboto Mono";
+    font-size: 16px;
+  }
+
+  .fb:hover      { color: #4267b2; }
   .replate:hover { color: #22B081; }
-  .bp:hover { color: #187BE5; }
+  .bp:hover      { color: #187BE5; }
   .spotify:hover { color: #1DB954; }
-  .wdd:hover { color: #de6868; }
+  .wdd:hover     { color: #de6868; }
+
+  .fb:hover      span { color: #4267b2; }
+  .replate:hover span { color: #22B081; }
+  .bp:hover      span { color: #187BE5; }
+  .spotify:hover span { color: #1DB954; }
+  .wdd:hover     span { color: #de6868; }
 }
 
 .social-container {

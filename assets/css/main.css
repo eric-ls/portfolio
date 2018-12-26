@@ -1,5 +1,5 @@
 /* Import partial files */
-@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
 /* line 1, sass/partials/_reset.scss */
 html, body, div, span, applet, object, iframe,
@@ -132,48 +132,81 @@ strong {
   display: block;
   padding: 8px 0;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
-/* line 32, sass/pages/_home.scss */
-.work-container a:hover {
+/* line 34, sass/pages/_home.scss */
+.work-container a:hover .company {
   text-decoration: underline;
 }
-/* line 37, sass/pages/_home.scss */
-.work-container .work-title {
+/* line 39, sass/pages/_home.scss */
+.work-container .company {
+  color: rgba(58, 71, 80, 0.9);
   font-weight: 500;
 }
-/* line 41, sass/pages/_home.scss */
-.work-container .year {
-  float: right;
-  font-family: "Roboto Mono";
-  font-size: 18px;
+/* line 44, sass/pages/_home.scss */
+.work-container .slash {
+  font-weight: 300;
+  color: rgba(58, 71, 80, 0.6);
+  margin: 0 5px;
 }
-/* line 47, sass/pages/_home.scss */
+/* line 50, sass/pages/_home.scss */
+.work-container .role {
+  color: rgba(58, 71, 80, 0.6);
+}
+/* line 54, sass/pages/_home.scss */
+.work-container .year {
+  margin-left: auto;
+  font-family: "Roboto Mono";
+  font-size: 16px;
+}
+/* line 60, sass/pages/_home.scss */
 .work-container .fb:hover {
   color: #4267b2;
 }
-/* line 48, sass/pages/_home.scss */
+/* line 61, sass/pages/_home.scss */
 .work-container .replate:hover {
   color: #22B081;
 }
-/* line 49, sass/pages/_home.scss */
+/* line 62, sass/pages/_home.scss */
 .work-container .bp:hover {
   color: #187BE5;
 }
-/* line 50, sass/pages/_home.scss */
+/* line 63, sass/pages/_home.scss */
 .work-container .spotify:hover {
   color: #1DB954;
 }
-/* line 51, sass/pages/_home.scss */
+/* line 64, sass/pages/_home.scss */
 .work-container .wdd:hover {
   color: #de6868;
 }
+/* line 66, sass/pages/_home.scss */
+.work-container .fb:hover span {
+  color: #4267b2;
+}
+/* line 67, sass/pages/_home.scss */
+.work-container .replate:hover span {
+  color: #22B081;
+}
+/* line 68, sass/pages/_home.scss */
+.work-container .bp:hover span {
+  color: #187BE5;
+}
+/* line 69, sass/pages/_home.scss */
+.work-container .spotify:hover span {
+  color: #1DB954;
+}
+/* line 70, sass/pages/_home.scss */
+.work-container .wdd:hover span {
+  color: #de6868;
+}
 
-/* line 54, sass/pages/_home.scss */
+/* line 73, sass/pages/_home.scss */
 .social-container {
   margin: 12px auto;
   font-size: 18px;
 }
-/* line 58, sass/pages/_home.scss */
+/* line 77, sass/pages/_home.scss */
 .social-container .link {
   margin-right: 12px;
 }
