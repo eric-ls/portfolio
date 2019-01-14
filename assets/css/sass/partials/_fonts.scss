@@ -19,3 +19,7 @@ strong {
     text-decoration: underline;
   }
 }
+
+.dark-mode {
+  .link { color: $blue-light; }
+}

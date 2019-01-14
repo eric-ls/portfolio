@@ -98,6 +98,11 @@ strong {
   text-decoration: underline;
 }
 
+/* line 24, sass/partials/_fonts.scss */
+.dark-mode .link {
+  color: #4daaf5;
+}
+
 /* Import page files */
 /* line 1, sass/pages/_home.scss */
 .main-container {
@@ -107,26 +112,30 @@ strong {
   padding: 40px 10px;
 }
 /* line 7, sass/pages/_home.scss */
+.main-container #fb {
+  color: #4267b2;
+}
+/* line 9, sass/pages/_home.scss */
 .main-container .title {
   font-size: 28px;
   font-weight: 800;
   margin-bottom: 28px;
 }
-/* line 13, sass/pages/_home.scss */
+/* line 15, sass/pages/_home.scss */
 .main-container .desc {
   color: rgba(58, 71, 80, 0.9);
   margin-bottom: 24px;
 }
-/* line 18, sass/pages/_home.scss */
+/* line 20, sass/pages/_home.scss */
 .main-container hr {
   opacity: 0.4;
 }
 
-/* line 23, sass/pages/_home.scss */
+/* line 25, sass/pages/_home.scss */
 .work-container {
   margin-top: 36px;
 }
-/* line 26, sass/pages/_home.scss */
+/* line 28, sass/pages/_home.scss */
 .work-container a {
   color: rgba(58, 71, 80, 0.7);
   display: block;
@@ -135,80 +144,121 @@ strong {
   display: flex;
   align-items: center;
 }
-/* line 34, sass/pages/_home.scss */
+/* line 36, sass/pages/_home.scss */
 .work-container a:hover .company {
   text-decoration: underline;
 }
-/* line 39, sass/pages/_home.scss */
+/* line 41, sass/pages/_home.scss */
 .work-container .company {
   color: rgba(58, 71, 80, 0.9);
   font-weight: 500;
 }
-/* line 44, sass/pages/_home.scss */
+/* line 46, sass/pages/_home.scss */
 .work-container .slash {
   font-weight: 300;
   color: rgba(58, 71, 80, 0.6);
   margin: 0 5px;
 }
-/* line 50, sass/pages/_home.scss */
+/* line 52, sass/pages/_home.scss */
 .work-container .role {
   color: rgba(58, 71, 80, 0.6);
 }
-/* line 54, sass/pages/_home.scss */
+/* line 56, sass/pages/_home.scss */
 .work-container .year {
   margin-left: auto;
   font-family: "Roboto Mono";
   font-size: 16px;
 }
-/* line 60, sass/pages/_home.scss */
+/* line 62, sass/pages/_home.scss */
 .work-container .fb:hover {
   color: #4267b2;
 }
-/* line 61, sass/pages/_home.scss */
+/* line 63, sass/pages/_home.scss */
 .work-container .replate:hover {
   color: #22B081;
 }
-/* line 62, sass/pages/_home.scss */
+/* line 64, sass/pages/_home.scss */
 .work-container .bp:hover {
   color: #187BE5;
 }
-/* line 63, sass/pages/_home.scss */
+/* line 65, sass/pages/_home.scss */
 .work-container .spotify:hover {
   color: #1DB954;
 }
-/* line 64, sass/pages/_home.scss */
+/* line 66, sass/pages/_home.scss */
 .work-container .wdd:hover {
   color: #de6868;
 }
-/* line 66, sass/pages/_home.scss */
+/* line 68, sass/pages/_home.scss */
 .work-container .fb:hover span {
   color: #4267b2;
 }
-/* line 67, sass/pages/_home.scss */
+/* line 69, sass/pages/_home.scss */
 .work-container .replate:hover span {
   color: #22B081;
 }
-/* line 68, sass/pages/_home.scss */
+/* line 70, sass/pages/_home.scss */
 .work-container .bp:hover span {
   color: #187BE5;
 }
-/* line 69, sass/pages/_home.scss */
+/* line 71, sass/pages/_home.scss */
 .work-container .spotify:hover span {
   color: #1DB954;
 }
-/* line 70, sass/pages/_home.scss */
+/* line 72, sass/pages/_home.scss */
 .work-container .wdd:hover span {
   color: #de6868;
 }
 
-/* line 73, sass/pages/_home.scss */
+/* line 75, sass/pages/_home.scss */
 .social-container {
   margin: 12px auto;
   font-size: 18px;
 }
-/* line 77, sass/pages/_home.scss */
+/* line 79, sass/pages/_home.scss */
 .social-container .link {
   margin-right: 12px;
+}
+
+/* line 82, sass/pages/_home.scss */
+.dark-mode {
+  background: #062a44;
+}
+/* line 86, sass/pages/_home.scss */
+.dark-mode .main-container .title {
+  color: #ecf0f1;
+}
+/* line 87, sass/pages/_home.scss */
+.dark-mode .main-container .desc {
+  color: rgba(236, 240, 241, 0.8);
+}
+/* line 88, sass/pages/_home.scss */
+.dark-mode .main-container #fb {
+  color: #4daaf5;
+}
+/* line 92, sass/pages/_home.scss */
+.dark-mode .work-container a {
+  color: #ecf0f1;
+}
+/* line 93, sass/pages/_home.scss */
+.dark-mode .work-container .company {
+  color: rgba(236, 240, 241, 0.8);
+}
+/* line 94, sass/pages/_home.scss */
+.dark-mode .work-container .slash {
+  color: rgba(236, 240, 241, 0.6);
+}
+/* line 95, sass/pages/_home.scss */
+.dark-mode .work-container .role {
+  color: rgba(236, 240, 241, 0.6);
+}
+/* line 98, sass/pages/_home.scss */
+.dark-mode .fb:hover {
+  color: #4daaf5;
+}
+/* line 99, sass/pages/_home.scss */
+.dark-mode .fb:hover span {
+  color: #4daaf5;
 }
 
 /* line 1, sass/pages/_article.scss */
@@ -282,4 +332,13 @@ strong {
   font-family: 'Roboto Mono', monospace;
   font-size: 14px;
   padding: 10px;
+}
+
+/* line 67, sass/pages/_article.scss */
+.dark-mode .article-content {
+  color: #ecf0f1;
+}
+/* line 69, sass/pages/_article.scss */
+.dark-mode .article-img label {
+  color: rgba(236, 240, 241, 0.8);
 }

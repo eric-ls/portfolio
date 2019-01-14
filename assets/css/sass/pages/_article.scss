@@ -62,3 +62,10 @@
   font-size: 14px;
   padding: 10px;
 }
+
+.dark-mode {
+  .article-content { color: $white; }
+  .article-img {
+    label { color: $white-80; }
+  }
+}
