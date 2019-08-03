@@ -78,24 +78,3 @@
 
   .link { margin-right: 12px; }
 }
-
-.dark-mode {
-  background: #062a44;  
-
-  .main-container {
-    .title { color: $white; }
-    .desc { color: $white-80; }
-    #fb { color: $blue-light; }
-  }
-
-  .work-container {
-    a { color: $white; }
-    .company { color: $white-80; }
-    .slash { color: $white-60; }
-    .role { color: $white-60; }
-  }
-
-  .fb:hover      { color: $blue-light; }
-  .fb:hover span { color: $blue-light; }
-
-}
