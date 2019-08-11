@@ -133,84 +133,47 @@ strong {
 /* line 28, sass/pages/_home.scss */
 .work-container a {
   color: rgba(58, 71, 80, 0.7);
+  border-radius: 8px;
   display: block;
-  padding: 8px 0;
   text-decoration: none;
   display: flex;
   align-items: center;
+  margin: 0 -15px;
+  padding: 12px 15px;
+  transition: 100ms;
 }
-/* line 36, sass/pages/_home.scss */
-.work-container a:hover .company {
-  text-decoration: underline;
+/* line 39, sass/pages/_home.scss */
+.work-container a:hover {
+  background: rgba(243, 243, 243, 0.8);
 }
-/* line 41, sass/pages/_home.scss */
+/* line 44, sass/pages/_home.scss */
 .work-container .company {
   color: rgba(58, 71, 80, 0.9);
   font-weight: 500;
 }
-/* line 46, sass/pages/_home.scss */
+/* line 49, sass/pages/_home.scss */
 .work-container .slash {
   font-weight: 300;
   color: rgba(58, 71, 80, 0.6);
   margin: 0 5px;
 }
-/* line 52, sass/pages/_home.scss */
+/* line 55, sass/pages/_home.scss */
 .work-container .role {
   color: rgba(58, 71, 80, 0.6);
 }
-/* line 56, sass/pages/_home.scss */
+/* line 59, sass/pages/_home.scss */
 .work-container .year {
   margin-left: auto;
   font-family: "Roboto Mono";
   font-size: 16px;
 }
-/* line 62, sass/pages/_home.scss */
-.work-container .fb:hover {
-  color: #4267b2;
-}
-/* line 63, sass/pages/_home.scss */
-.work-container .replate:hover {
-  color: #22B081;
-}
-/* line 64, sass/pages/_home.scss */
-.work-container .bp:hover {
-  color: #187BE5;
-}
-/* line 65, sass/pages/_home.scss */
-.work-container .spotify:hover {
-  color: #1DB954;
-}
-/* line 66, sass/pages/_home.scss */
-.work-container .wdd:hover {
-  color: #de6868;
-}
-/* line 68, sass/pages/_home.scss */
-.work-container .fb:hover span {
-  color: #4267b2;
-}
-/* line 69, sass/pages/_home.scss */
-.work-container .replate:hover span {
-  color: #22B081;
-}
-/* line 70, sass/pages/_home.scss */
-.work-container .bp:hover span {
-  color: #187BE5;
-}
-/* line 71, sass/pages/_home.scss */
-.work-container .spotify:hover span {
-  color: #1DB954;
-}
-/* line 72, sass/pages/_home.scss */
-.work-container .wdd:hover span {
-  color: #de6868;
-}
 
-/* line 75, sass/pages/_home.scss */
+/* line 66, sass/pages/_home.scss */
 .social-container {
   margin: 12px auto;
   font-size: 18px;
 }
-/* line 79, sass/pages/_home.scss */
+/* line 70, sass/pages/_home.scss */
 .social-container .link {
   margin-right: 12px;
 }
