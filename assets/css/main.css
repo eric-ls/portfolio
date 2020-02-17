@@ -104,33 +104,34 @@ strong {
   font-size: 20px;
   margin: 0 auto;
   max-width: 500px;
+  margin-top: 100px;
   padding: 40px 10px;
 }
-/* line 7, sass/pages/_home.scss */
+/* line 8, sass/pages/_home.scss */
 .main-container #fb {
   color: #4267b2;
 }
-/* line 9, sass/pages/_home.scss */
+/* line 10, sass/pages/_home.scss */
 .main-container .title {
   font-size: 28px;
   font-weight: 800;
   margin-bottom: 28px;
 }
-/* line 15, sass/pages/_home.scss */
+/* line 16, sass/pages/_home.scss */
 .main-container .desc {
   color: rgba(58, 71, 80, 0.9);
   margin-bottom: 24px;
 }
-/* line 20, sass/pages/_home.scss */
+/* line 21, sass/pages/_home.scss */
 .main-container hr {
   opacity: 0.4;
 }
 
-/* line 25, sass/pages/_home.scss */
+/* line 26, sass/pages/_home.scss */
 .work-container {
   margin-top: 36px;
 }
-/* line 28, sass/pages/_home.scss */
+/* line 29, sass/pages/_home.scss */
 .work-container a {
   color: rgba(58, 71, 80, 0.7);
   border-radius: 8px;
@@ -142,38 +143,38 @@ strong {
   padding: 12px 15px;
   transition: 100ms;
 }
-/* line 39, sass/pages/_home.scss */
+/* line 40, sass/pages/_home.scss */
 .work-container a:hover {
   background: rgba(243, 243, 243, 0.8);
 }
-/* line 44, sass/pages/_home.scss */
+/* line 45, sass/pages/_home.scss */
 .work-container .company {
   color: rgba(58, 71, 80, 0.9);
   font-weight: 500;
 }
-/* line 49, sass/pages/_home.scss */
+/* line 50, sass/pages/_home.scss */
 .work-container .slash {
   font-weight: 300;
   color: rgba(58, 71, 80, 0.6);
   margin: 0 5px;
 }
-/* line 55, sass/pages/_home.scss */
+/* line 56, sass/pages/_home.scss */
 .work-container .role {
   color: rgba(58, 71, 80, 0.6);
 }
-/* line 59, sass/pages/_home.scss */
+/* line 60, sass/pages/_home.scss */
 .work-container .year {
   margin-left: auto;
   font-family: "Roboto Mono";
   font-size: 16px;
 }
 
-/* line 66, sass/pages/_home.scss */
+/* line 67, sass/pages/_home.scss */
 .social-container {
   margin: 12px auto;
   font-size: 18px;
 }
-/* line 70, sass/pages/_home.scss */
+/* line 71, sass/pages/_home.scss */
 .social-container .link {
   margin-right: 12px;
 }
