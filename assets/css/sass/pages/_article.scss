@@ -52,6 +52,26 @@
   }
 }
 
+.section-title {
+  font-size: 17px;
+}
+
+.section-with-img {
+  display: flex;
+  flex-flow: row;
+  margin-top: 84px;
+
+  .article-img {
+    flex: 2;
+    margin-left: 30px;
+    // width: 600px;
+  }
+
+  .text {
+    flex: 1.5;
+  }
+}
+
 .article-body {
   animation: fadein 0.5s both;
   animation-delay: 0.3s;

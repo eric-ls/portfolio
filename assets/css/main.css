@@ -908,18 +908,39 @@ body {
 }
 
 /* line 55, sass/pages/_article.scss */
+.section-title {
+  font-size: 17px;
+}
+
+/* line 59, sass/pages/_article.scss */
+.section-with-img {
+  display: flex;
+  flex-flow: row;
+  margin-top: 84px;
+}
+/* line 64, sass/pages/_article.scss */
+.section-with-img .article-img {
+  flex: 2;
+  margin-left: 30px;
+}
+/* line 70, sass/pages/_article.scss */
+.section-with-img .text {
+  flex: 1.5;
+}
+
+/* line 75, sass/pages/_article.scss */
 .article-body {
   animation: fadein 0.5s both;
   animation-delay: 0.3s;
 }
 
-/* line 60, sass/pages/_article.scss */
+/* line 80, sass/pages/_article.scss */
 .article-img {
   margin-left: auto;
   margin-right: auto;
   text-align: right;
 }
-/* line 65, sass/pages/_article.scss */
+/* line 85, sass/pages/_article.scss */
 .article-img img {
   box-shadow: 0 5px 20px rgba(58, 71, 80, 0.2);
   border-radius: 3px;
@@ -928,32 +949,32 @@ body {
   object-fit: cover;
   max-height: 500px;
 }
-/* line 74, sass/pages/_article.scss */
+/* line 94, sass/pages/_article.scss */
 .article-img label {
   color: rgba(58, 71, 80, 0.8);
   font-size: 13px;
   font-weight: 200;
   margin: 10px auto;
 }
-/* line 81, sass/pages/_article.scss */
+/* line 101, sass/pages/_article.scss */
 .article-img.no-shadow img {
   box-shadow: none;
 }
 
-/* line 86, sass/pages/_article.scss */
+/* line 106, sass/pages/_article.scss */
 .article-list {
   list-style: square;
   padding-left: 30px;
 }
 
-/* line 91, sass/pages/_article.scss */
+/* line 111, sass/pages/_article.scss */
 .article-section-title {
   color: #3A4750;
   font-size: 22px;
   font-weight: 700;
 }
 
-/* line 97, sass/pages/_article.scss */
+/* line 117, sass/pages/_article.scss */
 .code-block {
   background: rgba(143, 172, 192, 0.1);
   color: rgba(58, 71, 80, 0.8);
@@ -1233,22 +1254,50 @@ p {
 }
 
 /* line 18, sass/partials/_custom_styles.scss */
-.facebook-item:hover .fb-thumb-icon {
-  transform: translateX(-50%) translateY(-65%) rotate(-10deg);
+.facebook-item:hover .fb-icon {
+  opacity: 0;
 }
-/* line 24, sass/partials/_custom_styles.scss */
+/* line 22, sass/partials/_custom_styles.scss */
+.facebook-item:hover .fb-icon-white {
+  opacity: 1;
+}
+/* line 26, sass/partials/_custom_styles.scss */
 .facebook-item:hover .work-item-img {
-  background-color: #4267B2;
+  background-color: #1877F2;
 }
 
-/* line 29, sass/partials/_custom_styles.scss */
-.fb-thumb-icon {
-  background-image: url("../images/icons/thumb.png");
+/* line 31, sass/partials/_custom_styles.scss */
+.fb-icon {
+  background-image: url("../images/icons/f.png");
   width: 65px;
+  height: 65px;
+  transition: 120ms;
+  opacity: 1;
+}
+
+/* line 39, sass/partials/_custom_styles.scss */
+.fb-icon-white {
+  background-image: url("../images/icons/f_white.png");
+  width: 65px;
+  height: 65px;
+  transition: 120ms;
+  opacity: 0;
+}
+
+/* line 47, sass/partials/_custom_styles.scss */
+.replate-icon {
+  background-image: url("../images/icons/replate.png");
+  width: 65px;
+  height: 65px;
   transition: 120ms;
 }
 
-/* line 36, sass/partials/_custom_styles.scss */
+/* line 54, sass/partials/_custom_styles.scss */
+.replate-item .work-item-img {
+  background: rgba(34, 176, 129, 0.07);
+}
+
+/* line 59, sass/partials/_custom_styles.scss */
 .spotify-item .work-item-img:before {
   background: -moz-linear-gradient(-45deg, #2B44A6 0%, #2FE48F 100%);
   background: -webkit-linear-gradient(-45deg, #2B44A6 0%, #2FE48F 100%);
@@ -1256,47 +1305,47 @@ p {
   opacity: 0.7;
 }
 
-/* line 44, sass/partials/_custom_styles.scss */
+/* line 67, sass/partials/_custom_styles.scss */
 .spotify-icon {
   background-image: url("../images/icons/spotify-white.png");
 }
 
-/* line 49, sass/partials/_custom_styles.scss */
+/* line 72, sass/partials/_custom_styles.scss */
 .gs-item .work-item-img {
   background: url("../images/home/gs-bg.png");
 }
 
-/* line 54, sass/partials/_custom_styles.scss */
+/* line 77, sass/partials/_custom_styles.scss */
 .gs-icon {
   background-image: url("../images/icons/gradescope-white.png");
 }
 
-/* line 59, sass/partials/_custom_styles.scss */
+/* line 82, sass/partials/_custom_styles.scss */
 .bp-item:hover .bp-icon {
   transform: translateX(-50%) translateY(-50%) rotate(180deg);
 }
 
-/* line 66, sass/partials/_custom_styles.scss */
+/* line 89, sass/partials/_custom_styles.scss */
 .bp-icon {
   background-image: url("../images/icons/bp.png");
   transition: 700ms;
 }
 
-/* line 72, sass/partials/_custom_styles.scss */
+/* line 95, sass/partials/_custom_styles.scss */
 .wdd-item .work-item-img:before {
   background: -moz-linear-gradient(-45deg, #2B44A6 0%, #2FE48F 100%);
   background: -webkit-linear-gradient(-45deg, #2B44A6 0%, #2FE48F 100%);
   background: linear-gradient(135deg, rgba(222, 104, 104, 0.1), rgba(222, 104, 104, 0.8));
 }
 
-/* line 79, sass/partials/_custom_styles.scss */
+/* line 102, sass/partials/_custom_styles.scss */
 .fb-white-photo {
   position: relative;
   z-index: 2;
   transition: 150ms;
 }
 
-/* line 85, sass/partials/_custom_styles.scss */
+/* line 108, sass/partials/_custom_styles.scss */
 .fb-blue-photo {
   position: absolute;
   top: 0;
