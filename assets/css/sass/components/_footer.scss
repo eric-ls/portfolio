@@ -1,14 +1,13 @@
 .social-media-container {
-  animation: fadein 0.5s both;
-  animation-delay: 0.4s;
   border-top: 1px solid $gray-dark-20;
   padding: 20px 0;
 
   li {
     display: inline-block;
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: 600;
     margin-right: 12px;
-    opacity: 0.6;
+    opacity: 0.7;
     transition: 100ms;
   }
 

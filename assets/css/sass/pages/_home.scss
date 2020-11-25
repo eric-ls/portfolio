@@ -23,15 +23,6 @@
 .title-name {
   font-size: 34px;
   font-weight: 700;
-
-  a {
-    color: inherit;
-    text-decoration: none;
-
-    &:hover {
-      border-bottom: 2px solid $gray-dark;
-    }
-  }
 }
 
 .title-description {
@@ -77,6 +68,7 @@
 .project-img {
   background: $gray-dark-20;
   border-radius: 0px;
+  display: inline-block;
   height: 450px;
   width: 100%;
   overflow: hidden;
@@ -141,6 +133,19 @@
       @include transform(translateX(8px));
       opacity: 1;
     }
+  }
+}
+
+.home-end {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  max-width: 500px;
+  text-align: center;
+
+  em {
+    color: $gray-dark;
   }
 }
 

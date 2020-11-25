@@ -20,6 +20,7 @@
   "homepage": "https://github.com/eric-ls/eric-ls.github.io#readme",
   "dependencies": {
     "build-css": "^0.2.0",
+    "http-server": "^0.12.3",
     "node-sass": "^5.0.0",
     "nodemon": "^2.0.6"
   }
