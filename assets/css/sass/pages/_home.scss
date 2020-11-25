@@ -1,9 +1,16 @@
 .home-container {
-  max-width: 750px;
+  max-width: 1100px;
 }
 
 .home-title {
-  margin-top: 65px;
+  margin-top: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30vh;
+  max-width: 760px;
+
+  animation: fadein 0.5s both;
+  animation-delay: 0.1s;
 
   em { color: $gray-dark; }
 
@@ -28,43 +35,30 @@
 }
 
 .title-description {
-  animation: fadein 0.5s both;
-  animation-delay: 0.1s;
   color: $gray-dark-70;
-  font-size: 19px;
+  font-size: 23px;
   line-height: 1.7;
+  margin-bottom: 20px;
+
+  em {
+    font-weight: 600;
+  }
 }
 
 .title-links {
-  margin-left: auto;
-
   li {
     display: inline-block;
-    margin-left: 10px;
+    margin-right: 32px;
   }
 
   a {
-    color: $gray-dark-60;
-    font-weight: 500;
+    color: $gray-dark;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 1.7;
     text-decoration: none;
     transition: 60ms;
-
-    &.active {
-      color: $gray-dark-90;
-      font-weight: 600;
-    }
-
-    &:hover {
-      color: $gray-dark-90;
-      border-bottom: 1px solid $gray-dark-50;
-    }
   }
-}
-
-.section-title {
-  font-size: 20px;
-  font-weight: 800;
-  position: relative;
 }
 
 .work-section {
@@ -74,122 +68,82 @@
   padding-top: 30px;
 }
 
-.work-grid {
+.project {
   display: flex;
-  flex-flow: row;
-  margin-left: -20px;
-  margin-right: -20px;
-}
-
-.work-item {
-  color: inherit;
-  flex: 1;
-  margin: 5px;
-  margin-bottom: 25px;
-  padding: 15px;
-  position: relative;
-  text-decoration: none;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform-style: preserve-3d;
-
-  h2 {
-  font-size: 16px;
-  font-weight: 600;
-  margin-left: 5px;
-  -webkit-backface-visibility: hidden;
-  -webkit-transform-style: preserve-3d;
-  }
-
-  h3 {
-    color: $gray-dark-60;
-    font-size: 15px;
-    margin-left: 5px;
-    -webkit-backface-visibility: hidden;
-    -webkit-transform-style: preserve-3d;
-  }
-
-  &:after {
-    background: $blue-gray-10;
-    content: "";
-    height: 100%;
-    left: 0;
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    transition: 100ms;
-    width: 100%;
-    z-index: -1;
-    @include transform(scale(0.9));
-  }
-
-  &:hover:after {
-    opacity: 1;
-    @include transform(scale(1));
-  }
-}
-
-.work-item.empty-item:after {
-  content: none;
-}
-
-.other-work {
-  .work-item {
-    h2 {
-      font-size: 16px;
-      font-weight: 500;
-    }
-
-    h3 {
-      font-size: 14px;
-    }
-  }
-
-  .work-item-img {
-    height: 130px;
-  }
-
-  .work-icon {
-    width: 45px;
-    height: 45px;
-  }
-}
-
-.work-item-img {
-  background: $blue-gray-20;
-  border-radius: 2px;
-  height: 170px;
-  margin-bottom: 15px;
-  overflow: hidden;
-  position: relative;
+  margin-bottom: 150px;
   width: 100%;
+}
+
+.project-img {
+  background: $gray-dark-20;
+  border-radius: 0px;
+  height: 450px;
+  width: 100%;
+  overflow: hidden;
+  transition: 500ms;
 
   img {
     height: 100%;
     width: 100%;
     object-fit: cover;
+    transition: 500ms;
   }
 
-  &:before {
-    background: transparent;
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
+  &:hover {
+    box-shadow: 0px 12px 40px rgba(0,0,0,0.12);
+    img {
+      @include transform(scale(1.05));
+    }
   }
 }
 
-.work-icon {
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 55px;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  width: 55px;
-  @include transform(translateX(-50%) translateY(-50%));
+.project-text {
+  margin-top: 12px;
+  margin-left: 48px;
+  width: 400px;
+
+  h2 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+
+  p {
+    color: $gray-dark-70;
+    font-size: 20px;
+  }
 }
+
+.project-link {
+  align-items: center;
+  color: $gray-dark;
+  display: flex;
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 12px;
+  padding: 8px 0;
+  
+  a {
+    color: $gray-dark;
+    text-decoration: none;
+  }
+
+  img {
+    height: 20px;
+    width: 20px;
+    opacity: 0.3;
+    margin-left: 8px;
+    transition: 400ms;
+  }
+
+  &:hover {
+    img {
+      @include transform(translateX(8px));
+      opacity: 1;
+    }
+  }
+}
+
 
 @media (max-width: 800px) {
   body {

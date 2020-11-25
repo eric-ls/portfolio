@@ -44,7 +44,7 @@ $animation-time: 0.4s;
   text-decoration: none;
 
   &:before {
-    background: $blue-10;
+    background: $gray-dark-10;
     content: '';
     display: block;
     position: absolute;
@@ -57,7 +57,7 @@ $animation-time: 0.4s;
   }
 
   &:after {
-    background: $blue-10;
+    background: $gray-dark-10;
     content: '';
     display: block;
     position: absolute;
