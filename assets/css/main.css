@@ -563,9 +563,15 @@ body {
   animation: fadein 0.5s both;
   animation-delay: 0.4s; }
   .article-main-img img {
+    border: 1px solid rgba(58, 71, 80, 0.1);
     height: 100%;
     width: 100%;
     object-fit: cover; }
+  .article-main-img label {
+    color: rgba(58, 71, 80, 0.8);
+    font-size: 15px;
+    font-weight: 200;
+    margin: 10px auto; }
 
 .project-stats {
   display: grid;
@@ -574,6 +580,10 @@ body {
   margin-top: 56px;
   animation: fadein 0.5s both;
   animation-delay: 0.3s; }
+  .project-stats.two-col {
+    grid-template-columns: 1fr 1fr; }
+  .project-stats .stat {
+    width: 1fr; }
   .project-stats .stat-label {
     color: #3A4750;
     font-weight: 700; }
@@ -611,42 +621,27 @@ body {
     .article-title .links-container .link, .article-title .links-container .social-media-container a:hover, .social-media-container .article-title .links-container a:hover {
       margin: 0 10px; }
 
-.section-with-img {
-  display: flex;
-  flex-flow: row;
-  margin-top: 84px; }
-  .section-with-img .article-img {
-    flex: 2;
-    margin-left: 30px; }
-  .section-with-img .text {
-    flex: 1.5; }
-
 .article-body {
   animation: fadein 0.5s both;
   animation-delay: 0.3s; }
 
-.article-img {
-  margin-left: auto;
-  margin-right: auto;
-  text-align: right; }
-  .article-img img {
-    box-shadow: 0 5px 20px rgba(58, 71, 80, 0.2);
-    border-radius: 3px;
+.article-2-img {
+  margin: 100px -200px;
+  animation: fadein 0.5s both;
+  animation-delay: 0.4s;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 16px;
+  height: 350px; }
+  .article-2-img img {
+    border: 1px solid rgba(58, 71, 80, 0.1);
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    max-height: 500px; }
-  .article-img label {
-    color: rgba(58, 71, 80, 0.8);
-    font-size: 13px;
-    font-weight: 200;
-    margin: 10px auto; }
-  .article-img.no-shadow img {
-    box-shadow: none; }
+    object-fit: cover; }
 
 .article-list {
   list-style: square;
-  padding-left: 30px; }
+  padding-left: 60px; }
 
 .article-section-title {
   color: #3A4750;
