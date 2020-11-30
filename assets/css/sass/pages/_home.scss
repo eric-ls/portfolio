@@ -1,5 +1,7 @@
 .home-container {
   max-width: 1100px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .home-title {
@@ -150,48 +152,52 @@
 }
 
 
-@media (max-width: 800px) {
-  body {
-    padding-left: 15px;
-    padding-right: 15px;
+@media (max-width: 1150px) {
+  .project-text {
+    width: 600px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .project-img {
+    height: 350px;
+  }
+}
+
+@media (max-width: 760px) {
+  .project {
+    flex-flow: column;
+    margin-bottom: 75px;
+  }
+
+  .project-img {
+    height: 250px;
+    margin-bottom: 16px;
+  }
+
+  .project-text {
+    margin-left: auto;
+    width: 100%;
   }
 }
 
 @media (max-width: 600px) {
   .home-title {
-    margin-top: 40px;
-
-    .title-name {
-      font-size: 28px;
-    }
-
-    .title-description {
-      font-size: 17px;
-      margin-top: 30px;
-      text-align: left;
-    }
+    margin-top: 10vh;
+    margin-bottom: 10vh;
   }
 
-  .work-section {
-    margin-top: 20px;
+  .title-description {
+    font-size: 21px;
   }
 
-  .work-item {
-    margin: 0;
-    margin-bottom: 10px;
-    width: 100%;
+  .title-links {
+    a {
+      font-size: 21px;
+    }
   }
 }
 
 @media (max-width: 450px) {
-  .work-grid {
-    flex-flow: row wrap;
-    margin-left: -10px;
-    margin-right: -10px;
-  }
 
-  .work-item {
-    flex: initial;
-    padding: 10px;
-  }
 }
