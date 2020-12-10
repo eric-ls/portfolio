@@ -680,6 +680,14 @@ body {
     margin-top: 50px;
     margin-bottom: 50px; } }
 
+.about-img {
+  animation: fadein 0.5s both;
+  max-width: 250px; }
+  .about-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; }
+
 .container-404 {
   max-width: 500px;
   padding: 50px 0;
