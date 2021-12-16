@@ -6,10 +6,10 @@
 }
 
 .article-title {
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 700;
   margin-bottom: 24px;
-  
+
   animation: fadein 0.5s both;
   animation-delay: 0.1s;
 }
@@ -27,7 +27,7 @@
 
 .article-text {
   color: $gray-dark-80;
-  font-size: 23px;
+  font-size: 21px;
   line-height: 1.5;
   margin-bottom: 32px;
 
@@ -142,7 +142,7 @@
 
   animation: fadein 0.5s both;
   animation-delay: 0.4s;
-  
+
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 24px;
@@ -195,7 +195,7 @@
   .homepage-link {
     display: inline;
   }
-  
+
   .project-stats {
     grid-template-columns: 1fr;
     row-gap: 10px;

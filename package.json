@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build-css": "node-sass --include-path sass assets/css/sass/main.scss assets/css/main.css",
+    "build-css": "sass assets/css/sass/main.scss assets/css/main.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
@@ -19,9 +19,9 @@
   },
   "homepage": "https://github.com/eric-ls/eric-ls.github.io#readme",
   "dependencies": {
-    "build-css": "^0.2.0",
-    "http-server": "^0.12.3",
-    "node-sass": "^5.0.0",
+    "build-css": "^0.0.1",
+    "http-server": "^14.0.0",
+    "node-sass": "npm:sass@^1.45.0",
     "nodemon": "^2.0.6"
   }
 }

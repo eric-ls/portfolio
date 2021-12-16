@@ -8,7 +8,7 @@
   margin-top: 20vh;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 30vh;
+  margin-bottom: 20vh;
   max-width: 760px;
 
   animation: fadein 0.5s both;
@@ -29,8 +29,8 @@
 
 .title-description {
   color: $gray-dark-70;
-  font-size: 23px;
-  line-height: 1.7;
+  font-size: 22px;
+  line-height: 1.5;
   margin-bottom: 20px;
 
   em {
@@ -47,7 +47,7 @@
   a {
     color: $gray-dark;
     font-weight: 600;
-    font-size: 23px;
+    font-size: 22px;
     line-height: 1.7;
     text-decoration: none;
     transition: 60ms;
@@ -69,7 +69,7 @@
 
 .project-img {
   background: $gray-dark-20;
-  border-radius: 0px;
+  border-radius: 5px;
   display: inline-block;
   height: 450px;
   width: 100%;
@@ -116,7 +116,7 @@
   font-weight: 600;
   margin-top: 12px;
   padding: 8px 0;
-  
+
   a {
     color: $gray-dark;
     text-decoration: none;
