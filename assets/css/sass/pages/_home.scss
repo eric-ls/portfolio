@@ -1,6 +1,7 @@
 .main-container {
   font-size: 20px;
   margin: 0 auto;
+  margin-top: 30px;
   max-width: 500px;
   padding: 40px 10px;
 
@@ -34,13 +35,13 @@
     align-items: center;
     margin: 0 -15px;
     padding: 12px 15px;
-    transition: 100ms;
+    transition: background 100ms;
 
     &:hover {
       background: $gray-80;
     }
   }
-  
+
   .company {
     color: $black-90;
     font-weight: 500;

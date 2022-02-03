@@ -1,7 +1,6 @@
 /* Import partial files */
 @import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900");
 @import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
-/* line 1, sass/partials/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -23,114 +22,152 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, sass/partials/_reset.scss */
 html {
   line-height: 1;
 }
 
-/* line 26, sass/partials/_reset.scss */
 ul {
   list-style: none;
 }
 
-/* line 30, sass/partials/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 35, sass/partials/_reset.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 41, sass/partials/_reset.scss */
 q, blockquote {
   quotes: none;
 }
 
-/* line 45, sass/partials/_reset.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 50, sass/partials/_reset.scss */
 a img {
   border: none;
 }
 
-/* line 54, sass/partials/_reset.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
 
-/* line 5, sass/main.scss */
 * {
   box-sizing: border-box;
 }
 
-/* line 9, sass/main.scss */
 body {
   padding: 0;
 }
 
-/* line 5, sass/partials/_fonts.scss */
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   line-height: 1.5;
 }
 
-/* line 10, sass/partials/_fonts.scss */
 strong {
   font-weight: 600;
 }
 
-/* line 14, sass/partials/_fonts.scss */
 .link {
   color: #2185D5;
   text-decoration: none;
 }
-/* line 18, sass/partials/_fonts.scss */
 .link:hover {
   text-decoration: underline;
 }
 
+.homepage-link {
+  color: #2185D5;
+  display: inline-block;
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+}
+.homepage-link:before {
+  background: rgba(33, 133, 213, 0.1);
+  content: "";
+  display: block;
+  position: absolute;
+  left: 5px;
+  bottom: 2px;
+  height: 12px;
+  width: 0;
+  -webkit-transition: width 0s ease, background 0.4s ease;
+  transition: width 0s ease, background 0.4s ease;
+}
+.homepage-link:after {
+  background: rgba(33, 133, 213, 0.1);
+  content: "";
+  display: block;
+  position: absolute;
+  right: -5px;
+  bottom: 2px;
+  height: 12px;
+  width: 0;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+}
+.homepage-link:hover:before {
+  width: 100%;
+  -webkit-transition: width 0.4s ease;
+  transition: width 0.4s ease;
+}
+.homepage-link:hover:after {
+  background: transparent;
+  width: 100%;
+  -webkit-transition: all 0s ease;
+  transition: all 0s ease;
+}
+
+.stripe-link {
+  color: #635bff;
+}
+.stripe-link:before {
+  background: #635bff20;
+}
+.stripe-link:after {
+  background: #635bff20;
+}
+
+@media (max-width: 600px) {
+  .homepage-link:before, .homepage-link:after {
+    content: none;
+  }
+}
 /* Import page files */
-/* line 1, sass/pages/_home.scss */
 .main-container {
   font-size: 20px;
   margin: 0 auto;
+  margin-top: 30px;
   max-width: 500px;
   padding: 40px 10px;
 }
-/* line 7, sass/pages/_home.scss */
 .main-container #fb {
   color: #4267b2;
 }
-/* line 9, sass/pages/_home.scss */
 .main-container .title {
   font-size: 28px;
   font-weight: 800;
   margin-bottom: 28px;
 }
-/* line 15, sass/pages/_home.scss */
 .main-container .desc {
   color: rgba(58, 71, 80, 0.9);
   margin-bottom: 24px;
 }
-/* line 20, sass/pages/_home.scss */
 .main-container hr {
   opacity: 0.4;
 }
 
-/* line 25, sass/pages/_home.scss */
 .work-container {
   margin-top: 36px;
 }
-/* line 28, sass/pages/_home.scss */
 .work-container a {
   color: rgba(58, 71, 80, 0.7);
   border-radius: 8px;
@@ -140,86 +177,71 @@ strong {
   align-items: center;
   margin: 0 -15px;
   padding: 12px 15px;
-  transition: 100ms;
+  transition: background 100ms;
 }
-/* line 39, sass/pages/_home.scss */
 .work-container a:hover {
   background: rgba(243, 243, 243, 0.8);
 }
-/* line 44, sass/pages/_home.scss */
 .work-container .company {
   color: rgba(58, 71, 80, 0.9);
   font-weight: 500;
 }
-/* line 49, sass/pages/_home.scss */
 .work-container .slash {
   font-weight: 300;
   color: rgba(58, 71, 80, 0.6);
   margin: 0 5px;
 }
-/* line 55, sass/pages/_home.scss */
 .work-container .role {
   color: rgba(58, 71, 80, 0.6);
 }
-/* line 59, sass/pages/_home.scss */
 .work-container .year {
   margin-left: auto;
   font-family: "Roboto Mono";
   font-size: 16px;
 }
 
-/* line 66, sass/pages/_home.scss */
 .social-container {
   margin: 12px auto;
   font-size: 18px;
 }
-/* line 70, sass/pages/_home.scss */
 .social-container .link {
   margin-right: 12px;
 }
 
-/* line 1, sass/pages/_article.scss */
 .nav-link {
   display: block;
   font-size: 16px;
   margin-bottom: 16px;
 }
 
-/* line 8, sass/pages/_article.scss */
 .article-container .title {
   margin-bottom: 12px;
 }
 
-/* line 11, sass/pages/_article.scss */
 .article-body {
   animation: fadein 0.5s both;
   animation-delay: 0.3s;
 }
 
-/* line 16, sass/pages/_article.scss */
 .article-content {
   color: black;
   font-size: 16px;
   margin-top: 36px;
 }
-/* line 21, sass/pages/_article.scss */
 .article-content p {
   margin-bottom: 16px;
 }
 
-/* line 26, sass/pages/_article.scss */
 .article-img {
   margin: 20px auto;
   text-align: right;
 }
-/* line 30, sass/pages/_article.scss */
 .article-img img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   max-height: 500px;
 }
-/* line 37, sass/pages/_article.scss */
 .article-img label {
   color: rgba(58, 71, 80, 0.8);
   font-size: 13px;
@@ -227,26 +249,25 @@ strong {
   margin: 10px auto;
 }
 
-/* line 45, sass/pages/_article.scss */
 .article-list {
   list-style: square;
   margin-bottom: 16px;
   padding-left: 30px;
 }
 
-/* line 51, sass/pages/_article.scss */
 .article-section-title {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 8px;
 }
 
-/* line 57, sass/pages/_article.scss */
 .code-block {
   background: rgba(143, 172, 192, 0.1);
   color: rgba(58, 71, 80, 0.8);
   display: inline-block;
-  font-family: 'Roboto Mono', monospace;
+  font-family: "Roboto Mono", monospace;
   font-size: 14px;
   padding: 10px;
 }
+
+/*# sourceMappingURL=main.css.map */
