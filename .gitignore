@@ -2,3 +2,4 @@
 *.css.map
 *.codekit
 .DS_STORE
+node_modules
