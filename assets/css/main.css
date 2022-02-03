@@ -149,13 +149,24 @@ strong {
   max-width: 500px;
   padding: 40px 10px;
 }
-.main-container #fb {
-  color: #4267b2;
+.main-container .title-container {
+  display: flex;
+  margin-bottom: 28px;
+  align-items: center;
 }
 .main-container .title {
   font-size: 28px;
   font-weight: 800;
-  margin-bottom: 28px;
+}
+.main-container .social-icon-container {
+  margin-left: auto;
+}
+.main-container .social-icon-container img {
+  color: rgba(58, 71, 80, 0.6);
+  height: 25px;
+  width: 25px;
+  margin-left: 10px;
+  opacity: 0.6;
 }
 .main-container .desc {
   color: rgba(58, 71, 80, 0.9);
@@ -198,14 +209,6 @@ strong {
   margin-left: auto;
   font-family: "Roboto Mono";
   font-size: 16px;
-}
-
-.social-container {
-  margin: 12px auto;
-  font-size: 18px;
-}
-.social-container .link {
-  margin-right: 12px;
 }
 
 .nav-link {
