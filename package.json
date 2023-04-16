@@ -22,7 +22,7 @@
     "build-css": "^0.0.1",
     "http-server": "^14.0.0",
     "node-sass": "npm:sass@^1.45.0",
-    "nodemon": "^2.0.6",
+    "nodemon": "^2.0.22",
     "sass": "^1.49.7"
   }
 }
